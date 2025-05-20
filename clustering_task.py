@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import ndjson
 import torch
+import einops
 
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import SentenceTransformer
@@ -21,42 +22,42 @@ MODEL_SETS = {
         "xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
-        "neulab/Pangea-7B",
+        #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'ger': [
         "xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
-        "neulab/Pangea-7B",
+        #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'eng': [
         "xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
-        "neulab/Pangea-7B",
+        #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'fre': [
         "xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
-        "neulab/Pangea-7B",
+        #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'ita': [
         "xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
-        "neulab/Pangea-7B",
+       # "neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'cal': [
         "xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
-        "neulab/Pangea-7B",
+        #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ]
 }
@@ -92,7 +93,7 @@ def process_dataset(df, chunk_size):
 
 def get_embeddings_flexible(model_name, text_chunks):
     try:
-        model = SentenceTransformer(model_name)
+        model = SentenceTransformer(model_name, trust_remote_code=True)
         print(f"✅ Using SentenceTransformer for {model_name}")
         return model.encode(
             text_chunks,
@@ -103,7 +104,7 @@ def get_embeddings_flexible(model_name, text_chunks):
     except Exception as e:
         print(f"⚠️ Falling back to AutoModel for {model_name} due to: {e}")
         tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModel.from_pretrained(model_name)
+        model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
         embeddings = []
 
         for chunk in text_chunks:

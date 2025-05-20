@@ -1,0 +1,13 @@
+Chunk Size	Model Name	V-Measure Score	Number of Rows
+200	xlm-roberta-large	0.5764	1338
+200	intfloat/multilingual-e5-large	0.5167	1338
+200	google-t5/t5-large	0.6217	1338
+200	jinaai/jina-embeddings-v3	0.4883	1338
+300	xlm-roberta-large	0.6854	888
+300	intfloat/multilingual-e5-large	0.6186	888
+300	google-t5/t5-large	0.7298	888
+300	jinaai/jina-embeddings-v3	0.6142	888
+400	xlm-roberta-large	0.6968	657
+400	intfloat/multilingual-e5-large	0.5988	657
+400	google-t5/t5-large	0.7544	657
+400	jinaai/jina-embeddings-v3	0.6378	657
