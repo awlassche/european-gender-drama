@@ -19,42 +19,42 @@ MODEL_SETS = {
         "emanjavacas/GysBERT-v2",
         "DTAI-KULeuven/robbert-2023-dutch-large",
         "GroNLP/bert-base-dutch-cased",
-        "xlm-roberta-large",
+        #"xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
         #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'ger': [
-        "xlm-roberta-large",
+        #"xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
         #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'eng': [
-        "xlm-roberta-large",
+        #"xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
         #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'fre': [
-        "xlm-roberta-large",
+        #"xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
         #"neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'ita': [
-        "xlm-roberta-large",
+        #"xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
        # "neulab/Pangea-7B",
         "jinaai/jina-embeddings-v3"
     ],
     'cal': [
-        "xlm-roberta-large",
+        #"xlm-roberta-large",
         "intfloat/multilingual-e5-large",
         "google-t5/t5-large",
         #"neulab/Pangea-7B",
@@ -63,7 +63,7 @@ MODEL_SETS = {
 }
 
 CHUNK_SIZES = [200, 300, 400]
-TODAY = '250520'
+TODAY = '250521'
 
 # -------------------- FUNCTIONS -----------------------
 
@@ -142,9 +142,54 @@ def get_embeddings_advanced(model_name, text_chunks, pooling="cls"):
     return np.array(embeddings)
 
 def evaluate_clustering(embeddings, true_labels, n_clusters):
+    # create sample of size 650
+    # alternative: vary sample size
+
     kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
     predicted_labels = kmeans.fit_predict(embeddings)
     return v_measure_score(true_labels, predicted_labels)
+
+def evaluate_clustering_stratified(embeddings, true_labels, sample_size=650, n_iterations=10):
+    """
+    Perform stratified sampling by speaker and run clustering multiple times.
+
+    :param embeddings: NumPy array of embeddings
+    :param true_labels: List or array of speaker labels
+    :param sample_size: Number of samples to draw per iteration
+    :param n_iterations: Number of repetitions
+    :return: mean V-measure, std, list of all scores
+    """
+    v_scores = []
+    embeddings = np.array(embeddings)
+    true_labels = np.array(true_labels)
+
+    df = pd.DataFrame({
+        'index': range(len(true_labels)),
+        'label': true_labels
+    })
+
+    for i in range(n_iterations):
+        # Sample stratified subset of indices
+        stratified_sample = (
+            df.groupby('label', group_keys=False)
+              .apply(lambda x: x.sample(
+                  max(1, int(np.floor(sample_size * len(x) / len(df)))),  # proportional allocation
+                  random_state=i,
+                  replace=False
+              ))
+        )
+
+        indices = stratified_sample['index'].values
+        sampled_embeddings = embeddings[indices]
+        sampled_labels = true_labels[indices]
+        sampled_n_clusters = len(set(sampled_labels))
+
+        kmeans = KMeans(n_clusters=sampled_n_clusters, random_state=i, n_init=10)
+        predicted = kmeans.fit_predict(sampled_embeddings)
+        v = v_measure_score(sampled_labels, predicted)
+        v_scores.append(v)
+
+    return np.mean(v_scores), np.std(v_scores), v_scores
 
 def get_language_from_filename(filename):
     match = re.match(r"speech_gender_(\w+)\.ndjson", filename)
@@ -157,13 +202,15 @@ def process_file(filepath, language, model_names):
         data = ndjson.load(fin)
     df = pd.DataFrame(data)
 
-    df_grouped = df.groupby(['speaker', 'play']).agg({
-        'gender': 'first',
-        'speech': ' '.join
-    }).reset_index()
+    # Optionally verify required columns exist
+    required_cols = {'speaker', 'play', 'gender', 'speech'}
+    assert required_cols.issubset(df.columns), f"Missing required columns in {filepath}"
 
-    df_grouped['speech_length'] = df_grouped['speech'].apply(count_tokens)
-    df_sorted = df_grouped.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
+    # Add speech length column
+    df['speech_length'] = df['speech'].apply(count_tokens)
+
+    # Sort by speech length, keep top 40
+    df_sorted = df.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
     df_top = df_sorted.iloc[:40]
 
     os.makedirs("results", exist_ok=True)
@@ -183,8 +230,15 @@ def process_file(filepath, language, model_names):
             for model_name in model_names:
                 print(f"🧠 Evaluating: {model_name}")
                 embeddings = get_embeddings_flexible(model_name, text_chunks)
-                v_score = evaluate_clustering(embeddings, true_labels, n_clusters)
-                f.write(f"{chunk_size}\t{model_name}\t{v_score:.4f}\t{num_rows}\n")
+                #v_score = evaluate_clustering(embeddings, true_labels, n_clusters)
+                #f.write(f"{chunk_size}\t{model_name}\t{v_score:.4f}\t{num_rows}\n")
+                mean_v, std_v, scores = evaluate_clustering_stratified(
+                        embeddings,
+                        true_labels,
+                        sample_size=650,
+                        n_iterations=20
+                        )
+                f.write(f"{chunk_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_rows}\n")
 
     print(f"✅ Results saved: {output_file}")
 
