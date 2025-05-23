@@ -5,6 +5,7 @@ import numpy as np
 import ndjson
 import torch
 import einops
+import hf_xet
 
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import SentenceTransformer
@@ -62,8 +63,8 @@ MODEL_SETS = {
     ]
 }
 
-CHUNK_SIZES = [200, 300, 400]
-TODAY = '250521'
+CHUNK_SIZES = [400] #[200, 300, 400]
+TODAY = '250523_2'
 
 # -------------------- FUNCTIONS -----------------------
 
@@ -172,11 +173,11 @@ def evaluate_clustering_stratified(embeddings, true_labels, sample_size=650, n_i
         # Sample stratified subset of indices
         stratified_sample = (
             df.groupby('label', group_keys=False)
-              .apply(lambda x: x.sample(
+              .apply(lambda x: x.sample( 
                   max(1, int(np.floor(sample_size * len(x) / len(df)))),  # proportional allocation
                   random_state=i,
                   replace=False
-              ))
+              ), include_groups=False)
         )
 
         indices = stratified_sample['index'].values
@@ -202,43 +203,44 @@ def process_file(filepath, language, model_names):
         data = ndjson.load(fin)
     df = pd.DataFrame(data)
 
-    # Optionally verify required columns exist
     required_cols = {'speaker', 'play', 'gender', 'speech'}
     assert required_cols.issubset(df.columns), f"Missing required columns in {filepath}"
 
-    # Add speech length column
     df['speech_length'] = df['speech'].apply(count_tokens)
-
-    # Sort by speech length, keep top 40
     df_sorted = df.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
-    df_top = df_sorted.iloc[:40]
 
     os.makedirs("results", exist_ok=True)
     output_file = f"results/v_measure_results_{language}_{TODAY}.txt"
 
     with open(output_file, "w", encoding="utf-8") as f:
-        f.write("Chunk Size\tModel Name\tV-Measure Score\tNumber of Rows\n")
+        f.write("Speakers\tSample Size\tModel Name\tV-Measure Score\tNum Chunks\n")
 
-        for chunk_size in CHUNK_SIZES:
-            print(f"\n🔍 Chunk size: {chunk_size}")
+        for n_speakers, sample_size in zip([10, 20, 30, 40], [150, 300, 450, 600]):
+            print(f"\n🎭 Top {n_speakers} speakers, sample size = {sample_size}")
+            df_top = df_sorted.iloc[:n_speakers]
+
+            chunk_size = 400  # fixed chunk size
             df_filtered = process_dataset(df_top, chunk_size)
             text_chunks = df_filtered['speech_chunk'].tolist()
             true_labels = df_filtered['speaker'].tolist()
             n_clusters = len(set(true_labels))
-            num_rows = df_filtered.shape[0]
+            num_chunks = len(text_chunks)
 
             for model_name in model_names:
                 print(f"🧠 Evaluating: {model_name}")
                 embeddings = get_embeddings_flexible(model_name, text_chunks)
-                #v_score = evaluate_clustering(embeddings, true_labels, n_clusters)
-                #f.write(f"{chunk_size}\t{model_name}\t{v_score:.4f}\t{num_rows}\n")
+
+                # In case there are fewer available chunks than sample size
+                actual_sample_size = min(sample_size, len(df_filtered))
+
                 mean_v, std_v, scores = evaluate_clustering_stratified(
-                        embeddings,
-                        true_labels,
-                        sample_size=650,
-                        n_iterations=20
-                        )
-                f.write(f"{chunk_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_rows}\n")
+                    embeddings,
+                    true_labels,
+                    sample_size=actual_sample_size,
+                    n_iterations=20
+                )
+
+                f.write(f"{n_speakers}\t{actual_sample_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
 
     print(f"✅ Results saved: {output_file}")
 
