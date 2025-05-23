@@ -1,0 +1,4 @@
+Chunk Size	Model Name	V-Measure Score	Number of Rows
+400	intfloat/multilingual-e5-large	0.3609 ± 0.0114	4626
+400	google-t5/t5-large	0.3627 ± 0.0098	4626
+400	jinaai/jina-embeddings-v3	0.3931 ± 0.0104	4626

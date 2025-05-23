@@ -1,0 +1,13 @@
+Speakers	Sample Size	Model Name	V-Measure Score	Num Chunks
+10	150	intfloat/multilingual-e5-large	0.7371 ± 0.0297	206
+10	150	google-t5/t5-large	0.8657 ± 0.0210	206
+10	150	jinaai/jina-embeddings-v3	0.8232 ± 0.0436	206
+20	300	intfloat/multilingual-e5-large	0.6413 ± 0.0292	373
+20	300	google-t5/t5-large	0.7932 ± 0.0174	373
+20	300	jinaai/jina-embeddings-v3	0.6835 ± 0.0242	373
+30	450	intfloat/multilingual-e5-large	0.6329 ± 0.0164	521
+30	450	google-t5/t5-large	0.7833 ± 0.0154	521
+30	450	jinaai/jina-embeddings-v3	0.6707 ± 0.0171	521
+40	600	intfloat/multilingual-e5-large	0.6009 ± 0.0125	657
+40	600	google-t5/t5-large	0.7572 ± 0.0155	657
+40	600	jinaai/jina-embeddings-v3	0.6519 ± 0.0147	657

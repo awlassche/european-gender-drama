@@ -1,0 +1,7 @@
+Chunk Size	Model Name	V-Measure Score	Number of Rows
+400	emanjavacas/GysBERT-v2	0.6673 ± 0.0068	740
+400	DTAI-KULeuven/robbert-2023-dutch-large	0.6195 ± 0.0099	740
+400	GroNLP/bert-base-dutch-cased	0.6298 ± 0.0111	740
+400	intfloat/multilingual-e5-large	0.6460 ± 0.0132	740
+400	google-t5/t5-large	0.6503 ± 0.0072	740
+400	jinaai/jina-embeddings-v3	0.6611 ± 0.0115	740
