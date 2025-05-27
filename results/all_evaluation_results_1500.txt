@@ -1,0 +1,60 @@
+📁 Dataset: speech_cal_embeddings
+TF-IDF Results:
+  MALE   → P: 0.7706, R: 0.8210, F1: 0.7947
+  FEMALE → P: 0.8089, R: 0.7551, F1: 0.7807
+  Accuracy: 0.7880
+Embedding Results:
+  MALE   → P: 0.6750, R: 0.6641, F1: 0.6692
+  FEMALE → P: 0.6695, R: 0.6797, F1: 0.6742
+  Accuracy: 0.6719
+
+📁 Dataset: speech_ita_embeddings
+TF-IDF Results:
+  MALE   → P: 0.8477, R: 0.9211, F1: 0.8827
+  FEMALE → P: 0.9138, R: 0.8339, F1: 0.8718
+  Accuracy: 0.8775
+Embedding Results:
+  MALE   → P: 0.7516, R: 0.7075, F1: 0.7287
+  FEMALE → P: 0.7241, R: 0.7661, F1: 0.7443
+  Accuracy: 0.7368
+
+📁 Dataset: speech_dutch_embeddings
+TF-IDF Results:
+  MALE   → P: 0.7615, R: 0.8042, F1: 0.7820
+  FEMALE → P: 0.7929, R: 0.7475, F1: 0.7691
+  Accuracy: 0.7758
+Embedding Results:
+  MALE   → P: 0.6509, R: 0.6611, F1: 0.6556
+  FEMALE → P: 0.6558, R: 0.6449, F1: 0.6499
+  Accuracy: 0.6530
+
+📁 Dataset: speech_fre_embeddings
+TF-IDF Results:
+  MALE   → P: 0.7014, R: 0.7244, F1: 0.7125
+  FEMALE → P: 0.7149, R: 0.6909, F1: 0.7024
+  Accuracy: 0.7076
+Embedding Results:
+  MALE   → P: 0.6769, R: 0.6475, F1: 0.6616
+  FEMALE → P: 0.6622, R: 0.6905, F1: 0.6758
+  Accuracy: 0.6690
+
+📁 Dataset: speech_ger_embeddings
+TF-IDF Results:
+  MALE   → P: 0.7695, R: 0.8184, F1: 0.7929
+  FEMALE → P: 0.8065, R: 0.7543, F1: 0.7792
+  Accuracy: 0.7864
+Embedding Results:
+  MALE   → P: 0.6964, R: 0.6782, F1: 0.6868
+  FEMALE → P: 0.6865, R: 0.7036, F1: 0.6946
+  Accuracy: 0.6909
+
+📁 Dataset: speech_eng_embeddings
+TF-IDF Results:
+  MALE   → P: 0.7111, R: 0.7483, F1: 0.7289
+  FEMALE → P: 0.7349, R: 0.6955, F1: 0.7142
+  Accuracy: 0.7219
+Embedding Results:
+  MALE   → P: 0.6970, R: 0.6789, F1: 0.6875
+  FEMALE → P: 0.6868, R: 0.7038, F1: 0.6949
+  Accuracy: 0.6914
+
