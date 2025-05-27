@@ -21,7 +21,8 @@ def evaluate_model_on_dataset(dataset_path, n_iterations=50):
 
     male_df = df[df['gender'] == 'MALE']
     female_df = df[df['gender'] == 'FEMALE']
-    min_size = min(len(male_df), len(female_df))
+    #min_size = min(len(male_df), len(female_df))
+    min_size = 1500
 
     tfidf_results = {
     'MALE': {'precision': [], 'recall': [], 'f1': []},
@@ -106,7 +107,7 @@ for path in dataset_paths:
     all_results.append(result)
 
 # Save to TXT
-with open("all_evaluation_results.txt", "w") as f:
+with open("results/all_evaluation_results_1500.txt", "w") as f:
     for r in all_results:
         f.write(f"📁 Dataset: {r['dataset']}\n")
         f.write("TF-IDF Results:\n")
