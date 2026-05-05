@@ -1,41 +1,35 @@
+"""
+python get_embeddings_europe.py \
+  --input_dir data/ \
+  --hub_dataset_id awlassche/european-gender-drama-bge-embeddings
+"""
+
 import os
 import glob
 import pandas as pd
-from datasets import Dataset
+from datasets import Dataset, concatenate_datasets
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 import argparse
 import ndjson
-import einops
+import torch
+
 
 def chunk_speech(speech, chunk_size):
-    """
-    Splits a speech into chunks of a specified word length.
-
-    :param speech: The full speech text.
-    :param chunk_size: The maximum number of words per chunk.
-    :return: A list of speech chunks.
-    """
     words = speech.split()
     return [' '.join(words[i:i + chunk_size]) for i in range(0, len(words), chunk_size)]
 
-def process_dataset(df, chunk_size):
-    """
-    Chunks speeches into smaller parts, filters out short chunks, and returns a DataFrame.
 
-    :param df: The original DataFrame containing speeches.
-    :param chunk_size: The chunk size to apply.
-    :return: A filtered DataFrame with chunked speech.
-    """
-
+def process_dataset(df, chunk_size, language):
     chunked_data = []
-    for _, row in tqdm(df.iterrows(), total=len(df), desc="Chunking grouped speeches"):
+    for _, row in tqdm(df.iterrows(), total=len(df), desc=f"Chunking [{language}]"):
         chunks = chunk_speech(row['speech'], chunk_size)
         speaker_id_base = row['speaker'][:4]
 
         for i, chunk in enumerate(chunks):
-            if len(chunk.split()) > 5:  # Optional: filter out very short chunks
+            if len(chunk.split()) > 5:
                 chunked_data.append({
+                    'language': language,
                     'speaker': row['speaker'],
                     'play': row['play'],
                     'gender': row['gender'],
@@ -45,47 +39,59 @@ def process_dataset(df, chunk_size):
 
     return pd.DataFrame(chunked_data)
 
-def embed_and_save(input_path, output_path, chunk_size=400, model_name="jinaai/jina-embeddings-v3"):
-    # 1. Load raw data
+
+def embed_and_collect(input_path, language, model, chunk_size, batch_size):
     with open(input_path) as fin:
         data = ndjson.load(fin)
     df = pd.DataFrame(data)
 
-    # 2. Chunk speeches
-    df_chunked = process_dataset(df, chunk_size)
+    df_chunked = process_dataset(df, chunk_size, language)
 
-    # 3. Load embedding model
-    model = SentenceTransformer(model_name, trust_remote_code=True)
-
-    # 4. Encode with batching
-    print("Generating embeddings...")
+    print(f"  Generating embeddings for {len(df_chunked)} chunks...")
     embeddings = model.encode(
         df_chunked['speech_chunk'].tolist(),
         show_progress_bar=True,
-        batch_size=32,
-        convert_to_numpy=True
+        batch_size=batch_size,
+        convert_to_numpy=True,
+        normalize_embeddings=True,  # bge-m3 recommends normalized embeddings
     )
 
-    # 5. Attach and save
     df_chunked['embedding'] = embeddings.tolist()
-    dataset = Dataset.from_pandas(df_chunked)
-    dataset.save_to_disk(output_path)
-    print(f"✅ Saved dataset with embeddings to: {output_path}")
+    return Dataset.from_pandas(df_chunked, preserve_index=False)
 
-if __name__ == "__main__":
+
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_dir", type=str, required=True, help="Directory with .ndjson files")
-    parser.add_argument("--output_dir", type=str, required=True, help="Output directory for saved datasets")
+    parser.add_argument("--hub_dataset_id", type=str, required=True, help="HuggingFace dataset ID, e.g. username/dataset-name")
     parser.add_argument("--chunk_size", type=int, default=400, help="Max number of words per chunk")
-    parser.add_argument("--model", type=str, default="jinaai/jina-embeddings-v3", help="SentenceTransformer model")
+    parser.add_argument("--model", type=str, default="BAAI/bge-m3", help="SentenceTransformer model")
+    parser.add_argument("--batch_size", type=int, default=64, help="Encoding batch size")
     args = parser.parse_args()
 
-    input_files = sorted(glob.glob(os.path.join(args.input_dir, "*.ndjson")))
-    os.makedirs(args.output_dir, exist_ok=True)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using device: {device}")
 
+    print(f"Loading model: {args.model}")
+    model = SentenceTransformer(args.model, trust_remote_code=True, device=device)
+
+    input_files = sorted(glob.glob(os.path.join(args.input_dir, "*.ndjson")))
+    if not input_files:
+        raise FileNotFoundError(f"No .ndjson files found in {args.input_dir}")
+
+    all_datasets = []
     for input_path in input_files:
         language = os.path.splitext(os.path.basename(input_path))[0].split("_")[-1]
-        output_path = os.path.join(args.output_dir, f"speech_{language}_embeddings")
+        print(f"\nProcessing: {input_path} (language={language})")
+        all_datasets.append(embed_and_collect(input_path, language, model, args.chunk_size, args.batch_size))
 
-        print(f"\n🚀 Processing: {input_path} → {output_path}")
-        embed_and_save(input_path, output_path, args.chunk_size, args.model)
+    print("\nConcatenating all language datasets...")
+    combined = concatenate_datasets(all_datasets)
+
+    print(f"Pushing {len(combined)} rows to HuggingFace Hub: {args.hub_dataset_id}")
+    combined.push_to_hub(args.hub_dataset_id)
+    print(f"Done. Dataset available at: https://huggingface.co/datasets/{args.hub_dataset_id}")
+
+
+if __name__ == "__main__":
+    main()
