@@ -1,0 +1,22 @@
+# Core
+transformers<5.0
+torch==2.11.0
+sentence-transformers==5.4.1
+
+# Data
+pandas==3.0.2
+numpy==2.4.4
+ndjson==0.3.1
+scikit-learn==1.8.0
+
+# Model utilities
+einops==0.8.2
+peft==0.19.1
+tiktoken
+hf-xet==1.4.3
+
+# Misc
+tqdm==4.67.3
+
+# Optional: install for faster inference on Ampere/Ada/Hopper GPUs (A100, RTX 3090/4090, H100)
+# pip install flash-attn --no-build-isolation
