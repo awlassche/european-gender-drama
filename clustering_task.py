@@ -17,54 +17,51 @@ from sklearn.metrics import v_measure_score
 # Define language-specific model sets
 MODEL_SETS = {
     'dutch': [
-        "emanjavacas/GysBERT-v2",
-        "DTAI-KULeuven/robbert-2023-dutch-large",
-        "GroNLP/bert-base-dutch-cased",
-        #"xlm-roberta-large",
+        "emanjavacas/GysBERT-v2",                    # historical Dutch
+        "DTAI-KULeuven/robbert-2023-dutch-large",     # modern Dutch SOTA
+        "intfloat/multilingual-e5-large",             # multilingual baseline
+        "BAAI/bge-m3",                                # multilingual SOTA
+        "jinaai/jina-embeddings-v3"                   # multilingual SOTA
+    ],
+    'eng': [
+        "emanjavacas/MacBERTh",                       # historical English
+        "BAAI/bge-large-en-v1.5",                     # modern English SOTA
         "intfloat/multilingual-e5-large",
-        "google-t5/t5-large",
-        #"neulab/Pangea-7B",
+        "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'ger': [
-        #"xlm-roberta-large",
+        "dbmdz/bert-base-historic-german-cased",      # historical German
+        "deutsche-telekom/gbert-large-paraphrase-cosine",  # modern German SOTA
         "intfloat/multilingual-e5-large",
-        "google-t5/t5-large",
-        #"neulab/Pangea-7B",
-        "jinaai/jina-embeddings-v3"
-    ],
-    'eng': [
-        #"xlm-roberta-large",
-        "intfloat/multilingual-e5-large",
-        "google-t5/t5-large",
-        #"neulab/Pangea-7B",
+        "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'fre': [
-        #"xlm-roberta-large",
+        "dbmdz/bert-base-french-europeana-cased",     # historical French
+        "dangvantuan/sentence-camembert-large",        # modern French SOTA
         "intfloat/multilingual-e5-large",
-        "google-t5/t5-large",
-        #"neulab/Pangea-7B",
+        "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'ita': [
-        #"xlm-roberta-large",
+        "models/bertoldo-all/checkpoint",              # historical Italian (local)
+        "nickprock/sentence-bert-base-italian-xxl-uncased",  # modern Italian SOTA
         "intfloat/multilingual-e5-large",
-        "google-t5/t5-large",
-       # "neulab/Pangea-7B",
+        "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'cal': [
-        #"xlm-roberta-large",
+        "dccuchile/bert-base-spanish-wwm-cased",       # historical Spanish (BETO)
+        "hiiamsid/sentence_similarity_spanish_es",    # modern Spanish SOTA
         "intfloat/multilingual-e5-large",
-        "google-t5/t5-large",
-        #"neulab/Pangea-7B",
+        "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ]
 }
 
-CHUNK_SIZES = [400] #[200, 300, 400]
-TODAY = '250523_2'
+CHUNK_SIZE = 400
+TODAY = '260505'
 
 # -------------------- FUNCTIONS -----------------------
 
@@ -196,7 +193,7 @@ def get_language_from_filename(filename):
     match = re.match(r"speech_gender_(\w+)\.ndjson", filename)
     return match.group(1) if match else None
 
-def process_file(filepath, language, model_names):
+def process_file(filepath, language, model_names, output_file):
     print(f"\n🚀 Processing file: {filepath} ({language})")
 
     with open(filepath) as fin:
@@ -209,28 +206,20 @@ def process_file(filepath, language, model_names):
     df['speech_length'] = df['speech'].apply(count_tokens)
     df_sorted = df.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
 
-    os.makedirs("results", exist_ok=True)
-    output_file = f"results/v_measure_results_{language}_{TODAY}.txt"
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("Speakers\tSample Size\tModel Name\tV-Measure Score\tNum Chunks\n")
-
+    with open(output_file, "a", encoding="utf-8") as f:
         for n_speakers, sample_size in zip([10, 20, 30, 40], [150, 300, 450, 600]):
             print(f"\n🎭 Top {n_speakers} speakers, sample size = {sample_size}")
             df_top = df_sorted.iloc[:n_speakers]
 
-            chunk_size = 400  # fixed chunk size
-            df_filtered = process_dataset(df_top, chunk_size)
+            df_filtered = process_dataset(df_top, CHUNK_SIZE)
             text_chunks = df_filtered['speech_chunk'].tolist()
             true_labels = df_filtered['speaker'].tolist()
-            n_clusters = len(set(true_labels))
             num_chunks = len(text_chunks)
 
             for model_name in model_names:
                 print(f"🧠 Evaluating: {model_name}")
                 embeddings = get_embeddings_flexible(model_name, text_chunks)
 
-                # In case there are fewer available chunks than sample size
                 actual_sample_size = min(sample_size, len(df_filtered))
 
                 mean_v, std_v, scores = evaluate_clustering_stratified(
@@ -240,14 +229,20 @@ def process_file(filepath, language, model_names):
                     n_iterations=20
                 )
 
-                f.write(f"{n_speakers}\t{actual_sample_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
+                f.write(f"{language}\t{n_speakers}\t{actual_sample_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
 
-    print(f"✅ Results saved: {output_file}")
+    print(f"✅ Results written to: {output_file}")
 
 # ------------------------ MAIN ------------------------
 
 def main():
-    for filename in os.listdir('data'):
+    os.makedirs("results", exist_ok=True)
+    output_file = f"results/v_measure_results_{TODAY}.txt"
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("Language\tSpeakers\tSample Size\tModel Name\tV-Measure Score\tNum Chunks\n")
+
+    for filename in sorted(os.listdir('data')):
         if filename.startswith("speech_gender_") and filename.endswith(".ndjson"):
             language = get_language_from_filename(filename)
             if not language:
@@ -259,7 +254,7 @@ def main():
 
             filepath = os.path.join('data', filename)
             model_names = MODEL_SETS[language]
-            process_file(filepath, language, model_names)
+            process_file(filepath, language, model_names, output_file)
 
 if __name__ == "__main__":
     main()
