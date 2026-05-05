@@ -1,3 +1,8 @@
+# pip install tiktoken
+# pip install peft
+# pip install "transformers<5.0"
+
+
 import os
 import re
 import pandas as pd
@@ -7,7 +12,8 @@ import torch
 import einops
 import hf_xet
 
-from transformers import AutoTokenizer, AutoModel
+from tqdm import tqdm
+from transformers import AutoModel
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
 from sklearn.metrics import v_measure_score
@@ -31,7 +37,7 @@ MODEL_SETS = {
         "jinaai/jina-embeddings-v3"
     ],
     'ger': [
-        "dbmdz/bert-base-historic-german-cased",      # historical German
+        "dbmdz/bert-base-german-europeana-uncased",      # historical German
         "deutsche-telekom/gbert-large-paraphrase-cosine",  # modern German SOTA
         "intfloat/multilingual-e5-large",
         "BAAI/bge-m3",
@@ -95,24 +101,19 @@ def get_embeddings_flexible(model_name, text_chunks):
         print(f"✅ Using SentenceTransformer for {model_name}")
         return model.encode(
             text_chunks,
+            task="text-matching",
             show_progress_bar=True,
             batch_size=32,
             convert_to_numpy=True
         )
     except Exception as e:
         print(f"⚠️ Falling back to AutoModel for {model_name} due to: {e}")
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
-        embeddings = []
-
-        for chunk in text_chunks:
-            inputs = tokenizer(chunk, return_tensors="pt", truncation=True, padding=True, max_length=512)
-            with torch.no_grad():
-                outputs = model(**inputs)
-            emb = outputs.last_hidden_state[:, 0, :].squeeze().numpy()
-            embeddings.append(emb)
-
-        return np.array(embeddings)
+        try:
+            model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
+            return np.array(model.encode(text_chunks, task="text-matching"))
+        except Exception as e2:
+            print(f"❌ AutoModel also failed for {model_name}: {e2}. Skipping.")
+            return None
 
 def get_embeddings_advanced(model_name, text_chunks, pooling="cls"):
     try:
@@ -206,30 +207,34 @@ def process_file(filepath, language, model_names, output_file):
     df['speech_length'] = df['speech'].apply(count_tokens)
     df_sorted = df.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
 
+    n_speakers = 40
+    sample_size = 600
+
     with open(output_file, "a", encoding="utf-8") as f:
-        for n_speakers, sample_size in zip([10, 20, 30, 40], [150, 300, 450, 600]):
-            print(f"\n🎭 Top {n_speakers} speakers, sample size = {sample_size}")
-            df_top = df_sorted.iloc[:n_speakers]
+        print(f"\n🎭 Top {n_speakers} speakers, sample size = {sample_size}")
+        df_top = df_sorted.iloc[:n_speakers]
 
-            df_filtered = process_dataset(df_top, CHUNK_SIZE)
-            text_chunks = df_filtered['speech_chunk'].tolist()
-            true_labels = df_filtered['speaker'].tolist()
-            num_chunks = len(text_chunks)
+        df_filtered = process_dataset(df_top, CHUNK_SIZE)
+        text_chunks = df_filtered['speech_chunk'].tolist()
+        true_labels = df_filtered['speaker'].tolist()
+        num_chunks = len(text_chunks)
 
-            for model_name in model_names:
-                print(f"🧠 Evaluating: {model_name}")
-                embeddings = get_embeddings_flexible(model_name, text_chunks)
+        for model_name in model_names:
+            print(f"🧠 Evaluating: {model_name}")
+            embeddings = get_embeddings_flexible(model_name, text_chunks)
+            if embeddings is None:
+                continue
 
-                actual_sample_size = min(sample_size, len(df_filtered))
+            actual_sample_size = min(sample_size, len(df_filtered))
 
-                mean_v, std_v, scores = evaluate_clustering_stratified(
-                    embeddings,
-                    true_labels,
-                    sample_size=actual_sample_size,
-                    n_iterations=20
-                )
+            mean_v, std_v, scores = evaluate_clustering_stratified(
+                embeddings,
+                true_labels,
+                sample_size=actual_sample_size,
+                n_iterations=20
+            )
 
-                f.write(f"{language}\t{n_speakers}\t{actual_sample_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
+            f.write(f"{language}\t{n_speakers}\t{actual_sample_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
 
     print(f"✅ Results written to: {output_file}")
 
