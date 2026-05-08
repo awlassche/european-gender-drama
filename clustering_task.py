@@ -13,7 +13,7 @@ import einops
 import hf_xet
 
 from tqdm import tqdm
-from transformers import AutoModel
+from transformers import AutoModel, AutoTokenizer
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
 from sklearn.metrics import v_measure_score
@@ -52,7 +52,7 @@ MODEL_SETS = {
     ],
     'ita': [
         "models/bertoldo-all/checkpoint",              # historical Italian (local)
-        "sapienzanlp/Minerva-350M-base-v1.0",  # modern Italian SOTA
+        "dbmdz/bert-base-italian-xxl-cased",  # modern Italian SOTA
         "intfloat/multilingual-e5-large",
         "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
@@ -108,13 +108,8 @@ def get_embeddings_flexible(model_name, text_chunks):
             convert_to_numpy=True
         )
     except Exception as e:
-        print(f"⚠️ Falling back to AutoModel for {model_name} due to: {e}")
-        try:
-            model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
-            return np.array(model.encode(text_chunks, task="text-matching"))
-        except Exception as e2:
-            print(f"❌ AutoModel also failed for {model_name}: {e2}. Skipping.")
-            return None
+        print(f"⚠️ Falling back to tokenizer+AutoModel for {model_name} due to: {e}")
+        return get_embeddings_advanced(model_name, text_chunks)
 
 def get_embeddings_advanced(model_name, text_chunks, pooling="cls"):
     try:
