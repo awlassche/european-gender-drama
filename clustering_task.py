@@ -67,7 +67,8 @@ MODEL_SETS = {
 }
 
 CHUNK_SIZE = 400
-TODAY = '260505'
+CHUNKS_PER_SPEAKER = 10   # cap per speaker → fixed pool of n_speakers × CHUNKS_PER_SPEAKER
+TODAY = '260508'
 
 # -------------------- FUNCTIONS -----------------------
 
@@ -208,13 +209,20 @@ def process_file(filepath, language, model_names, output_file):
     df_sorted = df.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
 
     n_speakers = 40
-    sample_size = 600
+    # Fixed pool: n_speakers × CHUNKS_PER_SPEAKER; sample 75% per iteration
+    total_chunks = n_speakers * CHUNKS_PER_SPEAKER
+    sample_size  = int(total_chunks * 0.75)
 
     with open(output_file, "a", encoding="utf-8") as f:
-        print(f"\n🎭 Top {n_speakers} speakers, sample size = {sample_size}")
+        print(f"\n🎭 Top {n_speakers} speakers, {CHUNKS_PER_SPEAKER} chunks each, sample size = {sample_size}")
         df_top = df_sorted.iloc[:n_speakers]
 
         df_filtered = process_dataset(df_top, CHUNK_SIZE)
+        # Cap to CHUNKS_PER_SPEAKER per speaker (chunks are already ordered 1…N)
+        df_filtered = (df_filtered
+                       .groupby('speaker', group_keys=False)
+                       .head(CHUNKS_PER_SPEAKER)
+                       .reset_index(drop=True))
         text_chunks = df_filtered['speech_chunk'].tolist()
         true_labels = df_filtered['speaker'].tolist()
         num_chunks = len(text_chunks)
