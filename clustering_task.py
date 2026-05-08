@@ -38,28 +38,28 @@ MODEL_SETS = {
     ],
     'ger': [
         "dbmdz/bert-base-german-europeana-uncased",      # historical German
-        "deutsche-telekom/gbert-large-paraphrase-cosine",  # modern German SOTA
+        "deepset/gbert-large",  # modern German SOTA
         "intfloat/multilingual-e5-large",
         "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'fre': [
         "dbmdz/bert-base-french-europeana-cased",     # historical French
-        "dangvantuan/sentence-camembert-large",        # modern French SOTA
+        "almanach/camembertav2-base",        # modern French SOTA
         "intfloat/multilingual-e5-large",
         "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'ita': [
         "models/bertoldo-all/checkpoint",              # historical Italian (local)
-        "nickprock/sentence-bert-base-italian-xxl-uncased",  # modern Italian SOTA
+        "sapienzanlp/Minerva-350M-base-v1.0",  # modern Italian SOTA
         "intfloat/multilingual-e5-large",
         "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
     ],
     'cal': [
-        "dccuchile/bert-base-spanish-wwm-cased",       # historical Spanish (BETO)
-        "hiiamsid/sentence_similarity_spanish_es",    # modern Spanish SOTA
+        # "dccuchile/bert-base-spanish-wwm-cased",       # historical Spanish (BETO)
+        "dccuchile/bert-base-spanish-wwm-cased",    # modern Spanish SOTA
         "intfloat/multilingual-e5-large",
         "BAAI/bge-m3",
         "jinaai/jina-embeddings-v3"
@@ -67,7 +67,8 @@ MODEL_SETS = {
 }
 
 CHUNK_SIZE = 400
-TODAY = '260505'
+CHUNKS_PER_SPEAKER = 10   # chunks randomly sampled per speaker per iteration
+TODAY = '260508'
 
 # -------------------- FUNCTIONS -----------------------
 
@@ -148,45 +149,31 @@ def evaluate_clustering(embeddings, true_labels, n_clusters):
     predicted_labels = kmeans.fit_predict(embeddings)
     return v_measure_score(true_labels, predicted_labels)
 
-def evaluate_clustering_stratified(embeddings, true_labels, sample_size=650, n_iterations=10):
+def evaluate_clustering_stratified(embeddings, true_labels, chunks_per_speaker=10, n_iterations=20):
     """
-    Perform stratified sampling by speaker and run clustering multiple times.
-
-    :param embeddings: NumPy array of embeddings
-    :param true_labels: List or array of speaker labels
-    :param sample_size: Number of samples to draw per iteration
-    :param n_iterations: Number of repetitions
-    :return: mean V-measure, std, list of all scores
+    Each iteration: randomly sample chunks_per_speaker chunks per speaker,
+    run KMeans on that sample, score with V-measure. Both chunk selection
+    and KMeans initialisation vary across iterations.
     """
     v_scores = []
     embeddings = np.array(embeddings)
     true_labels = np.array(true_labels)
 
-    df = pd.DataFrame({
-        'index': range(len(true_labels)),
-        'label': true_labels
-    })
+    df = pd.DataFrame({'index': range(len(true_labels)), 'label': true_labels})
 
     for i in range(n_iterations):
-        # Sample stratified subset of indices
-        stratified_sample = (
+        sampled = (
             df.groupby('label', group_keys=False)
-              .apply(lambda x: x.sample( 
-                  max(1, int(np.floor(sample_size * len(x) / len(df)))),  # proportional allocation
-                  random_state=i,
-                  replace=False
-              ), include_groups=False)
+              .apply(lambda x: x.sample(min(chunks_per_speaker, len(x)), random_state=i, replace=False),
+                     include_groups=False)
         )
-
-        indices = stratified_sample['index'].values
+        indices = sampled['index'].values
         sampled_embeddings = embeddings[indices]
         sampled_labels = true_labels[indices]
-        sampled_n_clusters = len(set(sampled_labels))
 
-        kmeans = KMeans(n_clusters=sampled_n_clusters, random_state=i, n_init=10)
+        kmeans = KMeans(n_clusters=len(set(sampled_labels)), random_state=i, n_init=10)
         predicted = kmeans.fit_predict(sampled_embeddings)
-        v = v_measure_score(sampled_labels, predicted)
-        v_scores.append(v)
+        v_scores.append(v_measure_score(sampled_labels, predicted))
 
     return np.mean(v_scores), np.std(v_scores), v_scores
 
@@ -208,10 +195,9 @@ def process_file(filepath, language, model_names, output_file):
     df_sorted = df.sort_values(by='speech_length', ascending=False).reset_index(drop=True)
 
     n_speakers = 40
-    sample_size = 600
 
     with open(output_file, "a", encoding="utf-8") as f:
-        print(f"\n🎭 Top {n_speakers} speakers, sample size = {sample_size}")
+        print(f"\n🎭 Top {n_speakers} speakers, {CHUNKS_PER_SPEAKER} chunks sampled per speaker per iteration")
         df_top = df_sorted.iloc[:n_speakers]
 
         df_filtered = process_dataset(df_top, CHUNK_SIZE)
@@ -225,16 +211,14 @@ def process_file(filepath, language, model_names, output_file):
             if embeddings is None:
                 continue
 
-            actual_sample_size = min(sample_size, len(df_filtered))
-
             mean_v, std_v, scores = evaluate_clustering_stratified(
                 embeddings,
                 true_labels,
-                sample_size=actual_sample_size,
+                chunks_per_speaker=CHUNKS_PER_SPEAKER,
                 n_iterations=20
             )
 
-            f.write(f"{language}\t{n_speakers}\t{actual_sample_size}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
+            f.write(f"{language}\t{n_speakers}\t{CHUNKS_PER_SPEAKER}\t{model_name}\t{mean_v:.4f} ± {std_v:.4f}\t{num_chunks}\n")
 
     print(f"✅ Results written to: {output_file}")
 
