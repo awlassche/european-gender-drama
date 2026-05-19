@@ -1,8 +1,12 @@
 """
-python train_classifiers_europe.py \
+Temporal gender classification on the French corpus.
+Trains classifiers on 25-year subcorpora (1625–1800) to see how well
+male vs. female speech can be distinguished across time.
+
+python train_temporal_fre.py \
   --bge_dataset_id awlassche/european-gender-drama-bge-embeddings \
   --jina_dataset_id awlassche/european-gender-drama-jina-embeddings \
-  --output results/evaluation_results_2605012_stratified.txt
+  --output results/temporal_fre_results_stratified.txt
 """
 
 import argparse
@@ -41,10 +45,9 @@ def stratified_resample(df, n_samples, random_state):
 
 
 def _run_iterations(get_X, df, n_iterations, min_size, desc):
-    """Shared resampling + logistic regression loop. get_X(balanced_df) → feature matrix."""
     male_df   = df[df['gender'] == 'MALE']
     female_df = df[df['gender'] == 'FEMALE']
-    results   = {'MALE': {'precision': [], 'recall': [], 'f1': []},
+    results   = {'MALE':   {'precision': [], 'recall': [], 'f1': []},
                  'FEMALE': {'precision': [], 'recall': [], 'f1': []},
                  'accuracy': []}
 
@@ -73,7 +76,7 @@ def _run_iterations(get_X, df, n_iterations, min_size, desc):
     return results
 
 
-def evaluate_language(language, df_bge, df_jina, n_iterations=50, min_size=1500):
+def evaluate_window(window_label, df_bge, df_jina, n_iterations, min_size):
     df_bge  = df_bge[df_bge['gender'].isin(['MALE', 'FEMALE'])].copy()
     df_jina = df_jina[df_jina['gender'].isin(['MALE', 'FEMALE'])].copy()
 
@@ -84,15 +87,20 @@ def evaluate_language(language, df_bge, df_jina, n_iterations=50, min_size=1500)
     def get_embeddings(balanced, i):
         return np.vstack(balanced['embedding'].values)
 
-    tfidf_r = _run_iterations(get_tfidf,      df_bge,  n_iterations, min_size, f"TF-IDF [{language}]")
-    bge_r   = _run_iterations(get_embeddings, df_bge,  n_iterations, min_size, f"BGE    [{language}]")
-    jina_r  = _run_iterations(get_embeddings, df_jina, n_iterations, min_size, f"Jina   [{language}]")
+    tfidf_r = _run_iterations(get_tfidf,      df_bge,  n_iterations, min_size, f"TF-IDF [{window_label}]")
+    bge_r   = _run_iterations(get_embeddings, df_bge,  n_iterations, min_size, f"BGE    [{window_label}]")
+    jina_r  = _run_iterations(get_embeddings, df_jina, n_iterations, min_size, f"Jina   [{window_label}]")
 
     def avg(r, key, sub=None):
         vals = r[key][sub] if sub else r[key]
         return np.mean(vals), np.std(vals)
 
-    row = {'language': language}
+    row = {
+        'window':   window_label,
+        'n_male':   len(df_bge[df_bge['gender'] == 'MALE']),
+        'n_female': len(df_bge[df_bge['gender'] == 'FEMALE']),
+        'min_size': min_size,
+    }
     for prefix, r in [('tfidf', tfidf_r), ('bge', bge_r), ('jina', jina_r)]:
         for gender in ['MALE', 'FEMALE']:
             for metric, sub in [('precision', 'precision'), ('recall', 'recall'), ('f1', 'f1')]:
@@ -104,46 +112,69 @@ def evaluate_language(language, df_bge, df_jina, n_iterations=50, min_size=1500)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bge_dataset_id",  type=str, required=True,
-                        help="HuggingFace dataset ID for BGE embeddings")
-    parser.add_argument("--jina_dataset_id", type=str, required=True,
-                        help="HuggingFace dataset ID for Jina embeddings")
-    parser.add_argument("--n_iterations", type=int, default=50)
-    parser.add_argument("--min_size",     type=int, default=1500)
-    parser.add_argument("--output",       type=str, default="results/evaluation_results.txt")
+    parser.add_argument("--bge_dataset_id",  type=str, required=True)
+    parser.add_argument("--jina_dataset_id", type=str, required=True)
+    parser.add_argument("--n_iterations",    type=int, default=50)
+    parser.add_argument("--min_size",        type=int, default=1000,
+                        help="Samples per gender per window; auto-capped at available data (default: 1000)")
+    parser.add_argument("--min_threshold",   type=int, default=50,
+                        help="Skip window if either gender has fewer than this many samples (default: 50)")
+    parser.add_argument("--window_size",     type=int, default=25)
+    parser.add_argument("--start_year",      type=int, default=1625)
+    parser.add_argument("--end_year",        type=int, default=1800)
+    parser.add_argument("--output",          type=str, default="results/temporal_fre_results.txt")
     args = parser.parse_args()
 
     print("Loading BGE dataset...")
-    bge_df  = load_dataset(args.bge_dataset_id,  split="train").to_pandas()
+    bge_df = load_dataset(args.bge_dataset_id, split="train").to_pandas()
+    bge_df = bge_df[(bge_df['language'] == 'fre') & bge_df['year'].notna()].copy()
+    bge_df['year'] = bge_df['year'].astype(int)
+
     print("Loading Jina dataset...")
     jina_df = load_dataset(args.jina_dataset_id, split="train").to_pandas()
-
-    languages = sorted(bge_df['language'].unique())
-    print(f"Languages found: {languages}")
+    jina_df = jina_df[(jina_df['language'] == 'fre') & jina_df['year'].notna()].copy()
+    jina_df['year'] = jina_df['year'].astype(int)
 
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
 
     all_results = []
-    for language in languages:
-        print(f"\n--- Language: {language} ---")
-        result = evaluate_language(
-            language    = language,
-            df_bge      = bge_df[bge_df['language']   == language].copy(),
-            df_jina     = jina_df[jina_df['language'] == language].copy(),
-            n_iterations = args.n_iterations,
-            min_size     = args.min_size,
-        )
+    for start in range(args.start_year, args.end_year, args.window_size):
+        end   = start + args.window_size
+        label = f"{start}–{end - 1}"
+
+        w_bge  = bge_df[(bge_df['year']   >= start) & (bge_df['year']   < end)]
+        w_jina = jina_df[(jina_df['year'] >= start) & (jina_df['year']  < end)]
+
+        n_male   = len(w_bge[w_bge['gender'] == 'MALE'])
+        n_female = len(w_bge[w_bge['gender'] == 'FEMALE'])
+
+        if n_male < args.min_threshold or n_female < args.min_threshold:
+            print(f"\nSkipping {label}: MALE={n_male}, FEMALE={n_female} (below threshold {args.min_threshold})")
+            continue
+
+        effective_min = min(args.min_size, n_male, n_female)
+
+        male_combos   = w_bge[w_bge['gender'] == 'MALE'].groupby(['speaker', 'play']).ngroups
+        female_combos = w_bge[w_bge['gender'] == 'FEMALE'].groupby(['speaker', 'play']).ngroups
+        per_speaker_m = max(1, effective_min // male_combos)
+        per_speaker_f = max(1, effective_min // female_combos)
+        print(f"\n--- {label} | chunks: MALE={n_male}, FEMALE={n_female} | "
+              f"speaker-play combos: MALE={male_combos}, FEMALE={female_combos} | "
+              f"per_speaker: MALE={per_speaker_m}, FEMALE={per_speaker_f} | "
+              f"min_size={effective_min} ---")
+
+        result = evaluate_window(label, w_bge, w_jina, args.n_iterations, effective_min)
         all_results.append(result)
 
     with open(args.output, "w") as f:
         for r in all_results:
-            f.write(f"Language: {r['language']}\n")
+            f.write(f"Window: {r['window']} (MALE={r['n_male']}, FEMALE={r['n_female']}, min_size={r['min_size']})\n")
             for label, prefix in [("TF-IDF", "tfidf"), ("BGE embeddings", "bge"), ("Jina embeddings", "jina")]:
                 f.write(f"{label}:\n")
                 for gender in ['MALE', 'FEMALE']:
-                    p,  ps  = r[f'{prefix}_{gender}_precision'],    r[f'{prefix}_{gender}_precision_std']
-                    rc, rcs = r[f'{prefix}_{gender}_recall'],       r[f'{prefix}_{gender}_recall_std']
-                    f1, f1s = r[f'{prefix}_{gender}_f1'],           r[f'{prefix}_{gender}_f1_std']
+                    p,  ps  = r[f'{prefix}_{gender}_precision'],     r[f'{prefix}_{gender}_precision_std']
+                    rc, rcs = r[f'{prefix}_{gender}_recall'],        r[f'{prefix}_{gender}_recall_std']
+                    f1, f1s = r[f'{prefix}_{gender}_f1'],            r[f'{prefix}_{gender}_f1_std']
                     f.write(f"  {gender:<6} → P: {p:.4f}±{ps:.4f}, R: {rc:.4f}±{rcs:.4f}, F1: {f1:.4f}±{f1s:.4f}\n")
                 acc, accs = r[f'{prefix}_accuracy'], r[f'{prefix}_accuracy_std']
                 f.write(f"  Accuracy: {acc:.4f}±{accs:.4f}\n")
