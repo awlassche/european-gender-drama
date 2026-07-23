@@ -2,18 +2,27 @@
 transformers<5.0
 torch==2.11.0
 sentence-transformers==5.4.1
+datasets==5.0.0
 
 # Data
 pandas==3.0.2
 numpy==2.4.4
 ndjson==0.3.1
 scikit-learn==1.8.0
+networkx==3.6.1
 
 # Model utilities
 einops==0.8.2
 peft==0.19.1
 tiktoken
 hf-xet==1.4.3
+
+# Visualization
+matplotlib==3.11.1
+
+# Google Drive access (used by visualize_corpus_stats.py to fetch fonts)
+google-auth==2.56.2
+google-api-python-client==2.198.0
 
 # Misc
 tqdm==4.67.3
