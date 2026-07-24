@@ -1,5 +1,6 @@
 # %%
 
+import os
 import re
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -7,8 +8,8 @@ import numpy as np
 import matplotlib.font_manager as fm
 
 for _font_path in [
-    "/Users/alielassche/Library/Fonts/RobotoCondensed-Regular.ttf",
-    "/Users/alielassche/Library/Fonts/RobotoCondensed-Bold.ttf",
+    os.path.expanduser("~/Library/Fonts/RobotoCondensed-Regular.ttf"),
+    os.path.expanduser("~/Library/Fonts/RobotoCondensed-Bold.ttf"),
 ]:
     fm.fontManager.addfont(_font_path)
 

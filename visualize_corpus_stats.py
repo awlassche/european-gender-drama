@@ -12,8 +12,8 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 
 for _font_path in [
-    "/Users/alielassche/Library/Fonts/RobotoCondensed-Regular.ttf",
-    "/Users/alielassche/Library/Fonts/RobotoCondensed-Bold.ttf",
+    os.path.expanduser("~/Library/Fonts/RobotoCondensed-Regular.ttf"),
+    os.path.expanduser("~/Library/Fonts/RobotoCondensed-Bold.ttf"),
 ]:
     fm.fontManager.addfont(_font_path)
 
@@ -37,7 +37,7 @@ CHRyellow = '#E8A838'
 CHRbeige = '#D4C5B0'
 CHRcream = '#F5F0E8'
 
-CREDENTIALS_FILE = "/Users/alielassche/Documenten/GitHub/credentials.json"
+CREDENTIALS_FILE = os.environ.get("GOOGLE_DRIVE_CREDENTIALS", "../credentials.json")
 DRIVE_FOLDER_NAME = "DutchDraCor_gender"
 CACHE_DIR = "data/corpus_stats"
 
@@ -164,7 +164,7 @@ merged_character_df = pd.concat(character_data.values())
 def plot_plays_per_decade():
     decades = [str(decade) + "0" for decade in range(150, 180)]
 
-    fig, axes = plt.subplots(6, 1, figsize=(5, 10), sharex=True)
+    fig, axes = plt.subplots(3, 2, figsize=(7.5, 5), sharex=True)
 
     for ax, corpus in zip(axes.flatten(), CORPORA):
         df = play_data[corpus]
@@ -186,7 +186,7 @@ def plot_plays_per_decade():
         ax.set_xlim(-0.5, len(decades) - 0.5)
 
     fig.tight_layout()
-    plt.savefig("figs/plays_per_decade.pdf", bbox_inches="tight")
+    plt.savefig("figs/plays_per_decade_columns.pdf", bbox_inches="tight")
 
 
 plot_plays_per_decade()
@@ -202,7 +202,7 @@ def plot_female_chars_per_corpus():
     stdvs = [merged_play_df[merged_play_df.corpus == c][independent_var].std() for c in CORPORA]
     counts = [len(merged_play_df[merged_play_df.corpus == c]) for c in CORPORA]
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(8.5, 4))
 
     parts = ax.violinplot(
         dataset=[merged_play_df[merged_play_df.corpus == c][independent_var].values for c in CORPORA],
@@ -226,14 +226,57 @@ def plot_female_chars_per_corpus():
     for i, c in enumerate(CORPORA):
         ax.text(i + 1, -0.02, CORPUS_NAMES[c], transform=trans,
                  ha="center", va="top", fontweight="bold")
-        ax.text(i + 1, -0.055, f"(N={counts[i]}, M={means[i]:.2f}, SD={stdvs[i]:.2f})",
-                 transform=trans, ha="center", va="top", fontsize=9)
+        ax.text(i + 1, -0.065, f"(N={counts[i]}, M={means[i]:.2f}, SD={stdvs[i]:.2f})",
+                 transform=trans, ha="center", va="top", fontsize=8)
 
     fig.tight_layout()
     plt.savefig("figs/pct_female_chars_per_corpus.pdf", bbox_inches="tight")
 
 
 plot_female_chars_per_corpus()
+
+# ── % female lines per corpus (hearability) ──────────────────────────────────
+# %%
+
+
+def plot_female_lines_per_corpus():
+    independent_var = "%_female_lines"
+
+    means = [merged_play_df[merged_play_df.corpus == c][independent_var].mean() for c in CORPORA]
+    stdvs = [merged_play_df[merged_play_df.corpus == c][independent_var].std() for c in CORPORA]
+    counts = [len(merged_play_df[merged_play_df.corpus == c]) for c in CORPORA]
+
+    fig, ax = plt.subplots(figsize=(8.5, 4))
+
+    parts = ax.violinplot(
+        dataset=[merged_play_df[merged_play_df.corpus == c][independent_var].values for c in CORPORA],
+        showmedians=True,
+    )
+    for body in parts["bodies"]:
+        body.set_facecolor(CHRred)
+        body.set_edgecolor(CHRgreen)
+        body.set_alpha(0.8)
+    for key in ("cmedians", "cmins", "cmaxes", "cbars"):
+        parts[key].set_color(CHRgreen)
+
+    ax.set_xticks(range(1, len(CORPORA) + 1), labels=[""] * len(CORPORA))
+    ax.set_ylim(0, 1)
+    ax.set_ylabel("Share of female lines (%)", fontweight="semibold")
+    ax.yaxis.grid(True, linestyle="--", alpha=0.4)
+    ax.spines[["top", "right"]].set_visible(False)
+
+    trans = ax.get_xaxis_transform()
+    for i, c in enumerate(CORPORA):
+        ax.text(i + 1, -0.02, CORPUS_NAMES[c], transform=trans,
+                 ha="center", va="top", fontweight="bold")
+        ax.text(i + 1, -0.065, f"(N={counts[i]}, M={means[i]:.2f}, SD={stdvs[i]:.2f})",
+                 transform=trans, ha="center", va="top", fontsize=8)
+
+    fig.tight_layout()
+    plt.savefig("figs/pct_female_lines_per_corpus.pdf", bbox_inches="tight")
+
+
+plot_female_lines_per_corpus()
 
 # ── centrality by gender, per corpus ─────────────────────────────────────────
 # %%
@@ -243,7 +286,7 @@ def plot_centrality_by_gender():
     independent_var = "degree (rel)"
     colors = {"MALE": CHRyellow, "FEMALE": CHRred}
 
-    fig, axes = plt.subplots(2, 3, figsize=(12, 7))
+    fig, axes = plt.subplots(2, 3, figsize=(8.5, 5))
 
     for ax, corpus in zip(axes.flatten(), CORPORA):
         df = character_data[corpus]
@@ -307,5 +350,65 @@ def plot_mean_speech_length_over_time():
 
 
 plot_mean_speech_length_over_time()
+
+# ── % female lines & characters over time, French, 25-yr windows ─────────────
+# %%
+
+# Same windowing as train_temporal_fre.py, so the two plots line up.
+WINDOW_SIZE = 25
+START_YEAR = 1625
+END_YEAR = 1800
+
+
+def plot_female_pct_over_time_fre():
+    df = play_data["fre"].copy()
+    df["year"] = pd.to_numeric(df["year"], errors="coerce")
+    df = df.dropna(subset=["year", "%_female_chars", "%_female_lines"])
+
+    windows, chars_mean, chars_std, lines_mean, lines_std, counts = [], [], [], [], [], []
+    for start in range(START_YEAR, END_YEAR, WINDOW_SIZE):
+        end = start + WINDOW_SIZE
+        w = df[(df.year >= start) & (df.year < end)]
+        if w.empty:
+            continue
+        windows.append(f"{start}–{end - 1}")
+        chars_mean.append(w["%_female_chars"].mean())
+        chars_std.append(w["%_female_chars"].std())
+        lines_mean.append(w["%_female_lines"].mean())
+        lines_std.append(w["%_female_lines"].std())
+        counts.append(len(w))
+
+    print("French, % female chars/lines per 25-yr window:")
+    for label, n, cm, lm in zip(windows, counts, chars_mean, lines_mean):
+        print(f"  {label} (N={n}): chars={cm:.2f}, lines={lm:.2f}")
+
+    x = np.arange(len(windows))
+
+    fig, ax = plt.subplots(figsize=(6, 3))
+
+    ax.errorbar(
+        x, chars_mean, yerr=chars_std,
+        label="FEMALE CHARACTERS", color=CHRred,
+        marker="o", markersize=5, capsize=3, linewidth=1.8, alpha=0.9,
+    )
+    ax.errorbar(
+        x, lines_mean, yerr=lines_std,
+        label="FEMALE LINES", color='grey',
+        marker="s", markersize=5, capsize=3, linewidth=1.8, alpha=0.9,
+    )
+
+    ax.set_xticks(x, labels=windows, ha="center")
+    ax.set_ylim(0, 0.6)
+    #ax.set_xlabel("Year (25-year windows)", fontweight="semibold")
+    ax.set_ylabel("Share (%)", fontweight="semibold")
+    ax.grid(axis="y", linestyle="--", alpha=0.4)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2, framealpha=0.7)
+
+    fig.tight_layout()
+    plt.savefig("figs/female_pct_over_time_fre.pdf", bbox_inches="tight")
+
+
+plot_female_pct_over_time_fre()
 
 # %%

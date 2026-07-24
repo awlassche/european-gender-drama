@@ -4,8 +4,8 @@ Trains classifiers on 25-year subcorpora (1625–1800) to see how well
 male vs. female speech can be distinguished across time.
 
 python train_temporal_fre.py \
-  --bge_dataset_id awlassche/european-gender-drama-bge-embeddings \
-  --jina_dataset_id awlassche/european-gender-drama-jina-embeddings \
+  --bge_dataset_id [username]/european-gender-drama-bge-embeddings \
+  --jina_dataset_id [username]/european-gender-drama-jina-embeddings \
   --output results/temporal_fre_results_stratified.txt
 """
 

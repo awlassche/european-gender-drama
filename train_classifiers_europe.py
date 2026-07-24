@@ -1,7 +1,7 @@
 """
 python train_classifiers_europe.py \
-  --bge_dataset_id awlassche/european-gender-drama-bge-embeddings \
-  --jina_dataset_id awlassche/european-gender-drama-jina-embeddings \
+  --bge_dataset_id [username]/european-gender-drama-bge-embeddings \
+  --jina_dataset_id [username]/european-gender-drama-jina-embeddings \
   --output results/evaluation_results_2605012_stratified.txt
 """
 

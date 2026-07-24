@@ -1,5 +1,6 @@
 # %%
 
+import os
 import re
 
 import matplotlib.font_manager as fm
@@ -7,8 +8,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 for _font_path in [
-    "/Users/alielassche/Library/Fonts/RobotoCondensed-Regular.ttf",
-    "/Users/alielassche/Library/Fonts/RobotoCondensed-Bold.ttf",
+    os.path.expanduser("~/Library/Fonts/RobotoCondensed-Regular.ttf"),
+    os.path.expanduser("~/Library/Fonts/RobotoCondensed-Bold.ttf"),
 ]:
     fm.fontManager.addfont(_font_path)
 

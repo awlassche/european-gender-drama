@@ -3,7 +3,7 @@ hf auth login
 
 python get_embeddings_europe.py \
   --input_dir data/ \
-  --hub_dataset_id awlassche/european-gender-drama-bge-embeddings
+  --hub_dataset_id [username]/european-gender-drama-bge-embeddings
 """
 
 import os
