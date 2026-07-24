@@ -4,7 +4,7 @@ Add a 'year' column to an existing Hugging Face dataset by joining on the
 added via add_year_to_ndjson.py).
 
 Usage:
-    python add_year_to_hf_dataset.py --repo_id awlassche/european-gender-drama-bge-embeddings AND awlassche/european-gender-drama-jina-embeddings
+    python add_year_to_hf_dataset.py --repo_id [username]/european-gender-drama-bge-embeddings AND [username]/european-gender-drama-jina-embeddings
 """
 
 import glob
