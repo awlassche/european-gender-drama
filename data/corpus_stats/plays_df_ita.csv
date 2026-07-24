@@ -1,0 +1,115 @@
+;play_id;corpus;author;title;genre;year;characters;male;female;%_male_chars;%_female_chars;%_female_lines;acts;scenes;speech_turns;lines;mean_sp_length;density;%_male_lines
+ita000001;ita000001;ita;Luigi Alamanni  & ;Tragedia di Antigone;unknown;1527;10;7;3;0.7;0.3;0.0;1;0;267;1700;6.37;0.0;0.0
+ita000002;ita000002;ita;Vittorio Alfieri  & ;Agamennone;unknown;1783;4;2;2;0.5;0.5;0.46;5;25;280;1537;5.49;1.0;0.54
+ita000003;ita000003;ita;Vittorio Alfieri  & ;Antigone;unknown;1783;4;2;2;0.5;0.5;0.43;5;22;308;1527;4.96;1.0;0.56
+ita000004;ita000004;ita;Vittorio Alfieri  & ;Bruto primo;unknown;1789;7;6;0;0.86;0.0;0.0;5;20;290;1538;5.3;1.0;0.91
+ita000005;ita000005;ita;Vittorio Alfieri  & ;Bruto secondo;unknown;1789;9;8;0;0.89;0.0;0.0;5;14;251;1638;6.53;0.69;0.98
+ita000006;ita000006;ita;Vittorio Alfieri  & ;Don Garzia;unknown;1789;5;4;1;0.8;0.2;0.08;5;23;297;1549;5.22;0.9;0.92
+ita000007;ita000007;ita;Vittorio Alfieri  & ;Filippo;unknown;1783;6;5;1;0.83;0.17;0.22;5;24;314;1626;5.18;0.8;0.78
+ita000008;ita000008;ita;Vittorio Alfieri  & ;La congiura de' Pazzi;unknown;1788;6;5;1;0.83;0.17;0.18;5;24;275;1626;5.91;0.8;0.81
+ita000009;ita000009;ita;Vittorio Alfieri  & ;Maria Stuarda;unknown;1788;5;4;1;0.8;0.2;0.35;5;27;313;1635;5.22;0.9;0.65
+ita000010;ita000010;ita;Vittorio Alfieri  & ;Merope;unknown;1783;6;4;1;0.67;0.17;0.3;5;21;336;1660;4.94;1.0;0.69
+ita000011;ita000011;ita;Vittorio Alfieri  & ;Mirra;unknown;1789;6;2;3;0.33;0.5;0.56;5;22;232;1599;6.89;1.0;0.41
+ita000012;ita000012;ita;Vittorio Alfieri  & ;Oreste;unknown;1783;5;3;2;0.6;0.4;0.44;5;30;474;1727;3.64;1.0;0.55
+ita000013;ita000013;ita;Vittorio Alfieri  & ;Ottavia;unknown;1783;5;3;2;0.6;0.4;0.42;5;27;294;1598;5.44;1.0;0.58
+ita000014;ita000014;ita;Vittorio Alfieri  & ;Polinice;unknown;1783;5;3;2;0.6;0.4;0.42;5;21;329;1652;5.02;1.0;0.57
+ita000015;ita000015;ita;Vittorio Alfieri  & ;Rosmunda;unknown;1783;4;2;2;0.5;0.5;0.53;5;24;309;1638;5.3;1.0;0.47
+ita000016;ita000016;ita;Vittorio Alfieri  & ;Saul;unknown;1788;6;5;1;0.83;0.17;0.15;5;24;282;1771;6.28;0.87;0.85
+ita000017;ita000017;ita;Vittorio Alfieri  & ;Sofonisba;unknown;1789;4;3;1;0.75;0.25;0.27;5;23;173;1232;7.12;1.0;0.72
+ita000018;ita000018;ita;Vittorio Alfieri  & ;Timoleone;unknown;1783;4;3;1;0.75;0.25;0.16;5;20;271;1488;5.49;1.0;0.84
+ita000019;ita000019;ita;Vittorio Alfieri  & ;Virginia;unknown;;7;4;2;0.57;0.29;0.23;5;21;302;1647;5.45;0.95;0.75
+ita000020;ita000020;ita;Giovan Andreini ;Lo schiavetto;unknown;1612;24;21;2;0.88;0.08;0.19;5;46;1627;1761;1.08;0.61;0.76
+ita000021;ita000021;ita;;Cleopatra e Marc'Antonio Tragedia;unknown;;12;9;3;0.75;0.25;0.0;0;0;281;1292;4.6;0.0;0.0
+ita000023;ita000023;ita;;La Canterina;unknown;unknown;4;2;2;0.5;0.5;0.0;0;0;243;496;2.04;0.0;0.0
+ita000025;ita000025;ita;;La rappresentazione della natività di Nostro Signore Gesù Cristo (Stanze della festa di Ottaviano Imperatore);unknown;;16;12;2;0.75;0.12;0.0;0;0;69;406;5.88;0.0;0.0
+ita000026;ita000026;ita;;La rappresentazione di Josef, di Jacob e de' fratelli;unknown;;20;17;1;0.85;0.05;0.0;0;0;112;712;6.36;0.0;0.0
+ita000027;ita000027;ita;;La rappresentazione di Moisè e Faraone re d'Egitto;unknown;;14;4;8;0.29;0.57;0.0;0;0;55;445;8.09;0.0;0.0
+ita000029;ita000029;ita;;La rappresentazione di San Bernardo d'uno Signore facea rubare le strade;unknown;;15;12;1;0.8;0.07;0.0;0;0;47;527;11.21;0.0;0.0
+ita000031;ita000031;ita;;La veniexiana;unknown;1536;6;2;4;0.33;0.67;0.0;0;0;568;706;1.24;0.0;0.0
+ita000033;ita000033;ita;;Quando Iddio fece il mondo e l'uomo e ogni cosa creata;unknown;;23;5;1;0.22;0.04;0.0;0;0;72;622;8.64;0.0;0.0
+ita000035;ita000035;ita;Ludovico Ariosto  & ;Cassaria;unknown;unknown;20;18;2;0.9;0.1;0.02;5;30;755;795;1.05;0.27;0.93
+ita000036;ita000036;ita;Ludovico Ariosto  & ;I Studenti;unknown;;12;9;3;0.75;0.25;0.06;6;18;429;1916;4.47;0.23;0.83
+ita000037;ita000037;ita;Ludovico Ariosto  & ;I Suppositi (red. in versi);unknown;1529;17;14;3;0.82;0.18;0.08;6;34;710;2584;3.64;0.32;0.9
+ita000038;ita000038;ita;Ludovico Ariosto  & ;I suppositi;unknown;unknown;17;14;3;0.82;0.18;0.07;5;27;721;728;1.01;0.35;0.89
+ita000039;ita000039;ita;Ludovico Ariosto  & ;Il Negromante;unknown;1535;14;10;4;0.71;0.29;0.06;6;25;699;2577;3.69;0.33;0.91
+ita000040;ita000040;ita;Ludovico Ariosto  & ;La Cassaria (red. in versi);unknown;;19;16;3;0.84;0.16;0.0;0;0;857;3680;4.29;0.0;0.0
+ita000041;ita000041;ita;Ludovico Ariosto  & ;La Lena;unknown;unknown;18;16;2;0.89;0.11;0.18;6;36;638;2125;3.33;0.3;0.78
+ita000042;ita000042;ita;Nicolò Barbieri ;L'inavertito;unknown;1629;13;10;3;0.77;0.23;0.09;5;72;1470;1520;1.03;0.65;0.91
+ita000043;ita000043;ita;Agostino Beccari  & ;Il sacrificio (1555);unknown;1555;11;8;3;0.73;0.27;0.29;6;29;462;2495;5.4;0.6;0.65
+ita000044;ita000044;ita;Agostino Beccari  & ;Il sacrificio (1587);unknown;1587;12;9;3;0.75;0.25;0.27;7;33;483;2952;6.11;0.5;0.64
+ita000048;ita000048;ita;Antonio Cammelli ;Panfila;unknown;1508;15;6;6;0.4;0.4;0.26;6;31;89;1646;18.49;0.11;0.64
+ita000049;ita000049;ita;Giovanni Carmignani  & ;Polissena;unknown;1789;6;4;2;0.67;0.33;0.3;5;30;383;2271;5.93;0.73;0.66
+ita000050;ita000050;ita;Pietro Cascina  & ;Alfea reverente;unknown;1639;4;0;3;0.0;0.75;0.63;0;1;14;172;12.29;1.0;0.0
+ita000051;ita000051;ita;Pier Cecchini ;L'amico tradito;unknown;1633;12;9;3;0.75;0.25;0.21;3;66;612;642;1.05;0.59;0.78
+ita000054;ita000054;ita;Lorenzo Ponte ;Così fan tutte;unknown;;9;5;3;0.56;0.33;0.4;2;34;692;1976;2.86;0.48;0.41
+ita000055;ita000055;ita;Lorenzo Ponte ;Don Giovanni;unknown;1787;12;6;4;0.5;0.33;0.24;2;36;655;1671;2.55;0.36;0.69
+ita000056;ita000056;ita;Lorenzo Ponte ;Le nozze di Figaro;unknown;;15;7;6;0.47;0.4;0.38;4;48;907;2142;2.36;0.26;0.55
+ita000059;ita000059;ita;Carlo Dottori ;Aristodemo;unknown;1670;12;7;4;0.58;0.33;0.28;5;34;308;3120;10.13;0.45;0.59
+ita000061;ita000061;ita;Federico Valle ;La reina di Scozia;unknown;1628;12;8;3;0.67;0.25;0.65;5;14;260;2639;10.15;0.45;0.32
+ita000062;ita000062;ita;Lodovico Dolce ;Marianna;unknown;1565;17;11;5;0.65;0.29;0.34;5;23;261;3304;12.66;0.26;0.6
+ita000063;ita000063;ita;Marc'Antonio Epicuro  & ;La Cecaria;unknown;1525;6;5;1;0.83;0.17;0.01;2;5;147;1654;11.25;0.47;0.31
+ita000064;ita000064;ita;Marc'Antonio Epicuro  & ;Mirzia;unknown;1528;8;4;4;0.5;0.5;0.22;4;17;254;1828;7.2;0.68;0.55
+ita000065;ita000065;ita;Silvio Fiorillo ;La Lucilla costante;unknown;1609;12;9;3;0.75;0.25;0.13;5;79;1435;1563;1.09;1.0;0.86
+ita000067;ita000067;ita;Ugo Foscolo  & ;Edippo;unknown;1978;5;4;1;0.8;0.2;0.15;4;17;278;1432;5.15;0.8;0.47
+ita000069;ita000069;ita;Ugo Foscolo  & ;Tieste;unknown;1795;4;2;2;0.5;0.5;0.56;5;24;345;1700;4.93;1.0;0.44
+ita000070;ita000070;ita;Girolamo Gigli  & ;La Dirindina;unknown;1715;3;2;1;0.67;0.33;0.0;0;0;132;413;3.13;0.0;0.0
+ita000071;ita000071;ita;Giambattista Giraldi  & ;Cleopatra;unknown;1583;18;14;4;0.78;0.22;0.33;6;35;347;3116;8.98;0.36;0.65
+ita000072;ita000072;ita;Giambattista Giraldi  & ;Egle (Editio Princeps);unknown;1545;19;11;8;0.58;0.42;0.36;6;20;386;2482;6.43;0.37;0.56
+ita000073;ita000073;ita;Giambattista Giraldi ;Egle, ms. Classe I 331;unknown;;17;9;8;0.53;0.47;0.41;5;21;446;2855;6.4;0.41;0.53
+ita000074;ita000074;ita;Giambattista Giraldi ;Egle;unknown;1545;19;11;8;0.58;0.42;0.35;5;21;411;2619;6.37;0.32;0.58
+ita000075;ita000075;ita;Giambattista Giraldi ;Gli Eudemoni;unknown;1549;15;12;3;0.8;0.2;0.26;5;30;539;2086;3.87;0.46;0.69
+ita000076;ita000076;ita;Giambattista Giraldi ;Orbecche;unknown;1543;15;6;7;0.4;0.47;0.34;6;15;245;3400;13.88;0.28;0.47
+ita000077;ita000077;ita;Carlo Goldoni  & ;Gl'innamorati;unknown;1759;11;6;5;0.55;0.45;0.5;3;41;1153;1170;1.01;0.64;0.49
+ita000078;ita000078;ita;Carlo Goldoni  & ;I rusteghi;unknown;1762;10;6;4;0.6;0.4;0.59;3;29;1403;1695;1.21;0.89;0.4
+ita000079;ita000079;ita;Carlo Goldoni  & ;Il campiello;unknown;1756;11;5;6;0.45;0.55;0.62;5;61;1461;2382;1.63;0.61;0.36
+ita000080;ita000080;ita;Carlo Goldoni  & ;Il servitore di due padroni;unknown;1745;12;9;3;0.75;0.25;0.27;3;59;1484;1529;1.03;0.68;0.71
+ita000081;ita000081;ita;Carlo Goldoni  & ;Il teatro comico;unknown;1750;13;9;4;0.69;0.31;0.24;3;37;919;972;1.06;0.78;0.73
+ita000082;ita000082;ita;Carlo Goldoni  & ;Il ventaglio;unknown;;14;10;4;0.71;0.29;0.36;3;37;1593;1599;1.0;0.95;0.64
+ita000083;ita000083;ita;Carlo Goldoni  & ;La bottega del caffè;unknown;1750;12;9;3;0.75;0.25;0.15;3;73;1481;1522;1.03;0.68;0.84
+ita000084;ita000084;ita;Carlo Goldoni  & ;La famiglia dell'antiquario;unknown;unknown;11;8;3;0.73;0.27;0.36;3;61;1681;1694;1.01;0.68;0.63
+ita000085;ita000085;ita;Carlo Goldoni  & ;La locandiera;unknown;1752;8;5;3;0.62;0.38;0.35;3;62;1535;1601;1.04;1.0;0.64
+ita000086;ita000086;ita;Carlo Goldoni  & ;La sposa persiana;unknown;1753;9;5;4;0.56;0.44;0.36;5;51;766;2139;2.79;0.75;0.62
+ita000087;ita000087;ita;Carlo Goldoni  & ;Le baruffe chiozzotte;unknown;1761;15;10;5;0.67;0.33;0.45;3;55;1584;1606;1.01;0.76;0.53
+ita000088;ita000088;ita;Carlo Goldoni  & ;Le femmine puntigliose;unknown;1750;14;10;4;0.71;0.29;0.5;3;55;1378;1407;1.02;0.55;0.48
+ita000089;ita000089;ita;Carlo Goldoni  & ;Le smanie per la villeggiatura;unknown;1761;11;8;3;0.73;0.27;0.41;3;41;1184;1194;1.01;0.73;0.58
+ita000090;ita000090;ita;Carlo Goldoni  & ;Una delle ultime sere di carnovale;unknown;1761;15;9;6;0.6;0.4;0.55;3;38;1662;1703;1.02;0.77;0.44
+ita000091;ita000091;ita;Battista Guarini  & ;La idropica;unknown;1613;18;13;5;0.72;0.28;0.14;5;50;1457;1484;1.02;0.36;0.86
+ita000092;ita000092;ita;Alessandro Guidi  & ;Endimione;unknown;1692;5;2;2;0.4;0.4;0.0;5;0;124;1394;11.24;0.0;0.0
+ita000094;ita000094;ita;Niccolò Machiavelli  & ;Clizia;unknown;1537;9;7;2;0.78;0.22;0.2;5;33;459;544;1.19;0.56;0.65
+ita000095;ita000095;ita;Niccolò Machiavelli  & ;Mandragola;unknown;1524;8;5;3;0.62;0.38;0.05;6;37;552;715;1.3;0.71;0.73
+ita000096;ita000096;ita;Scipione Maffei ;Merope;unknown;1714;7;5;2;0.71;0.29;0.37;5;31;479;2193;4.58;0.81;0.62
+ita000099;ita000099;ita;Annibale Marchese  & ;Il Crispo;unknown;1715;9;6;2;0.67;0.22;0.35;5;39;321;2348;7.31;0.5;0.52
+ita000100;ita000100;ita;Annibale Marchese  & ;L'Ermenegildo;unknown;1729;14;7;1;0.5;0.07;0.09;5;35;475;2978;6.27;0.32;0.8
+ita000101;ita000101;ita;Lodovico Martelli  & ;Tullia;unknown;1533;11;5;5;0.45;0.45;0.0;0;0;281;2348;8.36;0.0;0.0
+ita000102;ita000102;ita;Pietro Metastasio  & ;Achille in Sciro;unknown;unknown;14;6;2;0.43;0.14;0.19;3;35;471;1613;3.42;0.61;0.67
+ita000103;ita000103;ita;Pietro Metastasio  &  &  & ;Adriano in Siria;unknown;unknown;7;5;2;0.71;0.29;0.29;3;36;463;1532;3.31;0.79;0.69
+ita000104;ita000104;ita;Pietro Metastasio  & ;Alessandro nell'Indie;unknown;;7;4;3;0.57;0.43;0.34;3;40;458;1406;3.07;0.71;0.65
+ita000105;ita000105;ita;Pietro Metastasio  & ;Attilio Regolo;unknown;;9;5;2;0.56;0.22;0.25;3;33;456;1595;3.5;0.56;0.73
+ita000106;ita000106;ita;Pietro Metastasio  & ;Demetrio;unknown;unknown;7;4;2;0.57;0.29;0.35;3;45;477;1992;4.18;0.72;0.62
+ita000107;ita000107;ita;Pietro Metastasio  & ;Demofoonte;unknown;unknown;8;5;2;0.62;0.25;0.24;3;36;534;1839;3.44;0.62;0.73
+ita000108;ita000108;ita;Pietro Metastasio  & ;Didone abbandonata;unknown;unknown;7;5;2;0.71;0.29;0.41;3;52;480;1577;3.29;0.71;0.56
+ita000109;ita000109;ita;Pietro Metastasio  &  &  & ;Ezio;unknown;unknown;7;4;2;0.57;0.29;0.3;3;44;522;1996;3.82;1.0;0.69
+ita000110;ita000110;ita;Pietro Metastasio  & ;Il re pastore;unknown;unknown;6;3;2;0.5;0.33;0.31;3;25;399;1126;2.82;0.73;0.6
+ita000111;ita000111;ita;Pietro Metastasio  &  &  & ;Ipermestra;unknown;unknown;8;4;2;0.5;0.25;0.39;3;30;394;1307;3.32;0.49;0.57
+ita000112;ita000112;ita;Pietro Metastasio  & ;Issipile;unknown;unknown;7;3;3;0.43;0.43;0.49;3;37;442;1456;3.29;0.86;0.49
+ita000113;ita000113;ita;Pietro Metastasio  & ;L'eroe cinese;unknown;unknown;6;3;2;0.5;0.33;0.36;3;26;399;1234;3.09;0.81;0.59
+ita000114;ita000114;ita;Pietro Metastasio  & ;L'impresario delle Canarie, Intermezzi per la Didone;unknown;unknown;2;1;1;0.5;0.5;0.0;0;0;163;417;2.56;0.0;0.0
+ita000115;ita000115;ita;Pietro Metastasio  & ;L'olimpiade;unknown;unknown;10;6;2;0.6;0.2;0.31;3;35;556;1830;3.29;0.53;0.63
+ita000116;ita000116;ita;Pietro Metastasio  &  &  & ;Nitteti;unknown;unknown;7;4;2;0.57;0.29;0.4;3;32;465;1549;3.33;0.8;0.56
+ita000117;ita000117;ita;Pietro Metastasio  & ;Romolo ed Ersilia;unknown;unknown;7;4;2;0.57;0.29;0.37;3;27;324;1244;3.84;0.61;0.58
+ita000118;ita000118;ita;Pietro Metastasio  & ;Ruggero ovvero l'eroica gratitudine;unknown;unknown;7;4;2;0.57;0.29;0.39;3;29;380;1460;3.84;0.93;0.58
+ita000119;ita000119;ita;Pietro Metastasio  & ;Siroe;unknown;unknown;7;4;2;0.57;0.29;0.39;3;48;568;1786;3.14;0.93;0.6
+ita000120;ita000120;ita;Pietro Metastasio  & ;Temistocle;unknown;unknown;8;5;2;0.62;0.25;0.27;3;37;502;1760;3.51;0.81;0.71
+ita000121;ita000121;ita;Pietro Metastasio  & ;Zenobia;unknown;unknown;7;4;2;0.57;0.29;0.39;3;29;453;1585;3.5;0.64;0.58
+ita000124;ita000124;ita;Francesco Pagano  & ;Gli esuli tebani;unknown;1782;11;8;2;0.73;0.18;0.28;5;34;264;1509;5.72;0.56;0.71
+ita000126;ita000126;ita;Giovanni Rucellai ;Rosmunda;unknown;1525;9;5;3;0.56;0.33;0.0;0;0;192;1242;6.47;0.0;0.0
+ita000128;ita000128;ita;Flaminio Scala ;Il finto marito;unknown;1618;12;9;3;0.75;0.25;0.25;5;41;1445;1512;1.05;0.68;0.69
+ita000129;ita000129;ita;Sperone Speroni ;Canace;unknown;1546;11;6;3;0.55;0.27;0.0;0;0;148;2075;14.02;0.0;0.0
+ita000131;ita000131;ita;Torquato Tasso ;Aminta (ms. 1197);unknown;1577;11;7;3;0.64;0.27;0.35;6;10;275;2035;7.4;0.35;0.6
+ita000132;ita000132;ita;Torquato Tasso ;Aminta (ms. Campori 491);unknown;1579;10;6;3;0.6;0.3;0.39;6;10;268;2035;7.59;0.38;0.56
+ita000133;ita000133;ita;Torquato Tasso ;Aminta;unknown;1580;10;6;3;0.6;0.3;0.34;6;10;275;2097;7.63;0.33;0.61
+ita000134;ita000134;ita;Torquato Tasso  & ;Galealto;unknown;;8;3;4;0.38;0.5;0.4;2;6;70;1217;17.39;0.21;0.58
+ita000135;ita000135;ita;Torquato Tasso  & ;Intrichi d'Amore;unknown;1603;15;9;6;0.6;0.4;0.34;5;63;1862;1868;1.0;0.86;0.66
+ita000136;ita000136;ita;Torquato Tasso  & ;Re Torrismondo;unknown;1587;13;7;5;0.54;0.38;0.37;5;29;320;3410;10.66;0.37;0.53
+ita000137;ita000137;ita;Pomponio Torelli  & ;La Merope;unknown;1589;8;5;3;0.62;0.38;0.0;1;0;161;2705;16.8;0.0;0.0
+ita000138;ita000138;ita;Gian Trissino ;Sofonisba;unknown;1524;11;7;4;0.64;0.36;0.57;5;15;333;2107;6.33;0.42;0.43
