@@ -4,7 +4,7 @@
 
 This repository contains code for data extraction, embeddings, classification, clustering and analysis for the article:
 
-[Anonymous]. (under review). *Performing Gender on the Early Modern Stage. A Computational and Cross-lingual Approach to Male and Female Speech in European Drama*.
+[Anonymous]. (under review). *Performing Gender on the Early Modern Stage. A Computational and Cross-Lingual Approach to Male and Female Speech in European Drama*.
 
 ## Useful directions 📌
 
