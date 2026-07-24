@@ -9,7 +9,7 @@ This repository contains code for data extraction, embeddings, classification, c
 ## Useful directions 📌
 
 - `european-gender-drama/` the main folder contains the Python files to extract data, get embeddings, train classifiers and run clustering experiments
-- `/notebooks/` contains the notebooks used for data extraction from DraCor and descriptive analysis
+- `/notebooks/` contains a notebook exploring the extracted speech texts
 - `/data/` contains the per-language speech/gender corpora and corpus statistics
 - `/results/` contains results of the classification, clustering and temporal experiments
 - `/figs/` contains the figures generated from those results
@@ -43,19 +43,15 @@ Speech data is drawn from [DraCor](https://dracor.org/) (Dutch, English, French,
 │
 ├── push_to_hub.py                   <- Merges per-language local embedding datasets and pushes the combined dataset to the Hugging Face Hub.
 │
-├── visualize_corpus_stats.py        <- Figures on corpus composition: plays per decade, % female characters, centrality by gender, speech length over time.
+├── visualize_corpus_stats.py        <- Figures on corpus composition: plays per decade, % female characters/lines, centrality by gender, speech length over time, and % female lines/characters over time for the French corpus.
 │
 ├── visualize_method_comparison.py   <- Figures comparing classification accuracy across languages and embedding/TF-IDF methods.
 │
 ├── visualize_temporal_results.py    <- Figures for the temporal French classification results.
 │
-├── data/                            <- Per-language speech/gender NDJSON files, plus corpus_stats/ (per-play and per-character CSVs) created by the notebooks.
+├── data/                            <- Per-language speech/gender NDJSON files (zipped), plus corpus_stats/ (per-play and per-character CSVs) created by the notebooks.
 │
 ├── notebooks/                       <- Jupyter notebooks.
-│      │
-│      └── Read_DraCor_corpus.ipynb              <- Extracts speech text and character gender from DraCor TEI-XML corpora into NDJSON.
-│      │
-│      └── Descriptive_statistics_corpus_data.ipynb  <- Descriptive statistics on the extracted corpora.
 │      │
 │      └── explore_speech_texts.ipynb            <- Exploratory look at the extracted speech texts.
 │
