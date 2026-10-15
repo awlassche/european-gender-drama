@@ -174,3 +174,6 @@ cython_debug/
 .pypirc
 
 *.DS_Store
+
+# DraCor TEI files cached by extract_speech_texts.py
+data/tei/
