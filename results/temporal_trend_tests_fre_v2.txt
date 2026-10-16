@@ -1,0 +1,28 @@
+temporal_fre_predictions_v2_noreplace_heldout-plays_800.csv
+  TF-IDF
+    plays: 1287, predictions: 112047, years 1626-1799
+    odds ratio per decade: 1.016 [95% CI 1.003-1.029], p = 0.0129  -> rises
+    model accuracy: 0.630 (first year) -> 0.692 (last year)
+    adjusted for gender: odds ratio 1.016, p = 0.0121
+    per-play accuracy vs year (Spearman): rho = +0.117, p = 0.0000
+  bge-m3
+    plays: 1287, predictions: 112047, years 1626-1799
+    odds ratio per decade: 1.020 [95% CI 1.000-1.039], p = 0.0490  -> rises
+    model accuracy: 0.633 (first year) -> 0.707 (last year)
+    adjusted for gender: odds ratio 1.020, p = 0.0477
+    per-play accuracy vs year (Spearman): rho = +0.106, p = 0.0001
+
+temporal_fre_predictions_v2_equal-speakers_300x1.csv
+  TF-IDF
+    plays: 1294, predictions: 42059, years 1626-1799
+    odds ratio per decade: 1.012 [95% CI 1.002-1.021], p = 0.0131  -> rises
+    model accuracy: 0.581 (first year) -> 0.629 (last year)
+    adjusted for gender: odds ratio 1.012, p = 0.0116
+    per-play accuracy vs year (Spearman): rho = +0.113, p = 0.0000
+  bge-m3
+    plays: 1294, predictions: 42059, years 1626-1799
+    odds ratio per decade: 1.021 [95% CI 1.003-1.040], p = 0.0242  -> rises
+    model accuracy: 0.602 (first year) -> 0.685 (last year)
+    adjusted for gender: odds ratio 1.021, p = 0.0262
+    per-play accuracy vs year (Spearman): rho = +0.125, p = 0.0000
+

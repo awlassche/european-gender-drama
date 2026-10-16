@@ -1,0 +1,50 @@
+Window: 1575–1599 (MALE=3718, FEMALE=687, min_size=650, sampled without replacement, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.7097±0.0410, R: 0.6877±0.0522, F1: 0.6974±0.0386
+  FEMALE → P: 0.6962±0.0372, R: 0.7159±0.0507, F1: 0.7049±0.0356
+  Accuracy: 0.7017±0.0349
+BGE embeddings:
+  MALE   → P: 0.7577±0.0306, R: 0.7219±0.0493, F1: 0.7378±0.0240
+  FEMALE → P: 0.7343±0.0276, R: 0.7656±0.0455, F1: 0.7483±0.0194
+  Accuracy: 0.7437±0.0179
+
+Window: 1600–1624 (MALE=9905, FEMALE=2334, min_size=650, sampled without replacement, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6505±0.0321, R: 0.6396±0.0462, F1: 0.6438±0.0288
+  FEMALE → P: 0.6458±0.0281, R: 0.6546±0.0544, F1: 0.6490±0.0338
+  Accuracy: 0.6471±0.0272
+BGE embeddings:
+  MALE   → P: 0.7231±0.0367, R: 0.6917±0.0505, F1: 0.7058±0.0329
+  FEMALE → P: 0.7056±0.0319, R: 0.7334±0.0497, F1: 0.7181±0.0302
+  Accuracy: 0.7126±0.0290
+
+Window: 1625–1649 (MALE=6454, FEMALE=1982, min_size=650, sampled without replacement, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6323±0.0362, R: 0.6259±0.0526, F1: 0.6282±0.0388
+  FEMALE → P: 0.6300±0.0366, R: 0.6352±0.0468, F1: 0.6317±0.0350
+  Accuracy: 0.6304±0.0345
+BGE embeddings:
+  MALE   → P: 0.7019±0.0335, R: 0.6809±0.0522, F1: 0.6900±0.0330
+  FEMALE → P: 0.6912±0.0328, R: 0.7094±0.0442, F1: 0.6990±0.0262
+  Accuracy: 0.6950±0.0273
+
+Window: 1650–1674 (MALE=3513, FEMALE=1214, min_size=650, sampled without replacement, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6788±0.0416, R: 0.6701±0.0471, F1: 0.6732±0.0341
+  FEMALE → P: 0.6759±0.0376, R: 0.6823±0.0582, F1: 0.6781±0.0403
+  Accuracy: 0.6762±0.0351
+BGE embeddings:
+  MALE   → P: 0.7171±0.0343, R: 0.6916±0.0445, F1: 0.7029±0.0273
+  FEMALE → P: 0.7044±0.0286, R: 0.7266±0.0497, F1: 0.7143±0.0293
+  Accuracy: 0.7093±0.0255
+
+Window: 1675–1699 (MALE=8453, FEMALE=3266, min_size=650, sampled without replacement, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6622±0.0329, R: 0.6668±0.0407, F1: 0.6634±0.0258
+  FEMALE → P: 0.6637±0.0257, R: 0.6572±0.0528, F1: 0.6593±0.0320
+  Accuracy: 0.6619±0.0258
+BGE embeddings:
+  MALE   → P: 0.7193±0.0343, R: 0.6956±0.0401, F1: 0.7063±0.0263
+  FEMALE → P: 0.7051±0.0260, R: 0.7262±0.0486, F1: 0.7146±0.0288
+  Accuracy: 0.7109±0.0254
+

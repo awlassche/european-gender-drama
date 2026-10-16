@@ -1,0 +1,84 @@
+Language: cal (n per class: 1500, sampled without replacement, TF-IDF fitted on: all)
+TF-IDF:
+  MALE   → P: 0.6877±0.0203, R: 0.7080±0.0208, F1: 0.6974±0.0152
+  FEMALE → P: 0.6990±0.0158, R: 0.6777±0.0301, F1: 0.6879±0.0196
+  Accuracy: 0.6928±0.0164
+BGE embeddings:
+  MALE   → P: 0.6923±0.0187, R: 0.6705±0.0264, F1: 0.6810±0.0192
+  FEMALE → P: 0.6807±0.0183, R: 0.7017±0.0238, F1: 0.6909±0.0172
+  Accuracy: 0.6861±0.0172
+Jina embeddings:
+  MALE   → P: 0.6900±0.0190, R: 0.6663±0.0278, F1: 0.6777±0.0195
+  FEMALE → P: 0.6777±0.0187, R: 0.7003±0.0242, F1: 0.6886±0.0169
+  Accuracy: 0.6833±0.0172
+
+Language: dutch (n per class: 1500, sampled without replacement, TF-IDF fitted on: all)
+TF-IDF:
+  MALE   → P: 0.6601±0.0198, R: 0.6951±0.0286, F1: 0.6769±0.0206
+  FEMALE → P: 0.6783±0.0224, R: 0.6418±0.0276, F1: 0.6592±0.0212
+  Accuracy: 0.6684±0.0199
+BGE embeddings:
+  MALE   → P: 0.6731±0.0179, R: 0.6677±0.0259, F1: 0.6701±0.0169
+  FEMALE → P: 0.6704±0.0170, R: 0.6751±0.0274, F1: 0.6725±0.0176
+  Accuracy: 0.6714±0.0157
+Jina embeddings:
+  MALE   → P: 0.6631±0.0187, R: 0.6794±0.0285, F1: 0.6709±0.0188
+  FEMALE → P: 0.6715±0.0193, R: 0.6544±0.0286, F1: 0.6625±0.0193
+  Accuracy: 0.6669±0.0175
+
+Language: eng (n per class: 1500, sampled without replacement, TF-IDF fitted on: all)
+TF-IDF:
+  MALE   → P: 0.6593±0.0240, R: 0.6829±0.0354, F1: 0.6705±0.0246
+  FEMALE → P: 0.6715±0.0262, R: 0.6465±0.0345, F1: 0.6583±0.0251
+  Accuracy: 0.6647±0.0233
+BGE embeddings:
+  MALE   → P: 0.7308±0.0208, R: 0.7030±0.0295, F1: 0.7162±0.0202
+  FEMALE → P: 0.7142±0.0206, R: 0.7405±0.0270, F1: 0.7268±0.0185
+  Accuracy: 0.7217±0.0184
+Jina embeddings:
+  MALE   → P: 0.7172±0.0223, R: 0.6968±0.0271, F1: 0.7065±0.0203
+  FEMALE → P: 0.7053±0.0204, R: 0.7247±0.0280, F1: 0.7146±0.0200
+  Accuracy: 0.7107±0.0194
+
+Language: fre (n per class: 1500, sampled without replacement, TF-IDF fitted on: all)
+TF-IDF:
+  MALE   → P: 0.6450±0.0182, R: 0.6695±0.0304, F1: 0.6566±0.0195
+  FEMALE → P: 0.6567±0.0208, R: 0.6311±0.0292, F1: 0.6432±0.0199
+  Accuracy: 0.6503±0.0179
+BGE embeddings:
+  MALE   → P: 0.6708±0.0187, R: 0.6441±0.0288, F1: 0.6569±0.0198
+  FEMALE → P: 0.6579±0.0184, R: 0.6836±0.0264, F1: 0.6702±0.0178
+  Accuracy: 0.6638±0.0172
+Jina embeddings:
+  MALE   → P: 0.6813±0.0199, R: 0.6489±0.0253, F1: 0.6644±0.0189
+  FEMALE → P: 0.6649±0.0179, R: 0.6960±0.0266, F1: 0.6798±0.0187
+  Accuracy: 0.6724±0.0177
+
+Language: ger (n per class: 1500, sampled without replacement, TF-IDF fitted on: all)
+TF-IDF:
+  MALE   → P: 0.7146±0.0185, R: 0.7188±0.0225, F1: 0.7164±0.0159
+  FEMALE → P: 0.7172±0.0169, R: 0.7123±0.0259, F1: 0.7145±0.0175
+  Accuracy: 0.7156±0.0159
+BGE embeddings:
+  MALE   → P: 0.7517±0.0192, R: 0.7119±0.0285, F1: 0.7309±0.0195
+  FEMALE → P: 0.7267±0.0201, R: 0.7645±0.0235, F1: 0.7449±0.0167
+  Accuracy: 0.7382±0.0173
+Jina embeddings:
+  MALE   → P: 0.7376±0.0192, R: 0.7085±0.0286, F1: 0.7224±0.0182
+  FEMALE → P: 0.7199±0.0191, R: 0.7474±0.0261, F1: 0.7331±0.0166
+  Accuracy: 0.7280±0.0163
+
+Language: ita (n per class: 1130, sampled without replacement, TF-IDF fitted on: all)
+TF-IDF:
+  MALE   → P: 0.7421±0.0230, R: 0.7819±0.0332, F1: 0.7611±0.0232
+  FEMALE → P: 0.7701±0.0277, R: 0.7278±0.0302, F1: 0.7479±0.0233
+  Accuracy: 0.7548±0.0225
+BGE embeddings:
+  MALE   → P: 0.7440±0.0197, R: 0.7127±0.0289, F1: 0.7277±0.0193
+  FEMALE → P: 0.7246±0.0198, R: 0.7542±0.0258, F1: 0.7388±0.0173
+  Accuracy: 0.7335±0.0173
+Jina embeddings:
+  MALE   → P: 0.7463±0.0222, R: 0.6973±0.0331, F1: 0.7206±0.0227
+  FEMALE → P: 0.7164±0.0222, R: 0.7625±0.0269, F1: 0.7384±0.0186
+  Accuracy: 0.7299±0.0196
+

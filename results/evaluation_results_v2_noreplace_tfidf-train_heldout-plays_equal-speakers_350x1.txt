@@ -1,0 +1,60 @@
+Language: cal (n per class: 350, equal speakers: 350 x 1 chunks, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.5888±0.0434, R: 0.5825±0.0706, F1: 0.5841±0.0504
+  FEMALE → P: 0.5880±0.0501, R: 0.5926±0.0639, F1: 0.5887±0.0489
+  Accuracy: 0.5874±0.0448
+BGE embeddings:
+  MALE   → P: 0.6334±0.0435, R: 0.6038±0.0623, F1: 0.6166±0.0440
+  FEMALE → P: 0.6219±0.0396, R: 0.6485±0.0621, F1: 0.6335±0.0415
+  Accuracy: 0.6261±0.0385
+
+Language: dutch (n per class: 350, equal speakers: 350 x 1 chunks, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.5619±0.0405, R: 0.5830±0.0701, F1: 0.5700±0.0436
+  FEMALE → P: 0.5654±0.0450, R: 0.5418±0.0780, F1: 0.5510±0.0523
+  Accuracy: 0.5624±0.0399
+BGE embeddings:
+  MALE   → P: 0.6018±0.0478, R: 0.6355±0.0639, F1: 0.6170±0.0489
+  FEMALE → P: 0.6133±0.0528, R: 0.5771±0.0698, F1: 0.5931±0.0556
+  Accuracy: 0.6063±0.0488
+
+Language: eng (n per class: 350, equal speakers: 350 x 1 chunks, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6244±0.0429, R: 0.6144±0.0616, F1: 0.6180±0.0440
+  FEMALE → P: 0.6214±0.0430, R: 0.6291±0.0610, F1: 0.6238±0.0436
+  Accuracy: 0.6217±0.0400
+BGE embeddings:
+  MALE   → P: 0.7057±0.0511, R: 0.6737±0.0640, F1: 0.6882±0.0513
+  FEMALE → P: 0.6891±0.0513, R: 0.7179±0.0595, F1: 0.7022±0.0486
+  Accuracy: 0.6958±0.0484
+
+Language: fre (n per class: 350, equal speakers: 350 x 1 chunks, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6090±0.0445, R: 0.6062±0.0562, F1: 0.6063±0.0418
+  FEMALE → P: 0.6085±0.0396, R: 0.6095±0.0633, F1: 0.6077±0.0447
+  Accuracy: 0.6077±0.0398
+BGE embeddings:
+  MALE   → P: 0.6550±0.0413, R: 0.6379±0.0733, F1: 0.6441±0.0484
+  FEMALE → P: 0.6498±0.0418, R: 0.6633±0.0594, F1: 0.6546±0.0371
+  Accuracy: 0.6505±0.0377
+
+Language: ger (n per class: 350, equal speakers: 350 x 1 chunks, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6074±0.0463, R: 0.5879±0.0655, F1: 0.5959±0.0475
+  FEMALE → P: 0.6002±0.0427, R: 0.6173±0.0656, F1: 0.6071±0.0457
+  Accuracy: 0.6025±0.0420
+BGE embeddings:
+  MALE   → P: 0.6929±0.0559, R: 0.6470±0.0657, F1: 0.6669±0.0486
+  FEMALE → P: 0.6681±0.0433, R: 0.7086±0.0748, F1: 0.6859±0.0492
+  Accuracy: 0.6777±0.0451
+
+Language: ita (n per class: 350, equal speakers: 350 x 1 chunks, TF-IDF fitted on: train, held out: plays)
+TF-IDF:
+  MALE   → P: 0.6208±0.0515, R: 0.6310±0.0553, F1: 0.6243±0.0428
+  FEMALE → P: 0.6241±0.0455, R: 0.6114±0.0798, F1: 0.6159±0.0574
+  Accuracy: 0.6212±0.0462
+BGE embeddings:
+  MALE   → P: 0.7009±0.0409, R: 0.6804±0.0680, F1: 0.6881±0.0390
+  FEMALE → P: 0.6924±0.0440, R: 0.7072±0.0645, F1: 0.6974±0.0368
+  Accuracy: 0.6938±0.0336
+

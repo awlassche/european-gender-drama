@@ -1,0 +1,20 @@
+Language	Speakers	Sample Size	Model Name	V-Measure Score	Num Chunks
+cal	40	10	dccuchile/bert-base-spanish-wwm-cased	0.4660 ± 0.0112	480
+cal	40	10	intfloat/multilingual-e5-large	0.5908 ± 0.0161	480
+cal	40	10	BAAI/bge-m3	0.6360 ± 0.0192	480
+cal	40	10	jinaai/jina-embeddings-v3	0.4875 ± 0.0131	480
+dutch	40	10	emanjavacas/GysBERT-v2	0.8269 ± 0.0090	511
+dutch	40	10	DTAI-KULeuven/robbert-2023-dutch-large	0.7446 ± 0.0149	511
+dutch	40	10	intfloat/multilingual-e5-large	0.7982 ± 0.0124	511
+dutch	40	10	BAAI/bge-m3	0.7914 ± 0.0139	511
+dutch	40	10	jinaai/jina-embeddings-v3	0.7092 ± 0.0152	511
+eng	40	10	emanjavacas/MacBERTh	0.7598 ± 0.0143	872
+eng	40	10	BAAI/bge-large-en-v1.5	0.5807 ± 0.0121	872
+eng	40	10	intfloat/multilingual-e5-large	0.6731 ± 0.0162	872
+eng	40	10	BAAI/bge-m3	0.6746 ± 0.0120	872
+eng	40	10	jinaai/jina-embeddings-v3	0.6163 ± 0.0130	872
+fre	40	10	dbmdz/bert-base-french-europeana-cased	0.6972 ± 0.0145	759
+fre	40	10	almanach/camembertav2-base	0.4252 ± 0.0077	759
+fre	40	10	intfloat/multilingual-e5-large	0.6958 ± 0.0166	759
+fre	40	10	BAAI/bge-m3	0.6971 ± 0.0180	759
+fre	40	10	jinaai/jina-embeddings-v3	0.6551 ± 0.0204	759

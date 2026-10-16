@@ -1,0 +1,2 @@
+Language	Speakers	Sample Size	Model Name	V-Measure Score	Num Chunks
+fre	40	10	almanach/camembertav2-base	0.6991 ± 0.0150	759
