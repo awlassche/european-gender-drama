@@ -177,3 +177,6 @@ cython_debug/
 
 # DraCor TEI files cached by extract_speech_texts.py
 data/tei/
+
+# Local model checkpoints (e.g. models/bertoldo-all, 2.5 GB)
+models/
