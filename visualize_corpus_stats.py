@@ -37,11 +37,15 @@ CHRyellow = '#E8A838'
 CHRbeige = '#D4C5B0'
 CHRcream = '#F5F0E8'
 
-CREDENTIALS_FILE = os.environ.get("GOOGLE_DRIVE_CREDENTIALS", "../credentials.json")
-DRIVE_FOLDER_NAME = "DutchDraCor_gender"
-CACHE_DIR = "data/corpus_stats"
+_REPO_DIR = os.path.expanduser("~/Documenten/GitHub/european-gender-drama")
 
-CORPORA = ["fre", "eng", "ger", "cal", "dutch", "ita"]
+CREDENTIALS_FILE = os.environ.get(
+    "GOOGLE_DRIVE_CREDENTIALS", os.path.join(_REPO_DIR, "..", "credentials.json")
+)
+DRIVE_FOLDER_NAME = "DutchDraCor_gender"
+CACHE_DIR = os.path.join(_REPO_DIR, "data/corpus_stats")
+
+CORPORA = ["fre", "ita", "cal", "dutch", "eng", "ger"]
 CORPUS_NAMES = {
     "fre": "French",
     "eng": "English",
@@ -161,15 +165,23 @@ merged_character_df = pd.concat(character_data.values())
 # %%
 
 
-def plot_plays_per_decade():
+FEMALE_ACTING_INTRODUCED = {
+    "fre": 1544, "ita": 1560, "cal": 1587, "eng": 1660, "dutch": 1655, "ger": 1669,
+}
+
+
+def plot_plays_per_decade(play_years=None, filename="plays_per_decade_columns_female_line.pdf"):
+    """play_years: {corpus: one year per play}; defaults to the corpus_stats plays."""
+    if play_years is None:
+        play_years = {c: play_data[c]["year"] for c in play_data}
     decades = [str(decade) + "0" for decade in range(150, 180)]
 
     fig, axes = plt.subplots(3, 2, figsize=(7.5, 5), sharex=True)
-
+    CORPORA = ["fre", "dutch", "ita", "eng", "cal", "ger"]
     for ax, corpus in zip(axes.flatten(), CORPORA):
-        df = play_data[corpus]
+        df = play_years[corpus]
         histogram = {decade: 0 for decade in decades}
-        years = pd.to_numeric(df["year"], errors="coerce").dropna()
+        years = pd.to_numeric(df, errors="coerce").dropna()
         for year in years:
             decade = str(int(year))[0:3] + "0"
             if decade in histogram:
@@ -179,17 +191,47 @@ def plot_plays_per_decade():
             list(histogram.keys()), list(histogram.values()),
             width=0.8, align="center", color=CHRyellow,
         )
+
+        intro_year = FEMALE_ACTING_INTRODUCED[corpus]
+        intro_decade = str(intro_year)[0:3] + "0"
+        intro_x = decades.index(intro_decade) + (intro_year - int(intro_decade)) / 10
+        ax.axvline(intro_x, color=CHRgreen, linestyle=":", linewidth=1.5)
+
         ax.set_title(r"$\bf{" + CORPUS_NAMES[corpus] + "}$" + f" (N={len(df)})")
         ax.tick_params(axis="x", labelrotation=90, labelsize=7)
         ax.grid(axis="y", linestyle="--", alpha=0.4)
         ax.spines[["top", "right"]].set_visible(False)
         ax.set_xlim(-0.5, len(decades) - 0.5)
 
+    fig.legend(
+        handles=[plt.Line2D([0], [0], color=CHRgreen, linestyle=":", linewidth=1.5)],
+        labels=["First female actor on stage"],
+        loc="lower center", ncol=1, bbox_to_anchor=(0.5, -0.05), frameon=False,
+    )
     fig.tight_layout()
-    plt.savefig("figs/plays_per_decade_columns.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", filename), bbox_inches="tight")
 
 
 plot_plays_per_decade()
+
+# %%
+# The same figure for the plays in the current DraCor extraction
+# (extract_speech_texts.py), which is the corpus the experiments now use.
+
+SPEECH_TEXTS_DIR = os.path.join(_REPO_DIR, "data/speech_texts_2026-10-15")
+
+
+def speech_text_play_years(corpus):
+    """One year per play in the extracted speech texts of a corpus."""
+    path = os.path.join(SPEECH_TEXTS_DIR, f"speech_gender_{corpus}.ndjson")
+    records = pd.read_json(path, lines=True)[["play", "year"]]
+    return records.drop_duplicates("play")["year"]
+
+
+plot_plays_per_decade(
+    play_years={c: speech_text_play_years(c) for c in CORPORA},
+    filename="plays_per_decade_columns_female_line_dracor-2026-10-15.pdf",
+)
 
 # ── % female characters per corpus ───────────────────────────────────────────
 # %%
@@ -230,7 +272,7 @@ def plot_female_chars_per_corpus():
                  transform=trans, ha="center", va="top", fontsize=8)
 
     fig.tight_layout()
-    plt.savefig("figs/pct_female_chars_per_corpus.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", "pct_female_chars_per_corpus.pdf"), bbox_inches="tight")
 
 
 plot_female_chars_per_corpus()
@@ -273,7 +315,7 @@ def plot_female_lines_per_corpus():
                  transform=trans, ha="center", va="top", fontsize=8)
 
     fig.tight_layout()
-    plt.savefig("figs/pct_female_lines_per_corpus.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", "pct_female_lines_per_corpus.pdf"), bbox_inches="tight")
 
 
 plot_female_lines_per_corpus()
@@ -312,7 +354,7 @@ def plot_centrality_by_gender():
 
     #fig.suptitle("Degree centrality by gender", fontweight="bold")
     fig.tight_layout()
-    plt.savefig("figs/centrality_by_gender.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", "centrality_by_gender.pdf"), bbox_inches="tight")
 
 
 plot_centrality_by_gender()
@@ -346,7 +388,7 @@ def plot_mean_speech_length_over_time():
     ax.legend(loc="upper right", ncol=2, framealpha=0.7)
 
     fig.tight_layout()
-    plt.savefig("figs/mean_speech_length_over_time.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", "mean_speech_length_over_time.pdf"), bbox_inches="tight")
 
 
 plot_mean_speech_length_over_time()
@@ -406,7 +448,7 @@ def plot_female_pct_over_time_fre():
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2, framealpha=0.7)
 
     fig.tight_layout()
-    plt.savefig("figs/female_pct_over_time_fre.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", "female_pct_over_time_fre.pdf"), bbox_inches="tight")
 
 
 plot_female_pct_over_time_fre()

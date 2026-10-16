@@ -3,6 +3,8 @@
 # pip install "transformers<5.0"
 
 
+import argparse
+import gc
 import os
 import re
 import pandas as pd
@@ -66,9 +68,10 @@ MODEL_SETS = {
     ]
 }
 
+DATA_DIR = 'data/speech_texts_2026-10-15'   # output of extract_speech_texts.py
 CHUNK_SIZE = 400
 CHUNKS_PER_SPEAKER = 10   # chunks randomly sampled per speaker per iteration
-TODAY = '260508'
+TODAY = '261015'
 
 # -------------------- FUNCTIONS -----------------------
 
@@ -83,20 +86,35 @@ def process_dataset(df, chunk_size):
     chunked_data = []
     for _, row in df.iterrows():
         chunks = chunk_speech(row['speech'], chunk_size)
-        speaker_id_base = row['speaker'][:4]
         for i, chunk in enumerate(chunks):
             chunked_data.append({
                 'speaker': row['speaker'],
+                'speaker_id': row['speaker_id'],
                 'play': row['play'],
                 'gender': row['gender'],
                 'speech_chunk': chunk,
-                'unique_id': f"{speaker_id_base}_{i + 1}"
+                # a character is a speaker id within a play; names and ids
+                # alone recur across plays
+                'character': f"{row['play']}/{row['speaker_id']}",
+                'unique_id': f"{row['play']}/{row['speaker_id']}/{i + 1}"
             })
 
     df_chunked = pd.DataFrame(chunked_data)
     return df_chunked[df_chunked['speech_chunk'].apply(lambda x: len(x.split()) >= chunk_size)].reset_index(drop=True)
 
+def free_memory():
+    """Release memory of models that are no longer referenced. Without this,
+    every model stays in (GPU) memory until the end of the run, and later
+    models fail with out-of-memory errors."""
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    if torch.backends.mps.is_available():
+        torch.mps.empty_cache()
+
+
 def get_embeddings_flexible(model_name, text_chunks):
+    model = None
     try:
         model = SentenceTransformer(model_name, trust_remote_code=True)
         print(f"✅ Using SentenceTransformer for {model_name}")
@@ -108,8 +126,16 @@ def get_embeddings_flexible(model_name, text_chunks):
             convert_to_numpy=True
         )
     except Exception as e:
+        model = None  # release the failed model before loading the fallback
+        free_memory()
+        # NB: the fallback embeds differently (CLS token instead of the model's
+        # own pooling), so its scores are not comparable with the others
+        print(f"⚠️ FALLBACK for {model_name}: scores are not comparable with the other models")
         print(f"⚠️ Falling back to tokenizer+AutoModel for {model_name} due to: {e}")
         return get_embeddings_advanced(model_name, text_chunks)
+    finally:
+        model = None
+        free_memory()
 
 def get_embeddings_advanced(model_name, text_chunks, pooling="cls"):
     try:
@@ -183,7 +209,7 @@ def process_file(filepath, language, model_names, output_file):
         data = ndjson.load(fin)
     df = pd.DataFrame(data)
 
-    required_cols = {'speaker', 'play', 'gender', 'speech'}
+    required_cols = {'speaker', 'speaker_id', 'play', 'gender', 'speech'}
     assert required_cols.issubset(df.columns), f"Missing required columns in {filepath}"
 
     df['speech_length'] = df['speech'].apply(count_tokens)
@@ -197,12 +223,18 @@ def process_file(filepath, language, model_names, output_file):
 
         df_filtered = process_dataset(df_top, CHUNK_SIZE)
         text_chunks = df_filtered['speech_chunk'].tolist()
-        true_labels = df_filtered['speaker'].tolist()
+        true_labels = df_filtered['character'].tolist()
         num_chunks = len(text_chunks)
 
         for model_name in model_names:
             print(f"🧠 Evaluating: {model_name}")
-            embeddings = get_embeddings_flexible(model_name, text_chunks)
+            try:
+                embeddings = get_embeddings_flexible(model_name, text_chunks)
+            except Exception as e:
+                # e.g. a local model folder that isn't on this machine; skip it
+                # instead of losing the remaining models and languages
+                print(f"⚠️ Skipping {model_name}: {e}")
+                continue
             if embeddings is None:
                 continue
 
@@ -220,24 +252,37 @@ def process_file(filepath, language, model_names, output_file):
 # ------------------------ MAIN ------------------------
 
 def main():
+    parser = argparse.ArgumentParser(description="Clustering task (KMeans + V-measure) per language and model.")
+    parser.add_argument("--languages", nargs="+", default=None,
+                        help="Only these languages (e.g. fre ger). Default: all.")
+    parser.add_argument("--models", nargs="+", default=None,
+                        help="Only these models (e.g. almanach/camembertav2-base). Default: all of a language's models.")
+    parser.add_argument("--output", default=f"results/v_measure_results_{TODAY}.txt")
+    args = parser.parse_args()
+
     os.makedirs("results", exist_ok=True)
-    output_file = f"results/v_measure_results_{TODAY}.txt"
+    output_file = args.output
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("Language\tSpeakers\tSample Size\tModel Name\tV-Measure Score\tNum Chunks\n")
 
-    for filename in sorted(os.listdir('data')):
+    for filename in sorted(os.listdir(DATA_DIR)):
         if filename.startswith("speech_gender_") and filename.endswith(".ndjson"):
             language = get_language_from_filename(filename)
             if not language:
+                continue
+
+            if args.languages and language not in args.languages:
                 continue
 
             if language not in MODEL_SETS:
                 print(f"⚠️ Skipping {filename}: No models defined for language '{language}'")
                 continue
 
-            filepath = os.path.join('data', filename)
-            model_names = MODEL_SETS[language]
+            filepath = os.path.join(DATA_DIR, filename)
+            model_names = [m for m in MODEL_SETS[language] if not args.models or m in args.models]
+            if not model_names:
+                continue
             process_file(filepath, language, model_names, output_file)
 
 if __name__ == "__main__":

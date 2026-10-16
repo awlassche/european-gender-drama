@@ -2,8 +2,8 @@
 hf auth login
 
 python get_embeddings_europe.py \
-  --input_dir data/ \
-  --hub_dataset_id [username]/european-gender-drama-bge-embeddings
+  --input_dir data/speech_texts_2026-10-15/ \
+  --hub_dataset_id awlassche/european-gender-drama-bge-embeddings-v2
 """
 
 import os
@@ -26,17 +26,20 @@ def process_dataset(df, chunk_size, language):
     chunked_data = []
     for _, row in tqdm(df.iterrows(), total=len(df), desc=f"Chunking [{language}]"):
         chunks = chunk_speech(row['speech'], chunk_size)
-        speaker_id_base = row['speaker'][:4]
 
         for i, chunk in enumerate(chunks):
             if len(chunk.split()) > 5:
                 chunked_data.append({
                     'language': language,
                     'speaker': row['speaker'],
+                    # names are not unique within a play ("Soldado 1" can be
+                    # two characters); the DraCor character id is
+                    'speaker_id': row['speaker_id'],
                     'play': row['play'],
+                    'year': row['year'],
                     'gender': row['gender'],
                     'speech_chunk': chunk,
-                    'unique_id': f"{speaker_id_base}_{i + 1}"
+                    'unique_id': f"{row['play']}/{row['speaker_id']}/{i + 1}"
                 })
 
     return pd.DataFrame(chunked_data)

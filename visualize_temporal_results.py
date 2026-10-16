@@ -24,7 +24,18 @@ plt.rcParams.update({
     "figure.titlesize": 14,
 })
 
-RESULTS_FILE = "results/temporal_fre_results_stratified_1000.txt"
+# current results: corrected sampling (no replacement, TF-IDF fitted on the
+# training split, held-out plays) on the 2026-10-15 DraCor extraction
+RESULTS_FILE = "results/temporal_fre_results_v2_noreplace_tfidf-train_heldout-plays_800.txt"
+OUTPUT_FILE = "figs/temporal_fre_results_v2_noreplace_heldout-plays_800.pdf"
+YLIM = (0.5, 0.9)
+# the same figure for the English corpus (1575-1699, 650 chunks per window)
+RESULTS_FILE_ENG = "results/temporal_eng_results_v2_noreplace_tfidf-train_heldout-plays_650.txt"
+OUTPUT_FILE_ENG = "figs/temporal_eng_results_v2_noreplace_heldout-plays_650.pdf"
+# the figure in the submitted article:
+# RESULTS_FILE = "results/temporal_fre_results_stratified_1000.txt"
+# OUTPUT_FILE = "figs/temporal_fre_results_stratified_1000_2.pdf"
+# YLIM = (0.57, 1)
 
 CHRgreen = '#1B4332' 
 CHRred = '#C0392B'
@@ -39,11 +50,13 @@ def parse_results(path):
     current = None
 
     window_re  = re.compile(r"Window:\s*(\d{4})–(\d{4})")
-    method_re  = re.compile(r"^(TF-IDF|BGE embeddings):")
+    # Jina has to be recognised too, even though it is not plotted: otherwise
+    # its lines are read as a continuation of the BGE block and overwrite it
+    method_re  = re.compile(r"^(TF-IDF|BGE embeddings|Jina embeddings):")
     class_re   = re.compile(r"(MALE|FEMALE)\s*→\s*P:\s*([\d.]+)±([\d.]+),\s*R:\s*([\d.]+)±([\d.]+),\s*F1:\s*([\d.]+)±([\d.]+)")
     acc_re     = re.compile(r"Accuracy:\s*([\d.]+)±([\d.]+)")
 
-    method_map = {"TF-IDF": "TF-IDF", "BGE embeddings": "BGE"}
+    method_map = {"TF-IDF": "TF-IDF", "BGE embeddings": "BGE", "Jina embeddings": "Jina"}
     current_method = None
 
     with open(path) as f:
@@ -84,7 +97,7 @@ def parse_results(path):
 # ── plot ──────────────────────────────────────────────────────────────────────
 #%%
 
-def plot(windows):
+def plot(windows, output_file=OUTPUT_FILE):
     methods    = ["TF-IDF", "BGE"]
     classes    = ["MALE", "FEMALE"]
     metrics    = ["P", "R", "F1"]
@@ -154,7 +167,7 @@ def plot(windows):
             else:
                 ax.set_xticklabels([])
 
-            ax.set_ylim(0.57, 1)
+            ax.set_ylim(*YLIM)
             ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.1f}"))
             ax.grid(axis="y", linestyle="--", alpha=0.4)
             ax.spines[["top", "right"]].set_visible(False)
@@ -168,13 +181,12 @@ def plot(windows):
         bbox_to_anchor=(0.40, -0.02),
     )
 
-    out = "figs/temporal_fre_results_stratified_1000_2.pdf"
-    plt.savefig(out, bbox_inches="tight")
+    plt.savefig(output_file, bbox_inches="tight")
     plt.show()
 
 
 if __name__ == "__main__":
-    windows = parse_results(RESULTS_FILE)
-    plot(windows)
+    plot(parse_results(RESULTS_FILE), OUTPUT_FILE)
+    plot(parse_results(RESULTS_FILE_ENG), OUTPUT_FILE_ENG)
 
 # %%

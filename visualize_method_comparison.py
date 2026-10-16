@@ -27,13 +27,26 @@ plt.rcParams.update({
     "mathtext.bf": "Roboto Condensed:bold",
 })
 
-RESULTS_FILE = "results/evaluation_results_2605012_stratified.txt"
+_REPO_DIR = os.path.expanduser("~/Documenten/GitHub/european-gender-drama")
+# current results: corrected sampling (no replacement, TF-IDF fitted on the
+# training split, held-out plays) on the 2026-10-15 DraCor extraction
+RESULTS_FILE = os.path.join(
+    _REPO_DIR, "results/evaluation_results_v2_noreplace_tfidf-train_heldout-plays_n1500.txt"
+)
+FIGURE_SUFFIX = "_v2"   # figure names get this suffix, so the article's figures stay
+SCORE_RANGE = (0.5, 0.9)   # axis range for the scores, in both figures
+# the figures in the submitted article:
+# RESULTS_FILE = os.path.join(_REPO_DIR, "results/evaluation_results_2605012_stratified.txt")
+# FIGURE_SUFFIX = ""
+# SCORE_RANGE = None   # i.e. 0.5-1.0 for accuracy_by_language, 0.58-1.0 for the metrics grid
 
 CHRgreen = '#1B4332'
 CHRred = '#C0392B'
 CHRyellow = '#E8A838'
 CHRbeige = '#D4C5B0'
 CHRcream = '#F5F0E8'
+
+CORPORA = ["fre", "ita", "cal", "dutch", "eng", "ger"]
 
 LANGUAGE_NAMES = {
     "fre": "French",
@@ -124,14 +137,14 @@ def plot_accuracy_by_language(languages, methods=("TF-IDF", "bge-m3")):
         )
 
     ax.set_yticks(y, labels=[LANGUAGE_NAMES[c] for c in lang_codes])
-    ax.set_xlim(0.5, 1.0)
+    ax.set_xlim(*(SCORE_RANGE or (0.5, 1.0)))
     ax.set_xlabel("Accuracy", fontweight="semibold")
     ax.xaxis.grid(True, linestyle="--", alpha=0.4)
     ax.spines[["top", "right"]].set_visible(False)
     ax.legend(loc="lower right", framealpha=0.7)
 
     fig.tight_layout()
-    plt.savefig("figs/accuracy_by_language.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", f"accuracy_by_language{FIGURE_SUFFIX}.pdf"), bbox_inches="tight")
     plt.show()
 
 
@@ -186,7 +199,7 @@ def plot_metrics_grid(languages, methods=("TF-IDF", "bge-m3")):
             else:
                 ax.set_xticklabels([])
 
-            ax.set_ylim(0.58, 1.0)
+            ax.set_ylim(*(SCORE_RANGE or (0.58, 1.0)))
             ax.yaxis.grid(True, linestyle="--", alpha=0.4)
             ax.spines[["top", "right"]].set_visible(False)
 
@@ -194,7 +207,7 @@ def plot_metrics_grid(languages, methods=("TF-IDF", "bge-m3")):
     fig.legend(handles, labels, loc="lower center", ncol=2, framealpha=0.7, bbox_to_anchor=(0.55, -0.03))
 
     fig.tight_layout()
-    plt.savefig("figs/metrics_grid_by_gender_method.pdf", bbox_inches="tight")
+    plt.savefig(os.path.join(_REPO_DIR, "figs", f"metrics_grid_by_gender_method{FIGURE_SUFFIX}.pdf"), bbox_inches="tight")
     plt.show()
 
 
@@ -202,6 +215,7 @@ def plot_metrics_grid(languages, methods=("TF-IDF", "bge-m3")):
 
 if __name__ == "__main__":
     languages = parse_results(RESULTS_FILE)
+    languages.sort(key=lambda l: CORPORA.index(l["language"]))
     plot_accuracy_by_language(languages)
     plot_metrics_grid(languages)
 
