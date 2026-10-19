@@ -1,0 +1,753 @@
+;play_id;corpus;author;title;genre;year;characters;male;female;%_male_chars;%_female_chars;%_female_lines;acts;scenes;speech_turns;lines;mean_sp_length;density;%_male_lines
+eng000609;eng000609;eng;R. A.  &  &  &  &  &  &  &  & ;The Valiant Welshman;unknown;1615;41;30;7;0.73;0.17;0.13;5;25;307;1857;6.05;0.19;0.85
+eng000261;eng000261;eng;William Alexander  &  &  &  &  & ;Caesar;unknown;1604;11;8;3;0.73;0.27;0.09;5;13;154;3308;21.48;0.38;0.62
+eng000258;eng000258;eng;William Alexander  &  &  &  &  & ;Croesus;unknown;1604;11;10;1;0.91;0.09;0.06;5;13;128;2958;23.11;0.33;0.71
+eng000259;eng000259;eng;William Alexander  &  &  &  &  & ;Darius;unknown;1603;14;0;0;0.0;0.0;0.0;5;12;155;2272;14.66;0.26;0.0
+eng000260;eng000260;eng;William Alexander  &  &  &  &  & ;The Alexandraean Tragedy;unknown;1605;16;14;2;0.88;0.12;0.12;5;13;156;3499;22.43;0.29;0.62
+eng000095;eng000095;eng; &  & ;A Knack to Know a Knave;unknown;1592;29;27;2;0.93;0.07;0.04;0;1;393;1736;4.42;1.0;0.96
+eng000106;eng000106;eng; &  &  &  & ;A Larum for London, or The Siege of Antwerp;unknown;1602;39;33;5;0.85;0.13;0.0;1;1;451;1580;3.5;0.0;0.0
+eng000372;eng000372;eng; &  &  &  &  & ;Alphonsus, Emperor of Germany;unknown;1594;19;17;2;0.89;0.11;0.0;5;5;715;2502;3.5;0.0;0.0
+eng000324;eng000324;eng; &  &  &  & ;Arden of Faversham;unknown;1590;18;16;2;0.89;0.11;0.25;0;1;757;2428;3.21;1.0;0.74
+eng000064;eng000064;eng;;Band, Cuff, and Ruff, or Exchange Ware at the Second Hand;unknown;1615;3;3;0;1.0;0.0;0.0;0;1;79;84;1.06;1.0;0.92
+eng000637;eng000637;eng; &  &  &  &  &  & ;Bonduca, or The British Heroine;unknown;1696;30;18;3;0.6;0.1;0.02;6;1;495;1881;3.8;0.29;0.11
+eng000620;eng000620;eng; &  &  &  &  &  &  &  & ;Brutus of Alba, or Augusta's Triumph;unknown;1697;41;28;11;0.68;0.27;0.02;5;5;332;1112;3.35;0.0;0.05
+eng000427;eng000427;eng;;Caesar and Pompey, or Caesar's Revenge;unknown;1592;28;23;3;0.82;0.11;0.07;5;20;277;2489;8.99;0.34;0.78
+eng000397;eng000397;eng;;Canterbury His Change of Diet;unknown;1641;11;10;1;0.91;0.09;0.0;4;1;65;136;2.09;0.0;0.0
+eng000594;eng000594;eng; &  & ;Emilia;unknown;1672;19;9;7;0.47;0.37;0.45;6;45;727;2427;3.34;0.62;0.5
+eng000327;eng000327;eng; &  & ;Fair Em;unknown;1590;19;15;4;0.79;0.21;0.22;1;1;426;1483;3.48;1.0;0.77
+eng000641;eng000641;eng; &  &  &  & ;Henry II, King of England, with the Death of Rosamond;unknown;1693;15;12;3;0.8;0.2;0.04;6;2;687;2132;3.1;0.1;0.11
+eng000235;eng000235;eng;;Jack Straw;unknown;1590;22;20;2;0.91;0.09;0.0;4;4;177;854;4.82;0.0;0.0
+eng000097;eng000097;eng; &  & ;1 Jeronimo, with the Wars of Portugal;unknown;1604;25;22;2;0.88;0.08;0.05;0;1;475;1274;2.68;1.0;0.94
+eng000566;eng000566;eng; &  & ;Knavery in All Trades, or The Coffee-House;unknown;1664;30;17;8;0.57;0.27;0.13;5;3;608;627;1.03;0.33;0.3
+eng000201;eng000201;eng; &  &  &  &  &  &  &  &  & ;Locrine;unknown;1591;27;22;5;0.81;0.19;0.17;5;26;275;1891;6.88;0.31;0.81
+eng000377;eng000377;eng; &  &  &  & ;Mucedorus (and Amadine);unknown;1591;17;14;3;0.82;0.18;0.0;1;1;555;1409;2.54;0.0;0.0
+eng000178;eng000178;eng;;Nero;unknown;1624;30;27;3;0.9;0.1;0.0;5;5;461;2304;5.0;0.0;0.0
+eng000179;eng000179;eng;;Nobody and Somebody;unknown;1603;28;24;4;0.86;0.14;0.0;1;1;810;1992;2.46;0.0;0.0
+eng000695;eng000695;eng; &  & ;Piso's Conspiracy;unknown;1676;21;20;1;0.95;0.05;0.05;6;12;379;1851;4.88;0.48;0.75
+eng000480;eng000480;eng; &  & ;The Amorous Old Woman, or 'Tis Well if It Take;unknown;1674;12;8;4;0.67;0.33;0.28;7;30;991;2434;2.46;0.82;0.67
+eng000673;eng000673;eng; &  &  &  &  &  & ;Neglected Virtue, or The Unhappy Conqueror;unknown;1696;23;17;6;0.74;0.26;0.29;6;10;481;1463;3.04;0.44;0.65
+eng000723;eng000723;eng; &  & ;Romulus and Hersilia, or The Sabine War;unknown;1683;18;12;6;0.67;0.33;0.48;6;16;498;2214;4.45;0.49;0.47
+eng000621;eng000621;eng; &  &  &  &  &  & ;The Fairy Queen;unknown;1692;36;18;7;0.5;0.19;0.03;6;5;386;1496;3.88;0.04;0.05
+eng000560;eng000560;eng; &  &  &  & ;She Ventures and He Wins;unknown;1696;21;12;6;0.57;0.29;0.23;6;18;521;701;1.35;0.61;0.58
+eng000737;eng000737;eng; &  & ;The Bloody Duke, or The Adventures for a Crown;unknown;1690;38;31;2;0.82;0.05;0.1;11;14;385;1160;3.01;0.16;0.77
+eng000287;eng000287;eng;;The Contention between Liberality and Prodigality;unknown;1601;25;21;4;0.84;0.16;0.15;6;26;459;1249;2.72;0.31;0.71
+eng000533;eng000533;eng; &  & ;The Cornish Comedy;unknown;1696;26;18;6;0.69;0.23;0.05;6;5;795;1009;1.27;0.37;0.29
+eng000516;eng000516;eng; &  &  &  &  &  & ;The Counterfeit Bridegroom, or The Defeated Widow;unknown;1677;20;14;6;0.7;0.3;0.31;6;9;756;946;1.25;0.6;0.56
+eng000514;eng000514;eng; &  &  &  & ;The Counterfeits;unknown;1679;17;13;4;0.76;0.24;0.28;6;17;680;833;1.23;0.74;0.62
+eng000467;eng000467;eng; &  &  &  & ;The Feigned Astrologer;unknown;1668;14;9;5;0.64;0.36;0.16;5;8;1343;3200;2.38;0.78;0.48
+eng000497;eng000497;eng; &  & ;The Island Princess, or The Generous Portugal;unknown;1669;26;21;3;0.81;0.12;0.2;6;5;798;2470;3.1;0.86;0.77
+eng000205;eng000205;eng; &  & ;The London Prodigal;unknown;1603;19;15;4;0.79;0.21;0.14;0;1;775;1599;2.06;1.0;0.83
+eng000121;eng000121;eng;;The Maid's Metamorphosis;unknown;1600;25;13;11;0.52;0.44;0.0;6;5;626;1778;2.84;0.0;0.0
+eng000325;eng000325;eng; &  &  &  &  &  & ;The Merry Devil of Edmonton;unknown;1599;25;21;4;0.84;0.16;0.0;2;1;472;1215;2.57;0.0;0.0
+eng000477;eng000477;eng; &  & ;The Mistaken Husband;unknown;1675;20;17;3;0.85;0.15;0.18;6;17;912;1844;2.02;0.52;0.78
+eng000252;eng000252;eng; &  &  & ;The Pedlar's Prophecy;unknown;1561;12;9;3;0.75;0.25;0.0;1;2;276;1576;5.71;0.0;0.0
+eng000326;eng000326;eng;;The Reign of King Edward the Third;unknown;1590;37;31;3;0.84;0.08;0.05;0;1;442;2512;5.68;0.9;0.87
+eng000735;eng000735;eng; &  & ;The Siege and Surrender of Mons;unknown;1691;40;34;3;0.85;0.07;0.02;3;15;220;724;3.29;0.18;0.93
+eng000237;eng000237;eng;;The Taming of a Shrew;unknown;1590;22;18;4;0.82;0.18;0.18;0;1;480;1517;3.16;1.0;0.82
+eng000411;eng000411;eng;;The Trial of Chivalry;unknown;1599;24;22;2;0.92;0.08;0.14;0;1;776;2228;2.87;0.93;0.85
+eng000100;eng000100;eng; &  &  &  & ;The True Chronicle of King Leir;unknown;1590;21;18;3;0.86;0.14;0.28;1;32;609;2513;4.13;0.33;0.69
+eng000193;eng000193;eng;;The True Tragedy of Richard the Third;unknown;1588;44;39;5;0.89;0.11;0.11;0;1;542;1154;2.13;1.0;0.88
+eng000607;eng000607;eng; &  &  &  & ;The Unnatural Mother;unknown;1698;20;12;7;0.6;0.35;0.18;6;4;539;677;1.26;0.2;0.19
+eng000291;eng000291;eng; &  & ;The Wars of Cyrus;unknown;1588;19;16;3;0.84;0.16;0.0;5;5;369;1716;4.65;0.0;0.0
+eng000572;eng000572;eng;;The Woman Turned Bully;unknown;1675;15;9;6;0.6;0.4;0.32;6;15;988;1121;1.13;0.74;0.57
+eng000669;eng000669;eng; &  &  &  &  &  & ;Valentinian;unknown;1685;20;14;6;0.7;0.3;0.21;6;14;587;3138;5.35;0.56;0.72
+eng000255;eng000255;eng;;Wily Beguiled;unknown;1602;18;14;4;0.78;0.22;0.0;1;3;561;1961;3.5;0.0;0.0
+eng000021;eng000021;eng; &  &  & ;Wine, Beer, and Ale Together by the Ears;unknown;1624;9;9;0;1.0;0.0;0.0;0;2;284;323;1.14;1.0;0.97
+eng000579;eng000579;eng; &  &  &  & ;Wit for Money, or Poet Stutter;unknown;1691;3;3;0;1.0;0.0;0.0;0;1;257;310;1.21;1.0;0.95
+eng000739;eng000739;eng; &  & ;Wits Led by the Nose, or A Poet's Revenge;unknown;1678;25;18;7;0.72;0.28;0.25;6;19;518;1144;2.21;0.29;0.58
+eng000436;eng000436;eng;Ludovico Ariosto  &  &  & ;Supposes;unknown;1566;17;13;4;0.76;0.24;0.12;6;31;676;719;1.06;0.37;0.82
+eng000328;eng000328;eng;Robert Armin  &  &  & ;The Two Maids of More-Clacke;unknown;1606;30;23;6;0.77;0.2;0.16;0;1;816;1942;2.38;1.0;0.8
+eng000442;eng000442;eng;Joseph Arrowsmith  &  & ;The Reformation;unknown;1673;19;11;8;0.58;0.42;0.27;6;12;1158;1326;1.15;0.77;0.66
+eng000456;eng000456;eng;Abraham Bailey  &  & ;The Spiteful Sister;unknown;1667;44;32;10;0.73;0.23;0.0;5;5;830;2061;2.48;0.0;0.0
+eng000642;eng000642;eng;John Bancroft  &  & ;Sentorius;unknown;1679;22;18;2;0.82;0.09;0.16;6;40;278;2058;7.4;0.32;0.77
+eng000643;eng000643;eng;John Banks  &  & ;Cyrus the Great, or The Tragedy of Love;unknown;1696;21;11;9;0.52;0.43;0.08;2;2;396;2496;6.3;0.19;0.12
+eng000644;eng000644;eng;John Banks  &  & ;The Destruction of Troy;unknown;1679;18;14;4;0.78;0.22;0.19;5;9;375;2681;7.15;0.66;0.62
+eng000645;eng000645;eng;John Banks  &  & ;The Innocent Usurper, or The Death of the Lady Jane Grey;unknown;1694;7;5;2;0.71;0.29;0.0;5;5;558;2662;4.77;0.0;0.0
+eng000646;eng000646;eng;John Banks  &  & ;The Island Queens, or The Death of Mary Queen of Scotland;unknown;1684;8;6;2;0.75;0.25;0.0;5;5;502;2573;5.13;0.0;0.0
+eng000647;eng000647;eng;John Banks  &  & ;The Rival Kings, or The Loves of Oroondates and Statira;unknown;1677;15;12;3;0.8;0.2;0.15;6;5;433;2292;5.29;0.78;0.81
+eng000648;eng000648;eng;John Banks  &  &  &  & ;The Unhappy Favourite, or The Earl of Essex;unknown;1682;12;7;5;0.58;0.42;0.0;3;2;434;2847;6.56;0.0;0.0
+eng000068;eng000068;eng;Barnabe Barnes  &  &  & ;The Devil's Charter;unknown;1606;41;38;3;0.93;0.07;0.13;6;20;590;2879;4.88;0.26;0.82
+eng000649;eng000649;eng;Robert Baron  &  & ;Mirza;unknown;1655;32;21;9;0.66;0.28;0.0;10;10;1331;5724;4.3;0.0;0.0
+eng000094;eng000094;eng;Lording Barry  &  &  & ;Ram Alley;unknown;1608;24;19;5;0.79;0.21;0.0;6;5;912;2937;3.22;0.0;0.0
+eng000104;eng000104;eng;Francis Beaumont  & John Fletcher  &  &  &  &  & ;A King and No King;unknown;1611;25;18;7;0.72;0.28;0.0;5;5;1115;2712;2.43;0.0;0.0
+eng000102;eng000102;eng;Francis Beaumont  & John Fletcher  &  &  &  &  &  &  & ;Cupid's Revenge;unknown;1607;26;19;7;0.73;0.27;0.0;5;5;911;2238;2.46;0.0;0.0
+eng000361;eng000361;eng;Francis Beaumont  & John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;Love's Pilgrimage;unknown;1616;34;30;3;0.88;0.09;0.07;6;15;1226;3336;2.72;0.32;0.93
+eng000335;eng000335;eng;Francis Beaumont  & John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;Beggars' Bush;unknown;1615;29;25;4;0.86;0.14;0.05;5;16;1027;2711;2.64;0.41;0.88
+eng000353;eng000353;eng;Francis Beaumont  & John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;Love's Cure, or The Martial Maid;unknown;1606;19;15;4;0.79;0.21;0.29;6;17;740;2449;3.31;0.91;0.7
+eng000010;eng000010;eng;Francis Beaumont  & John Fletcher  & Philip Massinger  &  &  &  &  & ;Thierry and Theodoret;unknown;1617;31;27;4;0.87;0.13;0.24;5;6;781;2485;3.18;0.53;0.75
+eng000108;eng000108;eng;Francis Beaumont  & John Fletcher  &  &  &  &  & ;Philaster;unknown;1609;25;19;5;0.76;0.2;0.0;5;5;816;1786;2.19;0.0;0.0
+eng000336;eng000336;eng;Francis Beaumont  & John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Coxcomb;unknown;1608;26;19;7;0.73;0.27;0.29;6;5;1058;1852;1.75;0.67;0.69
+eng000107;eng000107;eng;Francis Beaumont  & John Fletcher  &  &  &  &  & ;The Maid's Tragedy;unknown;1610;23;15;8;0.65;0.35;0.03;5;5;951;2759;2.9;0.06;0.02
+eng000109;eng000109;eng;Francis Beaumont  & John Fletcher  &  &  &  &  & ;The Scornful Lady;unknown;1610;14;10;4;0.71;0.29;0.3;5;5;1133;1379;1.22;0.92;0.69
+eng000111;eng000111;eng;Francis Beaumont  & John Fletcher  &  &  &  &  & ;The Woman Hater;unknown;1606;26;19;7;0.73;0.27;0.16;6;13;919;1494;1.63;0.62;0.83
+eng000105;eng000105;eng;Francis Beaumont  &  &  &  &  & ;The Knight of the Burning Pestle;unknown;1607;31;26;5;0.84;0.16;0.0;6;5;768;1811;2.36;0.0;0.0
+eng000101;eng000101;eng;Francis Beaumont  &  &  & ;The Masque of the Inner Temple and Gray's Inn;unknown;1613;2;1;1;0.5;0.5;0.25;0;2;17;218;12.82;1.0;0.38
+eng000638;eng000638;eng;William or Walter Bedloe  &  &  &  & ;The Excommunicated Prince, or The False Relique;unknown;1679;24;17;3;0.71;0.12;0.11;6;18;242;1907;7.88;0.33;0.75
+eng000639;eng000639;eng;Aphra Behn  &  & ;Abdelazer, or The Moor's Revenge;unknown;1677;21;15;6;0.71;0.29;0.24;5;16;876;2830;3.23;0.5;0.73
+eng000444;eng000444;eng;Aphra Behn  &  &  &  & ;The Amorous Prince, or The Curious Husband;unknown;1671;18;11;6;0.61;0.33;0.3;6;20;989;2922;2.95;0.62;0.67
+eng000445;eng000445;eng;Aphra Behn  &  &  &  &  &  & ;The City Heiress, or Sir Timothy Treatall;unknown;1682;19;11;8;0.58;0.42;0.26;6;6;1163;1817;1.56;0.66;0.67
+eng000458;eng000458;eng;Aphra Behn  &  &  &  & ;The Debauchee, or The Credulous Cuckold;unknown;1677;19;11;8;0.58;0.42;0.39;6;14;1019;1151;1.13;0.48;0.54
+eng000446;eng000446;eng;Aphra Behn  &  & ;The Dutch Lover;unknown;1673;22;12;10;0.55;0.45;0.27;5;19;1338;2171;1.62;0.57;0.71
+eng000447;eng000447;eng;Aphra Behn  &  &  &  & ;The Emperor of the Moon;unknown;1687;18;12;4;0.67;0.22;0.17;4;10;730;1151;1.58;0.44;0.71
+eng000448;eng000448;eng;Aphra Behn  &  & ;The False Count, or A New Way to Play an Old Game;unknown;1682;17;15;2;0.88;0.12;0.12;6;8;1019;1260;1.24;0.86;0.78
+eng000449;eng000449;eng;Aphra Behn  &  & ;The feignʻd curtizans, or, A nights intrigue. A comedy· As it is acted at the Dukes Theatre. Written by Mrs. A. Behn. Licensed Mar. 27. 1679;unknown;1679;18;13;5;0.72;0.28;0.27;6;6;1163;1712;1.47;0.78;0.65
+eng000450;eng000450;eng;Aphra Behn  &  & ;The Forced Marriage, or the Jealous Bridegroom;unknown;1671;16;10;6;0.62;0.38;0.26;6;28;943;3119;3.31;0.66;0.7
+eng000451;eng000451;eng;Aphra Behn  &  & ;The Lucky Chance, or An Alderman's Bargain;unknown;1687;24;14;7;0.58;0.29;0.21;6;19;1093;1794;1.64;0.4;0.66
+eng000454;eng000454;eng;Aphra Behn  &  &  &  & ;The Revenge, or A Match in Newgate;unknown;1680;24;16;8;0.67;0.33;0.31;5;15;951;1042;1.1;0.5;0.66
+eng000452;eng000452;eng;Aphra Behn  &  &  &  & ;The Roundheads, or The Good Old Cause;unknown;1682;33;25;8;0.76;0.24;0.34;6;12;1030;1451;1.41;0.53;0.56
+eng000582;eng000582;eng;Aphra Behn  &  &  &  & ;1 The Rover, or The Banished Cavaliers;unknown;1677;26;18;8;0.69;0.31;0.33;6;11;1070;1607;1.5;0.6;0.59
+eng000736;eng000736;eng;Aphra Behn  &  &  &  & ;The Widow Ranter, or The History of Bacon in Virginia;unknown;1690;39;27;11;0.69;0.28;0.16;6;13;1070;1195;1.12;0.55;0.76
+eng000170;eng000170;eng;Dabridgcourt Belchier  &  &  & ;Hans Beer-Pot;unknown;1618;8;7;1;0.88;0.12;0.0;1;1;339;1693;4.99;0.0;0.0
+eng000453;eng000453;eng;Peter (?) Belon  &  & ;The Mock Duellist, or The French Valet;unknown;1675;31;22;9;0.71;0.29;0.31;6;19;781;2019;2.59;0.52;0.65
+eng000182;eng000182;eng;William Berkeley  &  &  & ;The Lost Lady;unknown;1637;13;9;4;0.69;0.31;0.4;5;5;686;2662;3.88;0.9;0.6
+eng000613;eng000613;eng;Thomas Betterton  &  &  &  &  &  &  &  & ;The Prophetess, or The History of Diocletian;unknown;1690;40;30;6;0.75;0.15;0.27;5;5;662;2490;3.76;0.41;0.63
+eng000738;eng000738;eng;Mrs. Frances Boothby  &  & ;Marcelia, or The Treacherous Friend;unknown;1670;28;21;6;0.75;0.21;0.27;6;40;741;1452;1.96;0.35;0.67
+eng000455;eng000455;eng;Reuben Bourne  &  & ;The Contended Cuckold, or The Woman's Advocate;unknown;1692;14;10;4;0.71;0.29;0.0;6;5;530;719;1.36;0.1;0.01
+eng000001;eng000001;eng;Richard Bower  &  &  &  &  & ;Appius and Virginia;unknown;1559;11;6;3;0.55;0.27;0.0;1;4;131;862;6.58;0.0;0.0
+eng000702;eng000702;eng;Abel Boyer  &  &  &  & ;Achilles, or Iphigenia in Aulis;unknown;1700;11;6;5;0.55;0.45;0.0;6;5;256;1833;7.16;0.0;0.0
+eng000522;eng000522;eng;Roger Boyle  &  & ;Guzman;unknown;1693;21;13;8;0.62;0.38;0.0;5;5;1045;1223;1.17;0.0;0.0
+eng000612;eng000612;eng;Roger Boyle  &  &  &  & ;Henry V;unknown;1668;23;18;5;0.78;0.22;0.0;5;5;470;2254;4.8;0.0;0.0
+eng000687;eng000687;eng;Roger Boyle  &  & ;Herod the Great;unknown;1694;22;16;6;0.73;0.27;0.32;6;15;545;2055;3.77;0.39;0.56
+eng000523;eng000523;eng;Roger Boyle  &  & ;Mr Anthony;unknown;1690;29;18;11;0.62;0.38;0.0;6;5;1092;1221;1.12;0.0;0.0
+eng000688;eng000688;eng;Roger Boyle  &  & ;Mustapha, Son of Solyman the Magnificent;unknown;1668;16;12;4;0.75;0.25;0.0;5;5;685;3051;4.45;0.0;0.0
+eng000640;eng000640;eng;Nicholas Brady  &  & ;The Rape, or The Innocent Impostors;unknown;1692;20;11;6;0.55;0.3;0.2;6;20;429;2405;5.61;0.55;0.72
+eng000364;eng000364;eng;Richard Brathwait  &  &  & ;Mercurius Britannicus, or The English Intelligencer;unknown;1641;26;24;2;0.92;0.08;0.0;4;4;190;244;1.28;0.0;0.0
+eng000368;eng000368;eng;Richard Brome  &  &  & ;A Jovial Crew, or The Merry Beggars;unknown;1641;30;27;3;0.9;0.1;0.03;6;2;1068;1995;1.87;0.34;0.11
+eng000418;eng000418;eng;Richard Brome  &  &  &  &  &  &  & ;A Mad Couple Well Matched;unknown;1632;18;13;5;0.72;0.28;0.32;10;9;1165;1588;1.36;0.56;0.64
+eng000262;eng000262;eng;Richard Brome  &  &  & ;The Antipodes;unknown;1640;46;34;12;0.74;0.26;0.21;6;48;1093;3134;2.87;0.2;0.74
+eng000420;eng000420;eng;Richard Brome  &  &  &  &  &  &  & ;The City Wit, or The Woman Wears the Breeches;unknown;1630;16;10;6;0.62;0.38;0.18;15;13;964;1270;1.32;0.85;0.56
+eng000366;eng000366;eng;Richard Brome  &  &  & ;The Court Beggar;unknown;1640;19;16;3;0.84;0.16;0.22;6;8;1137;2198;1.93;0.83;0.75
+eng000365;eng000365;eng;Alexander Brome  &  &  & ;The Cunning Lovers;unknown;1632;16;14;2;0.88;0.12;0.0;5;5;863;1988;2.3;0.0;0.0
+eng000367;eng000367;eng;Richard Brome  &  &  & ;The Damoiselle or The New Ordinary;unknown;1638;20;13;6;0.65;0.3;0.21;6;8;1045;2528;2.42;0.8;0.77
+eng000421;eng000421;eng;Richard Brome  &  &  &  &  &  &  &  &  &  &  &  &  & ;The English Moor, or The Mock Marriage;unknown;1632;24;18;5;0.75;0.21;0.23;6;17;1101;3005;2.73;0.44;0.69
+eng000422;eng000422;eng;Richard Brome  &  &  &  &  &  &  &  &  &  &  &  &  & ;The Lovesick Court, or The Ambitious Politic;unknown;1635;21;16;5;0.76;0.24;0.34;6;12;914;2801;3.06;0.58;0.64
+eng000424;eng000424;eng;Richard Brome  &  &  &  &  &  &  &  &  &  &  &  &  & ;The New Academy, or The New Exchange;unknown;1635;24;18;6;0.75;0.25;0.15;5;8;1315;3020;2.3;0.67;0.65
+eng000263;eng000263;eng;Richard Brome  &  &  & ;The Northern Lass;unknown;1629;16;12;4;0.75;0.25;0.24;6;29;1085;1441;1.33;0.7;0.67
+eng000419;eng000419;eng;Richard Brome  &  &  &  &  &  &  & ;The Novella;unknown;1632;19;15;4;0.79;0.21;0.29;9;8;882;2393;2.71;0.7;0.68
+eng000425;eng000425;eng;Richard Brome  &  &  &  &  &  &  &  &  &  &  &  &  & ;The Queen and Concubine;unknown;1635;39;33;5;0.85;0.13;0.26;5;47;1396;3634;2.6;0.21;0.7
+eng000369;eng000369;eng;Richard Brome  &  &  & ;The Queen's Exchange;unknown;1629;38;35;2;0.92;0.05;0.1;6;7;895;2840;3.17;0.42;0.71
+eng000264;eng000264;eng;Richard Brome  &  &  & ;The Sparagus Garden;unknown;1635;28;20;8;0.71;0.29;0.17;6;45;1292;1971;1.53;0.35;0.76
+eng000423;eng000423;eng;Richard Brome  &  &  &  &  &  &  &  &  &  &  &  &  & ;The Weeding of the Covent Garden, or The Middlesex Justice of Peace;unknown;1632;27;19;8;0.7;0.3;0.15;7;10;1233;1497;1.21;0.48;0.69
+eng000459;eng000459;eng;Thomas Browne  &  & ;Physic Lies a-Bleeding, or The Apothecary Turned Doctor;unknown;1697;7;7;0;1.0;0.0;0.0;0;2;214;232;1.08;1.0;1.51
+eng000460;eng000460;eng;William Burnaby  &  & ;The Reformed Wife;unknown;1700;21;13;8;0.62;0.38;0.0;6;5;824;925;1.12;0.0;0.0
+eng000370;eng000370;eng;Henry Burnell  &  &  & ;Landgartha;unknown;1639;30;22;7;0.73;0.23;0.0;6;5;539;2338;4.34;0.0;0.0
+eng000266;eng000266;eng;Thomas Campion  &  &  & ;The Masque at Lord Hay's Marriage;unknown;1607;12;10;2;0.83;0.17;0.28;0;1;61;548;8.98;1.0;0.2
+eng000428;eng000428;eng;Thomas Carew  &  &  &  &  &  &  & ;Coelum Britannicum;unknown;1634;16;9;7;0.56;0.44;0.22;0;6;77;657;8.53;1.0;0.91
+eng000268;eng000268;eng;Lodowick Carlell  &  &  &  &  & ;The Deserving Favorite;unknown;1629;20;17;3;0.85;0.15;0.0;1;2;793;3177;4.01;0.0;0.0
+eng000464;eng000464;eng;James Carlisle  &  & ;The Fortune Hunters, or Two Fools Well Met;unknown;1689;20;13;7;0.65;0.35;0.36;6;19;1003;1179;1.18;0.6;0.56
+eng000465;eng000465;eng;Richard Carpenter  &  & ;The Pragmatical Jesuit New Leavened;unknown;1665;42;33;6;0.79;0.14;0.15;6;30;693;1064;1.54;0.17;0.78
+eng000499;eng000499;eng;William Carr  &  &  &  & ;Pluto Furens et Vinctus, or The Raging Devil Bound;unknown;1669;35;32;2;0.91;0.06;0.04;4;6;228;403;1.77;0.43;0.29
+eng000585;eng000585;eng;George Cartwright  &  & ;The Heroic Lover, or The Infanta of Spain;unknown;1661;20;16;3;0.8;0.15;0.21;5;21;291;2323;7.98;0.31;0.71
+eng000269;eng000269;eng;William Cartwright  &  &  & ;The Royal Slave;unknown;1636;27;0;0;0.0;0.0;0.0;8;28;415;1738;4.19;0.4;0.0
+eng000267;eng000267;eng;Elizabeth Cary  &  &  &  &  &  &  & ;Mariam, the Fair Queen of Jewry;unknown;1602;18;12;5;0.67;0.28;0.33;5;22;258;2230;8.64;0.23;0.58
+eng000595;eng000595;eng;Henry Cary  &  & ;The Marriage Night;unknown;1664;28;24;4;0.86;0.14;0.0;5;5;659;693;1.05;0.0;0.0
+eng000471;eng000471;eng;John Caryl  &  &  &  & ;Sir Salomon, or The Cautious Coxcomb;unknown;1671;26;18;4;0.69;0.15;0.0;6;5;993;1173;1.18;0.0;0.0
+eng000659;eng000659;eng;John Caryl  &  & ;The English Princess, or The Death of Richard III;unknown;1667;22;18;4;0.82;0.18;0.32;6;39;546;2213;4.05;0.39;0.65
+eng000398;eng000398;eng;William Cavendish  & James Shirley  &  &  &  &  & ;The Country Captain;unknown;1639;16;13;3;0.81;0.19;0.0;4;4;726;829;1.14;0.0;0.0
+eng000578;eng000578;eng;William Cavendish  &  & ;The Triumphant Widow, or The Medley of Humours;unknown;1677;48;35;11;0.73;0.23;0.05;5;2;1377;1815;1.32;0.08;0.07
+eng000399;eng000399;eng;William Cavendish  &  &  &  &  & ;The Variety;unknown;1641;28;16;12;0.57;0.43;0.0;5;5;916;1108;1.21;0.0;0.0
+eng000461;eng000461;eng;Susannah Centlivre  &  & ;The Perjured Husband, or The Adventures of Venice;unknown;1700;13;8;5;0.62;0.38;0.43;6;14;425;1409;3.32;0.45;0.52
+eng000270;eng000270;eng;Robert Chamberlain  &  &  & ;The Swaggering Damsel;unknown;1640;20;15;5;0.75;0.25;0.0;6;5;820;1697;2.07;0.0;0.0
+eng000271;eng000271;eng;George Chapman  &  &  & ;All Fools;unknown;1601;16;13;3;0.81;0.19;0.0;6;5;628;2055;3.27;0.0;0.0
+eng000280;eng000280;eng;George Chapman  &  &  & ;An Humorous Day's Mirth;unknown;1597;24;19;5;0.79;0.21;0.17;0;1;904;929;1.03;1.0;0.79
+eng000273;eng000273;eng;George Chapman  &  &  & ;Bussy D'Ambois;unknown;1604;27;20;7;0.74;0.26;0.0;5;5;541;2422;4.48;0.0;0.0
+eng000283;eng000283;eng;George Chapman  &  &  & ;Caesar and Pompey (The Wars of Caesar and Pompey);unknown;1605;51;47;3;0.92;0.06;0.0;5;5;497;2255;4.54;0.0;0.0
+eng000276;eng000276;eng;George Chapman  & Ben Jonson  & John Marston  &  &  &  &  &  &  & ;Eastward Ho;unknown;1605;36;28;8;0.78;0.22;0.04;5;1;792;1058;1.34;0.33;0.22
+eng000278;eng000278;eng;George Chapman  &  &  & ;May Day;unknown;1602;22;18;4;0.82;0.18;0.07;5;2;1020;1139;1.12;0.57;0.3
+eng000416;eng000416;eng;George Chapman  &  &  & ;Monsieur D'Olive;unknown;1605;19;16;3;0.84;0.16;0.12;5;5;589;1404;2.38;0.66;0.86
+eng000031;eng000031;eng;George Chapman  &  &  & ;Sir Giles Goosecap;unknown;1602;17;13;4;0.76;0.24;0.16;5;6;915;1494;1.63;0.81;0.54
+eng000272;eng000272;eng;George Chapman  &  &  & ;The Blind Beggar of Alexandria;unknown;1596;31;23;8;0.74;0.26;0.36;0;1;486;1384;2.85;1.0;0.62
+eng000274;eng000274;eng;George Chapman  &  &  & ;The Conspiracy of Charles Duke of Byron;unknown;1607;23;20;3;0.87;0.13;0.02;0;2;295;2074;7.03;1.0;1.16
+eng000277;eng000277;eng;George Chapman  &  &  & ;The Gentleman Usher;unknown;1602;21;17;4;0.81;0.19;0.0;5;5;977;2584;2.64;0.0;0.0
+eng000279;eng000279;eng;George Chapman  &  &  &  &  & ;The Masque of the Middle Temple and Lincoln's Inn;unknown;1613;6;4;2;0.67;0.33;0.0;0;3;66;361;5.47;0.0;0.0
+eng000281;eng000281;eng;George Chapman  &  &  & ;The Revenge of Bussy D'Ambois;unknown;1610;22;19;3;0.86;0.14;0.0;5;5;618;2622;4.24;0.0;0.0
+eng000275;eng000275;eng;George Chapman  &  &  & ;The Tragedy of Charles Duke of Byron;unknown;1607;27;25;2;0.93;0.07;0.01;0;2;388;2391;6.16;0.93;1.4
+eng000284;eng000284;eng;George Chapman  &  &  & ;The Widow's Tears;unknown;1604;24;16;8;0.67;0.33;0.27;5;5;912;1456;1.6;0.6;0.66
+eng000282;eng000282;eng;George Chapman  &  & ;Two Wise Men and All the Rest Fools;unknown;1619;31;28;3;0.9;0.1;0.06;8;27;790;881;1.12;0.24;0.86
+eng000286;eng000286;eng;Henry Chettle  &  &  & ;Hoffman, or A Revenge for a Father;unknown;1602;19;17;2;0.89;0.11;0.0;5;5;701;2262;3.23;0.0;0.0
+eng000650;eng000650;eng;Colley Cibber  &  & ;Xerxes;unknown;1699;34;20;2;0.59;0.06;0.09;6;6;512;2228;4.35;0.12;0.28
+eng000740;eng000740;eng;William Clerke  &  & ;Marciano, or The Discovery;unknown;1663;19;16;3;0.84;0.16;0.25;5;36;700;1526;2.18;0.54;0.56
+eng000462;eng000462;eng;William Congreve  &  & ;The Double Dealer;unknown;1694;16;11;5;0.69;0.31;0.39;6;5;884;1128;1.28;0.73;0.45
+eng000653;eng000653;eng;William Congreve  &  & ;The Mourning Bride;unknown;1697;14;11;3;0.79;0.21;0.0;6;5;441;2263;5.13;0.0;0.0
+eng000463;eng000463;eng;William Congreve  &  & ;The Way of the World;unknown;1700;18;8;9;0.44;0.5;0.43;6;5;929;1136;1.22;0.69;0.49
+eng000289;eng000289;eng;Joshua Cooke  &  &  &  &  &  &  & ;Greene's Tu Quoque, or The City Gallant;unknown;1611;35;29;6;0.83;0.17;0.22;0;1;1210;2169;1.79;1.0;0.76
+eng000584;eng000584;eng;Pierre Corneille  &  &  &  & ;Amorous Orontus, or The Love in Fashion;unknown;1665;10;7;3;0.7;0.3;0.32;5;42;885;2281;2.58;0.67;0.66
+eng000741;eng000741;eng;Pierre Corneille  &  &  &  &  &  & ;Nicomede;unknown;1671;8;6;2;0.75;0.25;0.34;5;32;360;1999;5.55;0.79;0.65
+eng000654;eng000654;eng;Pierre Corneille  &  &  &  & ;Pompey;unknown;1663;12;9;3;0.75;0.25;0.32;6;21;193;2044;10.59;0.32;0.57
+eng000655;eng000655;eng;Pierre Corneille  &  &  &  &  &  &  &  & ;Pompey the Great;unknown;1664;11;9;2;0.82;0.18;0.32;6;19;195;1926;9.88;0.44;0.62
+eng000733;eng000733;eng;Pierre Corneille  &  &  &  &  & ;1 The Cid;unknown;1637;13;9;4;0.69;0.31;0.44;5;23;350;1733;4.95;0.49;0.55
+eng000466;eng000466;eng;John Corye  &  &  &  &  &  & ;The Generous Enemies, or The Ridiculous Lovers;unknown;1672;19;12;6;0.63;0.32;0.36;6;5;1089;2731;2.51;0.82;0.61
+eng000468;eng000468;eng;Abraham Cowley  &  & ;Cutter of Coleman Street;unknown;1663;22;16;6;0.73;0.27;0.22;7;47;806;1308;1.62;0.42;0.69
+eng000290;eng000290;eng;Abraham Cowley  &  &  & ;Love's Riddle;unknown;1633;14;8;6;0.57;0.43;0.05;0;1;711;2786;3.92;1.0;0.21
+eng000469;eng000469;eng;William Crauford  &  & ;Courtship à la mode;unknown;1700;17;11;6;0.65;0.35;0.24;6;12;878;1074;1.22;0.72;0.61
+eng000611;eng000611;eng;John Crowne  &  & ;Charles VIII of France, or The Invasion of Naples by the French;unknown;1672;23;16;7;0.7;0.3;0.0;6;5;491;2668;5.43;0.0;0.0
+eng000656;eng000656;eng;John Crowne  &  & ;Darius, King of Persia;unknown;1688;16;13;3;0.81;0.19;0.2;6;12;690;2565;3.72;0.53;0.76
+eng000742;eng000742;eng;John Crowne  &  & ;Juliana, or The Princess of Poland;unknown;1671;33;24;8;0.73;0.24;0.0;6;5;866;2119;2.45;0.0;0.0
+eng000470;eng000470;eng;John Crowne  &  & ;Sir Courtly Nice, or It Cannot Be;unknown;1685;16;10;4;0.62;0.25;0.0;6;5;1342;1539;1.15;0.0;0.0
+eng000586;eng000586;eng;John Crowne  &  & ;1 & 2 The Destruction of Jerusalem by Titus Vespasian;unknown;1677;32;25;6;0.78;0.19;0.23;12;19;968;4431;4.58;0.32;0.71
+eng000657;eng000657;eng;John Crowne  &  &  &  & ;The Misery of Civil War;unknown;1680;44;38;5;0.86;0.11;0.01;7;1;903;2888;3.2;0.21;0.17
+eng000658;eng000658;eng;John Crowne  &  &  &  & ;Thyestes;unknown;1681;16;10;6;0.62;0.38;0.22;6;5;588;2108;3.59;0.6;0.72
+eng000265;eng000265;eng;John Cumber  &  &  &  &  &  &  &  &  &  &  & ;The Two Merry Milkmaids, or The Best Words Wear the Garland;unknown;1619;32;26;3;0.81;0.09;0.21;6;12;1243;2711;2.18;0.6;0.76
+eng000292;eng000292;eng;J. D.  &  &  &  &  & ;The Knave in Grain, New Vamped;unknown;1625;41;34;7;0.83;0.17;0.0;5;5;1289;1903;1.48;0.0;0.0
+eng000590;eng000590;eng;Thomas D'Urfey  &  &  &  &  &  & ;A Commonwealth of Women;unknown;1686;30;21;9;0.7;0.3;0.35;6;11;882;1526;1.73;0.53;0.57
+eng000484;eng000484;eng;Thomas D'Urfey  &  & ;A Fond Husband, or The Plotting Sisters;unknown;1677;17;11;6;0.65;0.35;0.23;6;14;866;1056;1.22;0.66;0.47
+eng000486;eng000486;eng;Thomas D'Urfey  &  &  &  &  &  & ;A Fool's Preferment, or The Three Dukes of Dunstable;unknown;1688;26;20;6;0.77;0.23;0.11;6;7;1080;1318;1.22;0.42;0.44
+eng000616;eng000616;eng;Thomas D'Urfey  &  & ;Cinthia and Endimion, or The Loves of the Dieties;unknown;1697;38;21;13;0.55;0.34;0.14;6;5;465;1894;4.07;0.17;0.2
+eng000488;eng000488;eng;Thomas D'Urfey  &  & ;Love for Money, or The Boarding School;unknown;1691;26;14;11;0.54;0.42;0.3;6;11;1044;1286;1.23;0.73;0.56
+eng000591;eng000591;eng;Thomas D'Urfey  &  & ;1 & 2 Massaniello, or A Fisherman a Prince;unknown;1700;0;0;0;0.0;0.0;0.0;12;22;1289;1922;1.49;0.0;0.0
+eng000492;eng000492;eng;Thomas D'Urfey  &  & ;Squire Oldsapp, or The Night Adventurers;unknown;1679;19;12;5;0.63;0.26;0.21;6;17;883;1050;1.19;0.54;0.7
+eng000483;eng000483;eng;Thomas D'Urfey  &  &  &  &  &  & ;2 The Comical History of Don Quixote;unknown;1694;0;0;0;0.0;0.0;0.0;19;28;2135;3410;1.6;0.0;0.0
+eng000485;eng000485;eng;Thomas D'Urfey  &  & ;The Fool Turned Critic;unknown;1678;16;11;5;0.69;0.31;0.24;6;17;761;1405;1.85;0.62;0.67
+eng000592;eng000592;eng;Thomas D'Urfey  &  &  &  & ;The Injured Princess, or The Fatal Wager;unknown;1682;23;16;6;0.7;0.26;0.24;6;13;634;2197;3.47;0.49;0.73
+eng000487;eng000487;eng;Thomas D'Urfey  &  & ;The Intrigues at Versailles, or A Jilt in All Humours;unknown;1697;20;13;7;0.65;0.35;0.13;4;7;799;1055;1.32;0.49;0.43
+eng000489;eng000489;eng;Thomas D'Urfey  &  & ;The Marriage Hater Matched;unknown;1692;24;13;10;0.54;0.42;0.39;6;11;919;1193;1.3;0.72;0.45
+eng000490;eng000490;eng;Thomas D'Urfey  &  & ;The Richmond Heiress, or A Woman Once in the Right;unknown;1693;23;16;6;0.7;0.26;0.24;6;16;941;1244;1.32;0.51;0.59
+eng000491;eng000491;eng;Thomas D'Urfey  &  & ;The Royalist;unknown;1682;28;20;5;0.71;0.18;0.21;6;11;949;1268;1.34;0.54;0.64
+eng000493;eng000493;eng;Thomas D'Urfey  &  &  &  & ;Trick for Trick, or The Debauched Hypocrite;unknown;1678;20;14;5;0.7;0.25;0.14;4;6;966;1136;1.18;0.63;0.51
+eng000294;eng000294;eng;Robert Daborne  &  &  &  &  & ;A Christian Turned Turk;unknown;1609;39;35;3;0.9;0.08;0.13;2;5;859;1953;2.27;0.53;0.8
+eng000602;eng000602;eng;John Dancer  &  &  &  & ;Agrippa, King of Alba, or The False Tiberinus;unknown;1675;10;6;4;0.6;0.4;0.36;6;25;297;1901;6.4;0.47;0.62
+eng000729;eng000729;eng;Samuel Daniel  &  & ;Certaine small poems lately printed with the tragedie of Philotas;unknown;1605;13;10;2;0.77;0.15;0.02;5;4;82;3261;39.77;0.16;0.17
+eng000296;eng000296;eng;Samuel Daniel  &  &  & ;Cleopatra;unknown;1594;12;10;2;0.83;0.17;0.08;5;9;64;1836;28.69;0.14;0.27
+eng000730;eng000730;eng;Samuel Daniel  &  & ;Delia;unknown;1594;0;0;0;0.0;0.0;0.0;0;1;0;1711;0.0;0.0;0.0
+eng000297;eng000297;eng;Samuel Daniel  &  &  & ;Hymen's Triumph;unknown;1614;16;8;8;0.5;0.5;0.33;6;23;217;2003;9.23;0.2;0.45
+eng000295;eng000295;eng;Samuel Daniel  &  &  & ;Philotas;unknown;1605;24;21;2;0.88;0.08;0.09;5;12;211;2251;10.67;0.33;0.72
+eng000298;eng000298;eng;Samuel Daniel  &  &  & ;The Queen's Arcadia;unknown;1605;17;11;6;0.65;0.35;0.47;5;22;330;2603;7.89;0.78;0.5
+eng000299;eng000299;eng;Samuel Daniel  &  &  & ;The Vision of the Twelve Goddesses;unknown;1604;6;0;0;0.0;0.0;0.0;0;3;8;136;17.0;1.0;0.0
+eng000303;eng000303;eng;William Davenant  &  &  & ;Albovine, King of the Lombards;unknown;1626;16;12;3;0.75;0.19;0.0;5;5;801;2818;3.52;0.0;0.0
+eng000069;eng000069;eng;William Davenant  &  &  &  &  & ;Britannia Triumphans;unknown;1637;11;9;2;0.82;0.18;0.04;0;2;50;473;9.46;1.0;0.73
+eng000668;eng000668;eng;Charles Davenant  &  & ;Circe;unknown;1677;17;7;8;0.41;0.47;0.49;6;30;367;2044;5.57;0.46;0.37
+eng000716;eng000716;eng;William Davenant  &  &  &  & ;Macbeth;unknown;1674;36;24;11;0.67;0.31;0.01;5;5;691;2276;3.29;0.06;0.13
+eng000302;eng000302;eng;William Davenant  &  &  & ;Salmacida Spolia;unknown;1639;2;1;1;0.5;0.5;0.06;0;2;8;247;30.88;1.0;0.03
+eng000300;eng000300;eng;William Davenant  &  &  & ;The Cruel Brother;unknown;1627;14;11;3;0.79;0.21;0.02;5;5;635;2466;3.88;0.4;0.2
+eng000301;eng000301;eng;William Davenant  &  &  & ;The Just Italian;unknown;1629;14;10;4;0.71;0.29;0.26;5;5;785;2273;2.9;0.97;0.7
+eng000593;eng000593;eng;William Davenant  &  & ;1 & 2 The Siege of Rhodes;unknown;1659;0;0;0;0.0;0.0;0.0;6;6;664;2996;4.51;0.0;0.0
+eng000559;eng000559;eng;William Davenant  &  &  &  &  &  & ;The Tempest, or The Enchanted Island;unknown;1670;25;13;4;0.52;0.16;0.0;6;5;1173;2518;2.15;0.0;0.0
+eng000070;eng000070;eng;William Davenant  &  &  &  &  & ;The Temple of Love;unknown;1634;9;7;2;0.78;0.22;0.13;0;3;36;251;6.97;1.0;0.51
+eng000304;eng000304;eng;William Davenant  &  &  & ;The Wits;unknown;1634;13;8;5;0.62;0.38;0.0;6;5;921;2950;3.2;0.0;0.0
+eng000305;eng000305;eng;Robert Davenport  &  &  & ;A New Trick to Cheat the Devil;unknown;1625;18;15;3;0.83;0.17;0.2;5;13;1075;2803;2.61;0.65;0.8
+eng000306;eng000306;eng;John Day  &  &  & ;Humor Out of Breath;unknown;1607;16;13;3;0.81;0.19;0.0;5;5;838;1327;1.58;0.0;0.0
+eng000308;eng000308;eng;John Day  &  &  & ;Law Tricks;unknown;1604;16;13;3;0.81;0.19;0.0;5;5;930;1763;1.9;0.0;0.0
+eng000307;eng000307;eng;John Day  &  &  & ;The Isle of Gulls;unknown;1606;27;19;8;0.7;0.3;0.3;4;3;994;1357;1.37;0.7;0.63
+eng000374;eng000374;eng;John Day  &  &  & ;The Parliament of Bees;unknown;1634;33;22;3;0.67;0.09;0.1;0;2;261;1468;5.62;0.78;0.86
+eng000309;eng000309;eng;John Day  & George Wilkins  & William Rowley  &  &  &  &  &  &  & ;The Travels of the Three English Brothers;unknown;1607;39;37;2;0.95;0.05;0.0;6;5;605;2068;3.42;0.0;0.0
+eng000157;eng000157;eng;Thomas Dekker  &  &  &  &  & ;Blurt, Master Constable;unknown;1601;28;19;9;0.68;0.32;0.23;0;1;703;1194;1.7;0.88;0.74
+eng000314;eng000314;eng;Thomas Dekker  & Henry Chettle  & William Haughton  &  &  &  &  &  &  &  &  & ;Patient Grissel;unknown;1600;20;18;2;0.9;0.1;0.05;0;1;985;1951;1.98;1.0;0.86
+eng000394;eng000394;eng;Thomas Dekker  & John Ford  & Thomas Middleton  & William Rowley  &  &  &  &  & ;The Spanish Gypsy;unknown;1623;20;13;6;0.65;0.3;0.0;5;5;1014;2312;2.28;0.0;0.01
+eng000375;eng000375;eng;Thomas Dekker  & John Ford  &  &  &  &  & ;The Sun's Darling;unknown;1624;28;15;9;0.54;0.32;0.0;5;5;471;1454;3.09;0.0;0.0
+eng000385;eng000385;eng;Thomas Dekker  & William Haughton  & John Day  &  & ;Lust's Dominion, or The Lascivious Queen;unknown;1600;32;28;4;0.88;0.12;0.18;27;27;931;2555;2.74;0.15;0.79
+eng000312;eng000312;eng;Thomas Dekker  &  &  & ;If It Be Not Good, the Devil Is in It;unknown;1611;51;46;3;0.9;0.06;0.0;1;1;1284;2706;2.11;0.0;0.0
+eng000150;eng000150;eng;Thomas Dekker  & Philip Massinger  &  &  &  &  & ;The Virgin Martyr;unknown;1620;23;19;4;0.83;0.17;0.0;5;5;859;2742;3.19;0.0;0.0
+eng000317;eng000317;eng;Thomas Dekker  &  &  & ;Match Me in London;unknown;1611;23;20;3;0.87;0.13;0.0;5;5;1305;2229;1.71;0.0;0.0
+eng000293;eng000293;eng;Thomas Dekker  & Thomas Middleton  &  &  &  &  &  &  &  &  &  &  &  &  & ;The Bloody Banquet;unknown;1608;24;22;2;0.92;0.08;0.2;5;16;724;1785;2.47;0.38;0.76
+eng000310;eng000310;eng;Thomas Dekker  & Thomas Middleton  &  &  &  &  & ;1 The Honest Whore;unknown;1604;32;28;4;0.88;0.12;0.2;0;7;1185;2267;1.91;0.61;0.78
+eng000166;eng000166;eng;Thomas Dekker  & Thomas Middleton  &  &  &  &  & ;The Roaring Girl, or Moll Cutpurse;unknown;1611;33;28;5;0.85;0.15;0.0;1;1;1277;2416;1.89;0.0;0.0
+eng000313;eng000313;eng;Thomas Dekker  &  &  & ;Old Fortunatus;unknown;1599;35;29;5;0.83;0.14;0.0;1;2;844;2311;2.74;0.0;0.0
+eng000402;eng000402;eng;Thomas Dekker  & William Rowley  & John Ford  &  &  &  &  &  &  & ;The Witch of Edmonton;unknown;1621;30;25;5;0.83;0.17;0.34;6;8;857;1843;2.15;0.55;0.64
+eng000315;eng000315;eng;Thomas Dekker  &  &  & ;Satiromastix, or The Untrussing of the Humorous Poet;unknown;1601;26;17;9;0.65;0.35;0.0;0;1;861;1583;1.84;0.0;0.0
+eng000311;eng000311;eng;Thomas Dekker  &  &  & ;2 The Honest Whore;unknown;1605;32;25;7;0.78;0.22;0.0;1;1;1206;2021;1.68;0.0;0.0
+eng000194;eng000194;eng;Thomas Dekker  &  &  &  &  &  &  & ;The Noble Spanish Soldier;unknown;1622;20;17;3;0.85;0.15;0.35;5;5;765;1732;2.26;0.8;0.63
+eng000316;eng000316;eng;Thomas Dekker  &  &  & ;The Shoemaker's Holiday;unknown;1599;27;22;4;0.81;0.15;0.0;1;1;785;1534;1.95;0.0;0.0
+eng000581;eng000581;eng;Thomas Dekker  &  & ;The Whore of Babylon;unknown;1607;40;32;7;0.8;0.17;0.0;1;1;799;2700;3.38;0.0;0.0
+eng000318;eng000318;eng;Thomas Dekker  &  &  & ;The Wonder of A Kingdom;unknown;1631;35;30;5;0.86;0.14;0.0;6;5;849;1872;2.2;0.0;0.0
+eng000320;eng000320;eng;Thomas Dekker  & John Webster  &  &  &  &  & ;Northward Ho;unknown;1605;31;27;4;0.87;0.13;0.0;1;1;985;1073;1.09;0.0;0.0
+eng000319;eng000319;eng;Thomas Dekker  & John Webster  &  &  &  &  & ;The Famous History of Sir Thomas Wyatt;unknown;1602;33;30;2;0.91;0.06;0.12;0;1;456;1396;3.06;1.0;0.82
+eng000321;eng000321;eng;Thomas Dekker  & John Webster  &  &  &  &  & ;Westward Ho;unknown;1604;32;25;7;0.78;0.22;0.34;5;7;994;1173;1.18;0.56;0.62
+eng000373;eng000373;eng;John Denham  &  &  & ;The Sophy;unknown;1642;21;19;2;0.9;0.1;0.02;6;4;572;2459;4.3;0.46;0.44
+eng000660;eng000660;eng;John Dennis  &  &  &  & ;Iphigenia;unknown;1700;15;8;5;0.53;0.33;0.0;6;5;696;2508;3.6;0.1;0.01
+eng000661;eng000661;eng;John Dennis  &  &  &  &  &  & ;Rinaldo and Armida;unknown;1699;17;8;7;0.47;0.41;0.0;6;5;371;1780;4.8;0.0;0.0
+eng000734;eng000734;eng;Nicolas-Marc Desfontaines  &  &  &  &  &  &  & ;2 The Cid;unknown;1637;12;9;3;0.75;0.25;0.3;5;24;294;1533;5.21;0.54;0.66
+eng000457;eng000457;eng;George Digby  &  & ;Elvira, or The Worst Not Always True;unknown;1667;12;8;4;0.67;0.33;0.0;5;5;606;2635;4.35;0.0;0.0
+eng000472;eng000472;eng;Thomas Dilke  &  & ;The Lover's Luck;unknown;1696;17;11;5;0.65;0.29;0.22;6;11;669;797;1.19;0.69;0.62
+eng000473;eng000473;eng;Thomas Doggett  &  & ;The Country Wake;unknown;1696;25;19;5;0.76;0.2;0.29;6;11;869;974;1.12;0.71;0.62
+eng000625;eng000625;eng;Ludovico Dolce  &  &  & ;Jocasta;unknown;1566;15;10;4;0.67;0.27;0.22;5;11;480;2823;5.88;0.32;0.55
+eng000474;eng000474;eng;James Drake  &  &  &  &  &  & ;The Sham Lawyer, or The Lucky Extravagant;unknown;1697;21;14;4;0.67;0.19;0.02;6;1;768;929;1.21;0.36;0.24
+eng000322;eng000322;eng;Thomas Drue  &  &  & ;The Duchess of Suffolk;unknown;1631;54;51;3;0.94;0.06;0.0;5;5;686;2152;3.14;0.0;0.0
+eng000614;eng000614;eng;John Dryden  &  &  &  & ;Albion Albanius;unknown;1685;24;10;13;0.42;0.54;0.5;4;23;189;929;4.92;0.19;0.29
+eng000662;eng000662;eng;John Dryden  &  & ;Amboyna, or The Cruelties of the Dutch to the English Merchants;unknown;1673;21;18;3;0.86;0.14;0.11;6;7;744;891;1.2;0.68;0.79
+eng000577;eng000577;eng;John Dryden  &  &  &  &  &  &  &  & ;Amphitryon, or The Two Socias;unknown;1690;13;8;4;0.62;0.31;0.0;5;3;914;1677;1.83;0.0;0.0
+eng000475;eng000475;eng;John Dryden  &  &  &  &  &  &  &  & ;An Evening's Love, or The Mock Astrologer;unknown;1671;13;7;4;0.54;0.31;0.03;6;2;1277;1502;1.18;0.58;0.1
+eng000663;eng000663;eng;John Dryden  &  & ;Aureng-Zebe;unknown;1676;16;12;4;0.75;0.25;0.0;6;5;583;3030;5.2;0.0;0.0
+eng000664;eng000664;eng;John Dryden  &  &  &  &  &  &  &  & ;Cleomenes, The Spartan Hero;unknown;1692;17;13;3;0.76;0.18;0.23;6;9;770;2584;3.36;0.52;0.67
+eng000743;eng000743;eng;John Dryden  &  & ;Love Triumphant, or Nature Will Prevail;unknown;1694;15;8;5;0.53;0.33;0.0;6;5;894;2206;2.47;0.0;0.0
+eng000476;eng000476;eng;John Dryden  &  & ;Marriage à la Mode;unknown;1673;17;9;7;0.53;0.41;0.35;6;9;924;1948;2.11;0.8;0.6
+eng000665;eng000665;eng;John Dryden  &  &  &  &  &  & ;Oedipus;unknown;1679;29;18;3;0.62;0.1;0.0;6;5;733;2988;4.08;0.0;0.0
+eng000478;eng000478;eng;John Dryden  &  &  &  &  &  &  &  & ;Sir Martin Mar-all, or The Feigned Innocence;unknown;1668;13;7;6;0.54;0.46;0.0;6;5;1139;1392;1.22;0.0;0.0
+eng000587;eng000587;eng;John Dryden  &  & ;The Assignation, or Love in a Nunnery;unknown;1673;15;9;6;0.6;0.4;0.34;6;16;930;1361;1.46;0.94;0.53
+eng000479;eng000479;eng;John Dryden  &  &  &  &  &  & ;The Husband His Own Cuckold;unknown;1696;23;12;7;0.52;0.3;0.28;6;8;750;1508;2.01;0.67;0.61
+eng000588;eng000588;eng;John Dryden  &  & ;The Spanish Friar, or The Double Discovery;unknown;1681;18;12;4;0.67;0.22;0.26;6;10;849;2331;2.75;0.42;0.52
+eng000615;eng000615;eng;John Dryden  &  &  &  & ;The State of Innocence, and Fall of Man;unknown;1677;16;11;2;0.69;0.12;0.19;5;6;237;1572;6.63;0.54;0.72
+eng000666;eng000666;eng;John Dryden  &  &  &  & ;Troilus and Cressida, or Truth Found Too Late;unknown;1679;22;18;2;0.82;0.09;0.11;6;11;959;2559;2.67;0.67;0.82
+eng000667;eng000667;eng;John Dryden  &  & ;Tyrannic Love, or The Royal Martyr;unknown;1670;19;11;8;0.58;0.42;0.35;6;5;574;2388;4.16;0.72;0.61
+eng000482;eng000482;eng;Thomas Duffett  &  & ;Psyche Debauched;unknown;1678;42;26;9;0.62;0.21;0.31;6;8;651;1892;2.91;0.41;0.43
+eng000481;eng000481;eng;Thomas Duffett  &  &  &  &  &  & ;The Empress of Morocco;unknown;1674;0;0;0;0.0;0.0;0.0;1;4;122;626;5.13;0.0;0.0
+eng000589;eng000589;eng;Thomas Duffett  &  &  &  &  &  & ;The Mock Tempest, or The Enchanted Castle;unknown;1675;31;13;12;0.42;0.39;0.36;6;11;780;1221;1.57;0.55;0.42
+eng000617;eng000617;eng;Edward Ecclestone  &  & ;Noah's Flood, or the Destruction of the World;unknown;1679;35;23;7;0.66;0.2;0.0;5;5;193;1810;9.38;0.0;0.0
+eng000494;eng000494;eng;George Etherege  &  & ;The Comical Revenge, or Love in a Tub;unknown;1664;33;25;7;0.76;0.21;0.2;6;26;962;2799;2.91;0.33;0.75
+eng000498;eng000498;eng;Francis Fane  &  & ;Love in the Dark, or The Man of Business;unknown;1675;50;44;6;0.88;0.12;0.15;6;21;1028;2038;1.98;0.36;0.75
+eng000670;eng000670;eng;Francis Fane  &  & ;The Sacrifice;unknown;1687;22;18;4;0.82;0.18;0.24;0;2;447;2486;5.56;0.91;0.84
+eng000501;eng000501;eng;George Farquhar  &  & ;Love and a Bottle;unknown;1699;22;17;5;0.77;0.23;0.17;6;8;961;1232;1.28;0.42;0.45
+eng000500;eng000500;eng;George Farquhar  &  & ;The Constant Couple, or A Trip to the Jubilee;unknown;1700;20;11;5;0.55;0.25;0.22;6;15;930;1219;1.31;0.59;0.65
+eng000003;eng000003;eng;Nathan Field  &  &  & ;A Woman Is a Weathercock;unknown;1609;21;16;5;0.76;0.24;0.13;5;4;712;1739;2.44;0.78;0.65
+eng000002;eng000002;eng;Nathan Field  &  &  & ;Amends for Ladies;unknown;1610;27;21;6;0.78;0.22;0.0;6;6;675;1688;2.5;0.0;0.0
+eng000351;eng000351;eng;Nathan Field  & John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Knight of Malta;unknown;1616;35;26;8;0.74;0.23;0.23;5;18;965;3139;3.25;0.34;0.75
+eng000355;eng000355;eng;Nathan Field  & John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Queen of Corinth;unknown;1616;28;24;4;0.86;0.14;0.24;5;16;825;2838;3.44;0.55;0.76
+eng000354;eng000354;eng;Nathan Field  & Philip Massinger  & John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Honest Man's Fortune;unknown;1613;25;22;3;0.88;0.12;0.17;5;5;978;2381;2.43;0.69;0.79
+eng000151;eng000151;eng;Nathan Field  & Philip Massinger  &  &  &  &  & ;The Fatal Dowry;unknown;1619;29;26;3;0.9;0.1;0.1;5;10;723;2793;3.86;0.6;0.88
+eng000004;eng000004;eng;Jasper Fisher  &  &  & ;Fuimus Troes;unknown;1611;22;22;0;1.0;0.0;0.0;5;35;349;2319;6.64;0.41;0.85
+eng000744;eng000744;eng;Richard Flecknoe  &  & ;Erminia, or The Fair and Virtuous Lady;unknown;1661;16;9;6;0.56;0.38;0.45;6;46;643;707;1.1;0.67;0.46
+eng000745;eng000745;eng;Richard Flecknoe  &  & ;Love's Kingdom;unknown;1664;22;9;9;0.41;0.41;0.0;6;5;603;2208;3.66;0.0;0.0
+eng000495;eng000495;eng;Richard Flecknoe  &  & ;The Damoiselles à la Mode;unknown;1667;21;13;5;0.62;0.24;0.28;6;46;980;1138;1.16;0.34;0.55
+eng000357;eng000357;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;A Wife for a Month;unknown;1624;31;24;7;0.77;0.23;0.23;5;5;785;2713;3.46;0.42;0.56
+eng000334;eng000334;eng;John Fletcher  & Francis Beaumont  &  &  &  &  &  &  &  &  &  &  & ;The Captain;unknown;1609;22;16;6;0.73;0.27;0.31;6;20;1164;3329;2.86;0.47;0.67
+eng000333;eng000333;eng;John Fletcher  & Francis Beaumont  &  &  &  &  &  &  &  &  &  &  & ;The Noble Gentleman;unknown;1605;18;13;5;0.72;0.28;0.03;6;1;903;2580;2.86;0.32;0.16
+eng000347;eng000347;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;Bonduca;unknown;1611;27;24;3;0.89;0.11;0.11;5;18;1032;2951;2.86;0.67;0.89
+eng000362;eng000362;eng;John Fletcher  & Nathan Field  &  &  &  &  &  &  &  &  &  &  & ;Four Plays, or Moral Representations, in One;unknown;1613;52;30;11;0.58;0.21;0.24;0;1;738;2565;3.48;1.0;0.66
+eng000360;eng000360;eng;John Fletcher  & John Ford  & Philip Massinger  & John Webster  &  &  &  &  &  &  &  &  &  &  & ;The Fair Maid of the Inn;unknown;1626;33;28;5;0.85;0.15;0.23;6;5;906;2610;2.88;0.66;0.76
+eng000390;eng000390;eng;John Fletcher  & Philip Massinger  &  &  &  &  & ;A Very Woman;unknown;1634;35;29;6;0.83;0.17;0.0;6;5;952;2898;3.04;0.0;0.0
+eng000005;eng000005;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  & ;The Bloody Brother (Rollo, Duke of Normandy);unknown;1617;37;34;3;0.92;0.08;0.18;4;12;792;2642;3.34;0.53;0.81
+eng000332;eng000332;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Custom of the Country;unknown;1625;36;21;5;0.58;0.14;0.21;7;9;904;3240;3.58;0.5;0.75
+eng000349;eng000349;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Double Marriage;unknown;1619;32;29;3;0.91;0.09;0.24;5;5;1008;3270;3.24;0.63;0.76
+eng000006;eng000006;eng;John Fletcher  & Philip Massinger  &  &  &  &  & ;The Elder Brother;unknown;1625;16;13;3;0.81;0.19;0.11;6;17;740;2658;3.59;0.68;0.84
+eng000337;eng000337;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The False One;unknown;1619;17;13;4;0.76;0.24;0.15;6;16;629;2702;4.3;0.67;0.81
+eng000331;eng000331;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Little French Lawyer;unknown;1619;26;20;6;0.77;0.23;0.22;6;5;1211;3062;2.53;0.83;0.77
+eng000346;eng000346;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Prophetess;unknown;1622;39;35;4;0.9;0.1;0.25;5;18;653;2579;3.95;0.31;0.72
+eng000348;eng000348;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Sea Voyage;unknown;1622;19;13;6;0.68;0.32;0.22;5;3;804;2414;3.0;0.9;0.4
+eng000330;eng000330;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Spanish Curate;unknown;1622;23;18;4;0.78;0.17;0.22;6;21;941;3141;3.34;0.48;0.77
+eng000341;eng000341;eng;John Fletcher  & Philip Massinger  &  &  &  &  &  &  &  &  &  &  & ;The Wandering Lovers;unknown;1623;21;18;3;0.86;0.14;0.26;6;5;905;2931;3.24;0.77;0.71
+eng000345;eng000345;eng;John Fletcher  & William Rowley  &  &  &  &  &  &  &  &  &  &  & ;The Maid in the Mill;unknown;1623;30;23;7;0.77;0.23;0.24;5;12;1092;2732;2.5;0.55;0.76
+eng000009;eng000009;eng;John Fletcher  &  &  &  &  & ;Rule a Wife and Have a Wife;unknown;1624;19;10;9;0.53;0.47;0.0;1;2;891;2458;2.76;0.0;0.0
+eng000008;eng000008;eng;John Fletcher  & James Shirley  &  &  & ;The Night Walker, or The Little Thief;unknown;1611;24;15;9;0.62;0.38;0.05;5;1;1039;2678;2.58;0.4;0.16
+eng000011;eng000011;eng;Phineas Fletcher  &  &  & ;Sicelides;unknown;1615;17;14;3;0.82;0.18;0.18;6;30;699;2322;3.32;0.44;0.69
+eng000496;eng000496;eng;John Fletcher  &  &  &  &  &  & ;The Chances;unknown;1682;0;0;0;0.0;0.0;0.0;6;28;1000;1903;1.9;0.0;0.0
+eng000007;eng000007;eng;John Fletcher  &  &  & ;The Faithful Shepherdess;unknown;1608;13;8;3;0.62;0.23;0.21;4;5;341;2926;8.58;0.96;0.56
+eng000343;eng000343;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Humorous Lieutenant;unknown;1619;36;28;8;0.78;0.22;0.24;6;25;1392;3357;2.41;0.38;0.73
+eng000342;eng000342;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Island Princess;unknown;1619;31;25;6;0.81;0.19;0.2;5;5;881;3018;3.43;0.73;0.79
+eng000339;eng000339;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Loyal Subject;unknown;1618;29;21;8;0.72;0.28;0.16;6;28;1144;3463;3.03;0.43;0.83
+eng000329;eng000329;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Mad Lover;unknown;1617;30;22;8;0.73;0.27;0.22;6;5;1163;2808;2.41;0.69;0.76
+eng000350;eng000350;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Pilgrim;unknown;1621;42;38;4;0.9;0.1;0.34;5;19;1063;2851;2.68;0.28;0.65
+eng000363;eng000363;eng;John Fletcher  &  &  &  &  &  &  &  &  & ;The Wild Goose Chase;unknown;1621;23;14;9;0.61;0.39;0.27;5;16;1012;3013;2.98;0.59;0.68
+eng000352;eng000352;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Woman's Prize, or The Tamer Tamed;unknown;1611;20;14;6;0.7;0.3;0.34;6;23;1302;3317;2.55;0.66;0.64
+eng000359;eng000359;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;Valentinian;unknown;1610;29;23;6;0.79;0.21;0.18;5;21;961;3446;3.59;0.43;0.76
+eng000443;eng000443;eng;John Fletcher  &  &  &  & ;Wit without Money;unknown;1661;20;15;3;0.75;0.15;0.0;5;5;1059;1087;1.03;0.0;0.0
+eng000356;eng000356;eng;John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;Women Pleased;unknown;1619;32;24;8;0.75;0.25;0.29;5;20;999;2701;2.7;0.33;0.7
+eng000017;eng000017;eng;John Ford  &  &  & ;Love's Sacrifice;unknown;1632;16;11;5;0.69;0.31;0.0;5;5;782;2339;2.99;0.0;0.0
+eng000013;eng000013;eng;John Ford  &  &  & ;Perkin Warbeck;unknown;1633;28;25;3;0.89;0.11;0.08;6;5;590;2780;4.71;0.78;0.88
+eng000012;eng000012;eng;John Ford  &  &  & ;The Broken Heart;unknown;1630;24;18;5;0.75;0.21;0.22;6;10;828;2919;3.53;0.74;0.75
+eng000014;eng000014;eng;John Ford  &  &  & ;The Fancies Chaste and Noble;unknown;1635;18;12;6;0.67;0.33;0.0;5;1;825;2451;2.97;0.0;0.0
+eng000015;eng000015;eng;John Ford  &  &  & ;The Lady's Trial;unknown;1638;15;11;4;0.73;0.27;0.0;6;5;734;2517;3.43;0.0;0.0
+eng000340;eng000340;eng;John Ford  &  &  &  &  &  &  &  &  &  &  & ;The Laws of Candy;unknown;1619;20;16;3;0.8;0.15;0.2;5;6;735;2410;3.28;0.71;0.8
+eng000016;eng000016;eng;John Ford  &  &  &  &  & ;The Lover's Melancholy;unknown;1628;19;14;5;0.74;0.26;0.0;2;1;815;2437;2.99;0.0;0.0
+eng000400;eng000400;eng;John Ford  &  &  &  & ;The Queen, or The Excellency of Her Sex;unknown;1628;17;13;4;0.76;0.24;0.0;5;5;861;1972;2.29;0.0;0.0
+eng000018;eng000018;eng;John Ford  &  &  & ;'Tis Pity She's a Whore;unknown;1632;17;13;4;0.76;0.24;0.0;5;5;890;2167;2.43;0.0;0.0
+eng000019;eng000019;eng;Ralph Freeman  &  &  & ;Imperiale;unknown;1639;27;24;3;0.89;0.11;0.1;5;27;351;1990;5.67;0.27;0.89
+eng000020;eng000020;eng;Ulpian Fulwel  &  &  & ;Like Will to Like;unknown;1568;15;15;0;1.0;0.0;0.0;1;3;318;1286;4.04;0.0;0.0
+eng000624;eng000624;eng;Robert Garnier  &  &  &  &  & ;Antonius;unknown;1590;14;8;4;0.57;0.29;0.0;5;5;189;2045;10.82;0.0;0.0
+eng000623;eng000623;eng;Robert Garnier  &  &  &  &  & ;Cornelia;unknown;1594;11;9;1;0.82;0.09;0.0;5;5;198;2077;10.49;0.0;0.0
+eng000022;eng000022;eng;Thomas Garter  &  &  & ;The Most Virtuous and Godly Susanna;unknown;1563;15;11;4;0.73;0.27;0.0;1;1;317;1478;4.66;0.0;0.0
+eng000023;eng000023;eng;George Gascoigne  &  &  & ;The Glass of Government;unknown;1575;16;14;2;0.88;0.12;0.02;6;37;416;865;2.08;0.56;0.62
+eng000558;eng000558;eng;Charles Gildon  &  &  &  & ;Measure for Measure, or Beauty the Best Advocate;unknown;1700;33;16;14;0.48;0.42;0.31;6;8;585;1963;3.36;0.58;0.6
+eng000027;eng000027;eng;Henry Glapthorne  &  &  & ;Albertus Wallenstein;unknown;1639;21;18;3;0.86;0.14;0.07;5;13;231;1574;6.81;0.42;0.87
+eng000024;eng000024;eng;Henry Glapthorne  &  &  &  &  & ;Argalus and Parthenia;unknown;1632;14;9;5;0.64;0.36;0.16;5;4;279;1757;6.3;0.6;0.26
+eng000371;eng000371;eng;Henry Glapthorne  &  &  &  & ;Revenge for Honor;unknown;1640;13;11;2;0.85;0.15;0.1;6;9;360;399;1.11;0.79;0.8
+eng000025;eng000025;eng;Henry Glapthorne  &  &  & ;The Hollander;unknown;1636;18;12;6;0.67;0.33;0.33;0;2;673;1703;2.53;1.0;0.86
+eng000026;eng000026;eng;Henry Glapthorne  &  &  & ;The Ladies' Privilege;unknown;1637;13;10;3;0.77;0.23;0.0;5;4;340;2176;6.4;0.0;0.0
+eng000028;eng000028;eng;Henry Glapthorne  &  &  & ;Wit in a Constable;unknown;1636;25;20;5;0.8;0.2;0.0;6;5;510;2191;4.3;0.0;0.0
+eng000029;eng000029;eng;Thomas Goffe  &  &  & ;Orestes;unknown;1617;23;15;8;0.65;0.35;0.17;6;33;421;2370;5.63;0.29;0.77
+eng000376;eng000376;eng;Thomas Goffe  &  &  & ;The Careless Shepherdess;unknown;1619;29;26;3;0.9;0.1;0.2;7;46;630;2365;3.75;0.21;0.59
+eng000030;eng000030;eng;Robert Gomersall  &  &  &  &  & ;Lodovick Sforza;unknown;1628;26;23;3;0.88;0.12;0.08;5;27;263;2228;8.47;0.25;0.81
+eng000032;eng000032;eng;John Gough  &  &  &  &  & ;The Strange Discovery;unknown;1640;28;19;8;0.68;0.29;0.5;5;35;633;2750;4.34;0.24;0.47
+eng000671;eng000671;eng;Robert Gould  &  &  &  & ;The Rival Sisters, or The Violence of Love;unknown;1695;17;10;7;0.59;0.41;0.0;6;5;642;2403;3.74;0.0;0.0
+eng000676;eng000676;eng;George Granville  &  & ;Heroic Love;unknown;1698;12;9;3;0.75;0.25;0.0;6;5;367;2409;6.56;0.0;0.0
+eng000513;eng000513;eng;George Granville  &  & ;The She Gallants;unknown;1696;21;10;11;0.48;0.52;0.0;6;5;800;993;1.24;0.0;0.0
+eng000034;eng000034;eng;Robert Greene  &  &  & ;Alphonsus, King of Aragon;unknown;1587;23;15;8;0.65;0.35;0.0;3;3;171;1428;8.35;0.0;0.0
+eng000036;eng000036;eng;Robert Greene  &  &  & ;Friar Bacon and Friar Bongay;unknown;1586;33;29;4;0.88;0.12;0.18;0;1;559;1859;3.33;1.0;0.82
+eng000033;eng000033;eng;Robert Greene  &  & ;George a Green, the Pinner of Wakefield;unknown;1587;25;20;4;0.8;0.16;0.07;0;1;348;1053;3.03;1.0;0.89
+eng000035;eng000035;eng;Robert Greene  &  &  &  &  & ;Orlando Furioso;unknown;1591;21;19;2;0.9;0.1;0.09;0;1;356;1372;3.85;1.0;0.89
+eng000410;eng000410;eng;Robert Greene  &  &  &  &  &  & ;1 Selimus;unknown;1591;27;24;3;0.89;0.11;0.0;0;1;243;2406;9.9;0.0;0.0
+eng000037;eng000037;eng;Robert Greene  &  &  &  &  & ;The Scottish History of James the Fourth;unknown;1590;34;29;5;0.85;0.15;0.0;5;4;701;2225;3.17;0.0;0.0
+eng000038;eng000038;eng;Fulke Greville  &  &  & ;Alaham;unknown;1600;19;0;0;0.0;0.0;0.0;6;22;384;2737;7.13;0.23;0.0
+eng000039;eng000039;eng;Fulke Greville  &  &  & ;Mustapha;unknown;1596;12;9;1;0.75;0.08;0.07;5;16;199;1739;8.74;0.27;0.85
+eng000626;eng000626;eng;Hugo Grotius  &  &  &  &  & ;Christ's Passion;unknown;1640;15;9;3;0.6;0.2;0.0;10;10;55;2000;36.36;0.0;0.0
+eng000731;eng000731;eng;Battista Guarini  &  &  &  &  &  & ;Il Pastor Fido, or The Faithful Shepherd;unknown;1602;23;19;3;0.83;0.13;0.23;5;40;909;4642;5.11;0.25;0.52
+eng000746;eng000746;eng;Battista Guarini  &  &  &  & ;Il Pastor Fido;unknown;1647;23;18;4;0.78;0.17;0.3;6;39;936;6159;6.58;0.15;0.59
+eng000040;eng000040;eng;William Habington  &  &  & ;The Queen of Aragon;unknown;1640;16;13;3;0.81;0.19;0.26;7;5;638;2593;4.06;0.91;0.69
+eng000041;eng000041;eng;Samuel Harding  &  &  &  &  & ;Sicily and Naples;unknown;1640;23;18;5;0.78;0.22;0.21;5;28;912;2710;2.97;0.52;0.69
+eng000507;eng000507;eng;Joseph Harris  &  &  &  & ;The City Bride, or The Merry Cuckold;unknown;1696;30;22;8;0.73;0.27;0.18;6;6;810;1103;1.36;0.45;0.44
+eng000748;eng000748;eng;Joseph Harris  &  &  &  &  &  &  &  & ;The Mistakes, or The False Report;unknown;1691;24;17;3;0.71;0.12;0.17;6;11;834;3005;3.6;0.34;0.78
+eng000042;eng000042;eng;William Haughton  &  &  & ;Englishmen for My Money;unknown;1598;21;18;3;0.86;0.14;0.15;0;1;772;2108;2.73;1.0;0.84
+eng000426;eng000426;eng;Peter Hausted  &  &  & ;The Rival Friends;unknown;1632;42;32;10;0.76;0.24;0.19;6;49;1437;3851;2.68;0.33;0.72
+eng000043;eng000043;eng;William Hawkins  &  &  & ;Apollo Shroving;unknown;1627;23;17;6;0.74;0.26;0.1;6;29;875;1244;1.42;0.48;0.82
+eng000672;eng000672;eng;Joe Haynes  &  & ;A Fatal Mistake, or The Plot Spoiled;unknown;1692;44;28;10;0.64;0.23;0.26;5;5;412;1947;4.73;0.56;0.7
+eng000045;eng000045;eng;Thomas Heywood  &  &  & ;A Challenge for Beauty;unknown;1635;19;12;6;0.63;0.32;0.0;6;5;785;2092;2.66;0.0;0.0
+eng000437;eng000437;eng;Thomas Heywood  &  & ;A Maidenhead Well Lost;unknown;1634;22;18;4;0.82;0.18;0.0;6;5;745;1823;2.45;0.0;0.0
+eng000061;eng000061;eng;Thomas Heywood  &  &  & ;A Woman Killed with Kindness;unknown;1603;25;22;3;0.88;0.12;0.0;1;1;566;1963;3.47;0.0;0.0
+eng000062;eng000062;eng;Thomas Heywood  & Richard Brome  &  &  &  &  & ;The Late Lancashire Witches;unknown;1634;28;16;10;0.57;0.36;0.0;1;1;1009;1819;1.8;0.0;0.0
+eng000056;eng000056;eng;Thomas Heywood  &  &  & ;1 Edward the Fourth;unknown;1599;82;76;5;0.93;0.06;0.11;0;2;1556;5364;3.45;0.34;0.75
+eng000288;eng000288;eng;Thomas Heywood  &  &  &  &  & ;How a Man May Choose a Good Wife from a Bad;unknown;1601;18;13;4;0.72;0.22;0.2;0;1;747;2509;3.36;1.0;0.79
+eng000052;eng000052;eng;Thomas Heywood  &  &  & ;1 If You Know Not Me You Know Nobody;unknown;1604;38;35;3;0.92;0.08;0.3;0;1;541;1447;2.67;0.82;0.69
+eng000053;eng000053;eng;Thomas Heywood  &  &  & ;2 If You Know Not Me You Know Nobody;unknown;1605;40;36;4;0.9;0.1;0.0;1;1;779;2251;2.89;0.0;0.0
+eng000057;eng000057;eng;Thomas Heywood  &  &  & ;Love's Mistress, or The Queen's Masque;unknown;1634;19;11;5;0.58;0.26;0.11;4;5;287;943;3.29;0.32;0.26
+eng000378;eng000378;eng;Thomas Heywood  & William Rowley  &  &  &  &  & ;Fortune by Land and Sea;unknown;1609;28;25;3;0.89;0.11;0.17;6;9;814;929;1.14;0.67;0.79
+eng000044;eng000044;eng;Thomas Heywood  &  &  & ;The Brazen Age;unknown;1611;49;37;12;0.76;0.24;0.47;0;2;555;2688;4.84;1.0;1.34
+eng000046;eng000046;eng;Thomas Heywood  &  &  & ;The English Traveller;unknown;1627;25;18;7;0.72;0.28;0.11;6;6;888;2751;3.1;0.69;0.87
+eng000047;eng000047;eng;Thomas Heywood  &  & ;The Fair Maid of the Exchange;unknown;1602;22;18;4;0.82;0.18;0.0;1;1;903;2379;2.63;0.0;0.0
+eng000048;eng000048;eng;Thomas Heywood  &  &  & ;1 The Fair Maid of the West;unknown;1597;29;27;2;0.93;0.07;0.0;6;5;872;1920;2.2;0.0;0.0
+eng000049;eng000049;eng;Thomas Heywood  &  &  & ;2 The Fair Maid of the West;unknown;1631;22;20;2;0.91;0.09;0.0;5;5;961;2577;2.68;0.0;0.0
+eng000050;eng000050;eng;Thomas Heywood  &  &  & ;The Four Prentices of London;unknown;1594;21;19;2;0.9;0.1;0.0;1;1;815;2665;3.27;0.0;0.0
+eng000051;eng000051;eng;Thomas Heywood  &  &  & ;The Golden Age, or The Lives of Jupiter and Saturn;unknown;1610;31;19;12;0.61;0.39;0.23;0;2;560;2222;3.97;1.0;0.85
+eng000054;eng000054;eng;Thomas Heywood  &  &  & ;1 The Iron Age;unknown;1612;33;0;0;0.0;0.0;0.0;5;5;696;2497;3.59;0.0;0.0
+eng000055;eng000055;eng;Thomas Heywood  &  &  & ;2 The Iron Age;unknown;1612;39;27;12;0.69;0.31;0.0;5;5;667;2421;3.63;0.0;0.0
+eng000058;eng000058;eng;Thomas Heywood  &  &  & ;The Rape of Lucrece;unknown;1606;20;17;3;0.85;0.15;0.19;0;1;794;2175;2.74;1.0;0.79
+eng000059;eng000059;eng;Thomas Heywood  &  &  &  &  & ;The Royal King and the Loyal Subject;unknown;1602;28;21;7;0.75;0.25;0.04;6;2;742;2172;2.93;0.61;0.37
+eng000060;eng000060;eng;Thomas Heywood  &  &  & ;The Wise Woman of Hogsdon;unknown;1604;20;13;7;0.65;0.35;0.27;5;6;889;1470;1.65;0.8;0.68
+eng000502;eng000502;eng;Henry Higden  &  & ;The Wary Widow, or Sir Noisy Parrot;unknown;1693;22;12;9;0.55;0.41;0.0;6;5;520;1258;2.42;0.0;0.0
+eng000065;eng000065;eng;Barten Holiday  &  &  & ;Technogamia, or The Marriages of the Arts;unknown;1618;25;18;7;0.72;0.28;0.11;9;36;1162;1642;1.41;0.6;0.81
+eng000504;eng000504;eng;James Howard  &  & ;All Mistaken, or The Mad Couple;unknown;1672;30;16;13;0.53;0.43;0.0;5;5;711;2254;3.17;0.0;0.0
+eng000505;eng000505;eng;James Howard  &  & ;The English Monsieur;unknown;1674;30;23;6;0.77;0.2;0.27;5;12;918;1005;1.09;0.62;0.7
+eng000596;eng000596;eng;Edward Howard  &  & ;The Man of Newmarket;unknown;1678;30;23;5;0.77;0.17;0.0;6;5;1208;1372;1.14;0.0;0.0
+eng000503;eng000503;eng;Edward Howard  &  & ;The Six Days' Adventure, or The New Utopia;unknown;1671;27;14;9;0.52;0.33;0.0;6;5;1583;2003;1.27;0.0;0.0
+eng000674;eng000674;eng;Edward Howard  &  & ;The Usurper;unknown;1668;29;25;4;0.86;0.14;0.01;6;1;910;2779;3.05;0.21;0.16
+eng000747;eng000747;eng;Edward Howard  &  & ;The Women's Conquest;unknown;1671;38;22;16;0.58;0.42;0.01;8;5;1133;3026;2.67;0.0;0.0
+eng000066;eng000066;eng;Thomas Hughes  &  &  &  &  &  &  & ;The Misfortunes of Arthur;unknown;1587;20;17;3;0.85;0.15;0.09;5;17;302;2332;7.72;0.25;0.7
+eng000506;eng000506;eng;Antonio Hurtado de Mendoza  &  &  &  & ;To Love Only for Love's Sake;unknown;1671;0;0;0;0.0;0.0;0.0;4;3;1008;5759;5.71;0.0;0.0
+eng000508;eng000508;eng;Thomas Jevon  &  &  &  & ;The Devil of a Wife, or A Comical Transformation;unknown;1686;22;17;4;0.77;0.18;0.07;4;1;691;878;1.27;0.42;0.19
+eng000071;eng000071;eng;John Jones  &  &  & ;Adrasta;unknown;1635;30;19;11;0.63;0.37;0.34;6;5;619;2198;3.55;0.6;0.64
+eng000080;eng000080;eng;Ben Jonson  &  &  & ;Bartholomew Fair;unknown;1614;41;32;9;0.78;0.22;0.17;6;30;1498;1671;1.12;0.43;0.79
+eng000078;eng000078;eng;Ben Jonson  &  &  &  &  & ;Catiline His Conspiracy;unknown;1611;39;35;4;0.9;0.1;0.05;5;38;985;3995;4.06;0.31;0.51
+eng000084;eng000084;eng;Ben Jonson  &  &  & ;Chloridia;unknown;1631;13;2;9;0.15;0.69;0.62;0;6;45;165;3.67;0.65;0.1
+eng000073;eng000073;eng;Ben Jonson  &  &  &  &  & ;Cynthia's Revels;unknown;1600;33;24;9;0.73;0.27;0.22;6;31;1339;2195;1.64;0.44;0.57
+eng000439;eng000439;eng;Ben Jonson  &  &  &  &  & ;Epicoene or The Silent Woman;unknown;1609;17;12;5;0.71;0.29;0.11;7;28;1426;1516;1.06;0.71;0.83
+eng000085;eng000085;eng;Ben Jonson  &  &  & ;Epicoene or The Silent Woman;unknown;1609;18;12;6;0.67;0.33;0.14;6;24;1289;1361;1.06;0.66;0.8
+eng000072;eng000072;eng;Ben Jonson  &  &  &  &  & ;Every Man in His Humour;unknown;1598;18;15;3;0.83;0.17;0.05;6;34;1086;1764;1.62;0.77;0.84
+eng000438;eng000438;eng;Ben Jonson  &  &  &  &  & ;Every Man out of his Humor;unknown;1599;0;0;0;0.0;0.0;0.0;5;37;1581;2253;1.43;0.0;0.0
+eng000086;eng000086;eng;Ben Jonson  &  &  & ;Every Man Out of His Humour;unknown;1599;36;32;3;0.89;0.08;0.06;5;16;1561;2290;1.47;0.35;0.76
+eng000088;eng000088;eng;Ben Jonson  &  &  & ;Hymenaei;unknown;1606;5;2;3;0.4;0.6;0.53;0;2;30;652;21.73;1.0;0.12
+eng000089;eng000089;eng;Ben Jonson  &  &  &  &  & ;Love's Triumph Through Callipolis;unknown;1631;10;7;3;0.7;0.3;0.15;0;1;28;147;5.25;1.0;0.37
+eng000090;eng000090;eng;Ben Jonson  &  &  & ;Neptune's Triumph for the Return of Albion;unknown;1624;9;9;0;1.0;0.0;0.0;0;1;94;329;3.5;1.0;0.93
+eng000074;eng000074;eng;Ben Jonson  &  &  &  &  & ;Poetaster;unknown;1601;37;30;6;0.81;0.16;0.07;6;22;1126;2560;2.27;0.36;0.74
+eng000075;eng000075;eng;Ben Jonson  &  &  &  &  & ;Sejanus His Fall;unknown;1604;42;39;3;0.93;0.07;0.0;5;1;948;3673;3.87;0.01;0.02
+eng000077;eng000077;eng;Ben Jonson  &  &  &  &  & ;The Alchemist;unknown;1610;19;18;1;0.95;0.05;0.0;6;25;1692;4051;2.39;0.52;0.52
+eng000082;eng000082;eng;Ben Jonson  &  &  & ;The Case Is Altered;unknown;1597;24;21;3;0.88;0.12;0.1;4;18;944;1891;2.0;0.61;0.86
+eng000083;eng000083;eng;Ben Jonson  &  &  & ;The Characters of Two Royal Masques;unknown;1605;6;5;1;0.83;0.17;0.0;0;1;19;468;24.63;0.2;0.31
+eng000379;eng000379;eng;Ben Jonson  &  &  & ;The Devil Is an Ass;unknown;1616;25;21;4;0.84;0.16;0.1;6;36;1175;3734;3.18;0.38;0.84
+eng000079;eng000079;eng;Ben Jonson  &  &  &  &  & ;The Entertainment of the Queen and Prince at Althorp (The Satyr);unknown;1604;11;6;5;0.55;0.45;0.24;0;3;38;560;14.74;1.0;0.73
+eng000087;eng000087;eng;Ben Jonson  &  &  & ;The Fortunate Isles and Their Union;unknown;1625;8;8;0;1.0;0.0;0.0;0;2;131;493;3.76;1.0;1.22
+eng000091;eng000091;eng;Ben Jonson  &  &  & ;The New Inn, or The Light Heart;unknown;1629;23;18;5;0.78;0.22;0.25;28;23;1109;3231;2.91;0.04;0.67
+eng000081;eng000081;eng;Ben Jonson  &  &  & ;The Staple of News;unknown;1614;42;28;11;0.67;0.26;0.04;5;25;1386;3444;2.48;0.33;0.86
+eng000076;eng000076;eng;Ben Jonson  &  &  &  &  & ;Volpone;unknown;1605;25;21;3;0.84;0.12;0.08;6;39;1407;3770;2.68;0.47;0.82
+eng000383;eng000383;eng;Thomas Killigrew  &  &  & ;Claricilla;unknown;1636;18;16;2;0.89;0.11;0.12;5;28;562;573;1.02;0.48;0.82
+eng000092;eng000092;eng;Henry Killigrew  &  &  & ;The Conspiracy;unknown;1635;45;33;9;0.73;0.2;0.0;6;5;772;1735;2.25;0.0;0.0
+eng000675;eng000675;eng;William Killigrew  &  & ;The Imperial Tragedy;unknown;1669;37;29;2;0.78;0.05;0.0;6;5;545;2027;3.72;0.0;0.0
+eng000382;eng000382;eng;Thomas Killigrew  &  &  & ;The Parson's Wedding;unknown;1641;23;15;8;0.65;0.35;0.31;5;26;1550;1567;1.01;0.45;0.68
+eng000381;eng000381;eng;Thomas Killigrew  &  &  & ;The Princess;unknown;1636;26;22;4;0.85;0.15;0.18;5;33;1143;1224;1.07;0.45;0.77
+eng000384;eng000384;eng;Thomas Killigrew  &  &  & ;The Prisoners;unknown;1635;25;20;4;0.8;0.16;0.18;5;22;435;467;1.07;0.35;0.74
+eng000093;eng000093;eng;John Kirke  &  &  & ;The Seven Champions of Christendom;unknown;1634;39;30;7;0.77;0.18;0.0;5;5;651;2460;3.78;0.0;0.0
+eng000096;eng000096;eng;Ralph Knevet  &  &  & ;Rhodon and Iris;unknown;1631;15;8;7;0.53;0.47;0.37;6;25;302;1884;6.24;0.43;0.51
+eng000232;eng000232;eng;Thomas Kyd  &  & ;Soliman and Perseda;unknown;1588;28;23;2;0.82;0.07;0.0;1;1;604;2276;3.77;0.0;0.0
+eng000098;eng000098;eng;Thomas Kyd  &  &  & ;The Spanish Tragedy;unknown;1587;31;29;2;0.94;0.06;0.0;4;4;684;2751;4.02;0.0;0.0
+eng000099;eng000099;eng;Francis Kynaston  &  &  & ;Corona Minervae;unknown;1635;7;4;3;0.57;0.43;0.67;0;2;62;532;8.58;1.0;0.33
+eng000511;eng000511;eng;John Lacy  &  &  &  & ;Sauny the Scot, or The Taming of the Shrew;unknown;1698;34;29;5;0.85;0.15;0.0;5;5;983;1029;1.05;0.0;0.0
+eng000512;eng000512;eng;John Lacy  &  & ;Sir Hercules Buffoon, or The Poetical Squire;unknown;1684;21;14;6;0.67;0.29;0.17;6;16;1072;1226;1.14;0.49;0.72
+eng000509;eng000509;eng;John Lacy  &  &  &  &  &  & ;The Dumb Lady, or The Farrier Made Physician;unknown;1672;27;21;5;0.78;0.19;0.0;6;5;1297;1371;1.06;0.0;0.0
+eng000510;eng000510;eng;John Lacy  &  & ;The Old Troop, or Monsieur Raggou;unknown;1672;41;31;6;0.76;0.15;0.0;1;2;959;1042;1.09;0.0;0.0
+eng000515;eng000515;eng;John Leanerd  &  &  &  &  &  & ;The Rambling Justice, or The Jealous Husbands;unknown;1678;20;14;5;0.7;0.25;0.23;6;21;899;1036;1.15;0.58;0.7
+eng000677;eng000677;eng;Nathaniel Lee  &  &  &  & ;Caesar Borgia, Son of Pope Alexander VI;unknown;1680;21;19;2;0.9;0.1;0.02;6;2;598;2995;5.01;0.34;0.21
+eng000678;eng000678;eng;Nathaniel Lee  &  &  &  & ;Constantine the Great;unknown;1684;15;12;2;0.8;0.13;0.13;6;8;811;2569;3.17;0.66;0.61
+eng000597;eng000597;eng;Nathaniel Lee  &  & ;Gloriana, or The Court of Augustus Caesar;unknown;1676;13;10;3;0.77;0.23;0.27;6;7;428;2363;5.52;0.9;0.67
+eng000679;eng000679;eng;Nathaniel Lee  &  &  &  & ;Lucius Junius Brutus, Father of His Country;unknown;1681;22;17;3;0.77;0.14;0.17;6;8;418;2552;6.11;0.64;0.79
+eng000681;eng000681;eng;Nathaniel Lee  &  &  &  & ;Mithridates, King of Pontus;unknown;1678;16;12;2;0.75;0.12;0.15;6;7;499;2937;5.89;0.41;0.81
+eng000684;eng000684;eng;Nathaniel Lee  &  & ;Nero, Emperor of Rome;unknown;1675;19;14;5;0.74;0.26;0.21;6;14;345;1705;4.94;0.53;0.74
+eng000682;eng000682;eng;Nathaniel Lee  &  & ;Sophonisba, or Hannibal's Overthrow;unknown;1676;17;11;6;0.65;0.35;0.0;5;5;445;2177;4.89;0.0;0.0
+eng000680;eng000680;eng;Nathaniel Lee  &  & ;The Massacre of Paris;unknown;1690;22;18;4;0.82;0.18;0.26;7;13;417;2204;5.29;0.46;0.65
+eng000598;eng000598;eng;Nathaniel Lee  &  &  &  & ;The Princess of Cleve;unknown;1689;16;8;8;0.5;0.5;0.41;6;15;861;1983;2.3;0.72;0.53
+eng000599;eng000599;eng;Nathaniel Lee  &  &  &  &  &  & ;The Rival Queens, or The Death of Alexander the Great;unknown;1677;19;13;4;0.68;0.21;0.0;6;5;556;2545;4.58;0.0;0.0
+eng000683;eng000683;eng;Nathaniel Lee  &  & ;Theodosius, or The Force of Love;unknown;1680;17;9;5;0.53;0.29;0.24;6;10;372;2697;7.25;0.7;0.69
+eng000103;eng000103;eng;Thomas Lodge  &  &  & ;The Wounds of Civil War, or Marius and Scilla;unknown;1588;48;46;2;0.96;0.04;0.0;6;6;451;2428;5.38;0.0;0.0
+eng000110;eng000110;eng;William Lower  &  &  & ;The Phoenix in Her Flames;unknown;1639;23;19;4;0.83;0.17;0.0;2;1;497;2843;5.72;0.0;0.0
+eng000112;eng000112;eng;Thomas Lupton  &  &  & ;All for Money;unknown;1577;31;6;1;0.19;0.03;0.0;1;1;316;1580;5.0;0.0;0.0
+eng000113;eng000113;eng;John Lyly  &  &  & ;Campaspe;unknown;1583;30;28;2;0.93;0.07;0.09;7;19;569;591;1.04;0.25;0.88
+eng000114;eng000114;eng;John Lyly  &  &  & ;Endymion;unknown;1588;23;15;8;0.65;0.35;0.27;6;17;699;728;1.04;0.47;0.7
+eng000115;eng000115;eng;John Lyly  &  &  & ;Gallathea;unknown;1584;24;16;8;0.67;0.33;0.33;6;20;484;501;1.04;0.32;0.64
+eng000116;eng000116;eng;John Lyly  &  &  & ;Love's Metamorphosis;unknown;1590;15;8;7;0.53;0.47;0.42;5;11;432;446;1.03;0.65;0.56
+eng000117;eng000117;eng;John Lyly  &  &  & ;Midas;unknown;1589;30;18;11;0.6;0.37;0.17;6;14;522;556;1.07;0.27;0.81
+eng000118;eng000118;eng;John Lyly  &  &  & ;Mother Bombie;unknown;1587;25;19;6;0.76;0.24;0.16;5;17;864;919;1.06;0.73;0.81
+eng000119;eng000119;eng;John Lyly  &  &  & ;Sappho and Phao;unknown;1583;17;8;9;0.47;0.53;0.46;7;19;522;536;1.03;0.4;0.51
+eng000120;eng000120;eng;John Lyly  &  &  & ;The Woman in the Moon;unknown;1593;19;12;7;0.63;0.37;0.45;7;6;584;1560;2.67;0.85;0.52
+eng000134;eng000134;eng;Lewis Machin  & William Barkstead  & John Marston  &  &  &  &  & ;The Insatiate Countess;unknown;1607;30;25;5;0.83;0.17;0.43;0;2;721;2266;3.14;1.0;0.77
+eng000518;eng000518;eng;Lewis Maidwell  &  &  &  & ;The Loving Enemies;unknown;1680;22;11;6;0.5;0.27;0.0;6;5;825;1799;2.18;0.05;0.0
+eng000122;eng000122;eng;Gervase Markham  & William Sampson  &  &  &  &  & ;Herod and Antipater;unknown;1622;34;31;3;0.91;0.09;0.0;6;5;812;3106;3.83;0.0;0.0
+eng000126;eng000126;eng;Christopher Marlowe  &  &  & ;Dr. Faustus;unknown;1588;33;25;1;0.76;0.03;0.01;0;1;410;1088;2.65;1.0;0.96
+eng000127;eng000127;eng;Christopher Marlowe  &  &  & ;Edward the Second;unknown;1592;45;43;2;0.96;0.04;0.11;0;2;948;2664;2.81;1.0;0.88
+eng000128;eng000128;eng;Christopher Marlowe  & Thomas Nashe  &  &  &  &  & ;Dido, Queen of Carthage;unknown;1585;16;11;5;0.69;0.31;0.0;4;4;349;1742;4.99;0.0;0.0
+eng000125;eng000125;eng;Christopher Marlowe  &  &  & ;1 Tamburlaine;unknown;1587;54;45;9;0.83;0.17;0.09;12;39;752;4582;6.09;0.19;0.89
+eng000123;eng000123;eng;Christopher Marlowe  &  &  &  &  & ;The Jew of Malta;unknown;1589;35;30;5;0.86;0.14;0.0;7;5;853;2420;2.84;0.0;0.0
+eng000124;eng000124;eng;Christopher Marlowe  &  &  & ;The Massacre at Paris;unknown;1593;47;39;6;0.83;0.13;0.11;0;1;361;1184;3.28;1.0;0.88
+eng000129;eng000129;eng;Shackerley Marmion  &  &  & ;A Fine Companion;unknown;1633;22;18;4;0.82;0.18;0.18;27;26;872;1779;2.04;0.11;0.77
+eng000130;eng000130;eng;Shackerley Marmion  &  &  & ;Holland's Leaguer;unknown;1631;20;13;7;0.65;0.35;0.14;8;24;901;2876;3.19;0.51;0.85
+eng000131;eng000131;eng;John Marston  &  &  & ;Antonio and Mellida;unknown;1599;17;14;3;0.82;0.18;0.0;6;5;527;1433;2.72;0.0;0.0
+eng000132;eng000132;eng;John Marston  &  &  & ;Antonio's Revenge;unknown;1600;21;19;2;0.9;0.1;0.12;6;26;498;1848;3.71;0.52;0.85
+eng000063;eng000063;eng;John Marston  &  &  & ;Histriomastix, or The Player Whipped;unknown;1598;87;49;13;0.56;0.15;0.1;6;5;620;1690;2.73;0.38;0.56
+eng000323;eng000323;eng;John Marston  &  &  & ;Jack Drum's Entertainment;unknown;1600;26;21;5;0.81;0.19;0.0;5;5;573;1578;2.75;0.0;0.0
+eng000136;eng000136;eng;John Marston  &  &  & ;Parasitaster, or The Fawn;unknown;1604;19;14;5;0.74;0.26;0.04;6;3;871;1460;1.68;0.31;0.34
+eng000133;eng000133;eng;John Marston  &  &  & ;The Dutch Courtesan;unknown;1603;21;15;6;0.71;0.29;0.01;6;2;782;1274;1.63;0.13;0.11
+eng000135;eng000135;eng;John Marston  &  &  & ;The Malcontent;unknown;1603;20;13;6;0.65;0.3;0.2;5;26;653;1234;1.89;0.66;0.77
+eng000138;eng000138;eng;John Marston  &  &  & ;The Wonder of Women, or Sophonisba;unknown;1605;19;13;6;0.68;0.32;0.46;6;11;409;1801;4.4;0.46;0.5
+eng000137;eng000137;eng;John Marston  &  &  & ;What You Will;unknown;1601;28;24;4;0.86;0.14;0.06;6;5;700;1563;2.23;0.59;0.87
+eng000139;eng000139;eng;John Mason  &  &  & ;The Turk;unknown;1607;16;12;4;0.75;0.25;0.19;6;14;564;2055;3.64;0.51;0.6
+eng000145;eng000145;eng;Philip Massinger  &  &  & ;A New Way to Pay Old Debts;unknown;1625;20;15;5;0.75;0.25;0.15;5;13;841;2873;3.42;0.69;0.83
+eng000388;eng000388;eng;Philip Massinger  &  &  &  &  & ;The Bashful Lover;unknown;1636;22;18;4;0.82;0.18;0.0;6;5;644;2734;4.25;0.0;0.0
+eng000140;eng000140;eng;Philip Massinger  &  &  & ;The Bondman;unknown;1623;17;12;5;0.71;0.29;0.25;5;17;700;2971;4.24;0.81;0.74
+eng000386;eng000386;eng;Philip Massinger  &  &  &  &  & ;The City Madam;unknown;1632;30;24;6;0.8;0.2;0.19;5;16;879;2815;3.2;0.31;0.79
+eng000141;eng000141;eng;Philip Massinger  &  &  & ;The Duke of Milan;unknown;1621;25;20;5;0.8;0.2;0.19;5;10;638;3037;4.76;0.52;0.79
+eng000142;eng000142;eng;Philip Massinger  &  &  & ;The Emperor of the East;unknown;1631;22;16;6;0.73;0.27;0.32;7;14;651;2960;4.55;0.63;0.63
+eng000143;eng000143;eng;Philip Massinger  &  &  & ;The Great Duke of Florence;unknown;1627;18;14;4;0.78;0.22;0.19;5;10;646;2759;4.27;0.61;0.8
+eng000389;eng000389;eng;Philip Massinger  &  &  &  &  & ;The Guardian;unknown;1633;23;18;5;0.78;0.22;0.0;6;5;740;2885;3.9;0.0;0.0
+eng000144;eng000144;eng;Philip Massinger  &  &  & ;The Maid of Honour;unknown;1621;27;24;3;0.89;0.11;0.3;5;17;721;2818;3.91;0.45;0.68
+eng000146;eng000146;eng;Philip Massinger  &  &  & ;The Picture;unknown;1629;18;14;4;0.78;0.22;0.32;5;17;758;3224;4.25;0.67;0.64
+eng000147;eng000147;eng;Philip Massinger  &  &  & ;The Renegado, or The Gentleman of Venice;unknown;1624;19;16;3;0.84;0.16;0.24;5;25;639;2894;4.53;0.64;0.7
+eng000148;eng000148;eng;Philip Massinger  &  &  & ;The Roman Actor;unknown;1626;25;21;4;0.84;0.16;0.17;5;11;491;2679;5.46;0.53;0.79
+eng000149;eng000149;eng;Philip Massinger  &  &  & ;The Unnatural Combat;unknown;1624;25;19;6;0.76;0.24;0.09;5;11;579;2639;4.56;0.57;0.88
+eng000153;eng000153;eng;Thomas May  &  &  & ;Antigone, the Theban Princess;unknown;1627;25;18;7;0.72;0.28;0.05;5;2;244;1640;6.72;0.05;0.17
+eng000154;eng000154;eng;Thomas May  &  &  & ;Cleopatra, Queen of Egypt;unknown;1626;31;29;2;0.94;0.06;0.0;5;5;430;2086;4.85;0.0;0.0
+eng000155;eng000155;eng;Thomas May  &  &  & ;Julia Agrippina, Empress of Rome;unknown;1628;30;23;7;0.77;0.23;0.0;6;5;554;2753;4.97;0.0;0.0
+eng000152;eng000152;eng;Thomas May  &  &  & ;The Heir;unknown;1620;28;25;3;0.89;0.11;0.0;5;5;736;2121;2.88;0.0;0.0
+eng000156;eng000156;eng;Jasper Mayne  &  &  & ;The City Match;unknown;1637;22;14;8;0.64;0.36;0.19;7;33;1157;3246;2.81;0.64;0.77
+eng000158;eng000158;eng;Thomas Middleton  &  &  & ;A Chaste Maid in Cheapside;unknown;1613;42;27;10;0.64;0.24;0.0;5;5;1051;2054;1.95;0.0;0.0
+eng000160;eng000160;eng;Thomas Middleton  &  &  & ;A Game at Chess;unknown;1624;26;20;4;0.77;0.15;0.05;6;1;640;2422;3.78;0.04;0.06
+eng000162;eng000162;eng;Thomas Middleton  &  &  & ;A Mad World, My Masters;unknown;1604;27;23;3;0.85;0.11;0.0;5;5;974;1385;1.42;0.0;0.0
+eng000165;eng000165;eng;Thomas Middleton  &  &  & ;A Trick to Catch the Old One;unknown;1605;37;33;4;0.89;0.11;0.0;5;5;1018;1278;1.26;0.0;0.0
+eng000206;eng000206;eng;Thomas Middleton  &  & ;A Yorkshire Tragedy;unknown;1605;16;14;2;0.88;0.12;0.28;0;1;220;593;2.7;1.0;0.68
+eng000391;eng000391;eng;Thomas Middleton  &  &  & ;Anything for a Quiet Life;unknown;1621;25;19;6;0.76;0.24;0.0;6;5;964;1033;1.07;0.0;0.0
+eng000344;eng000344;eng;Thomas Middleton  & John Fletcher  &  &  &  &  &  &  &  &  &  &  & ;The Nice Valor, or The Passionate Madman;unknown;1622;25;23;2;0.92;0.08;0.04;6;7;739;2083;2.82;0.66;0.89
+eng000163;eng000163;eng;Thomas Middleton  &  &  & ;Michaelmas Term;unknown;1604;28;21;7;0.75;0.25;0.0;5;5;1083;1431;1.32;0.0;0.0
+eng000395;eng000395;eng;Thomas Middleton  &  &  & ;More Dissemblers Besides Women;unknown;1614;22;19;3;0.86;0.14;0.33;5;14;694;2290;3.3;0.49;0.63
+eng000387;eng000387;eng;Thomas Middleton  & William Rowley  & Thomas Heywood  &  &  &  &  &  &  & ;The Old Law, or A New Way to Please You;unknown;1618;30;24;6;0.8;0.2;0.0;5;5;1028;2531;2.46;0.0;0.0
+eng000392;eng000392;eng;Thomas Middleton  & William Rowley  &  &  &  &  & ;The Changeling;unknown;1622;23;19;3;0.83;0.13;0.0;5;5;963;2164;2.25;0.0;0.0
+eng000167;eng000167;eng;Thomas Middleton  & William Rowley  &  &  &  &  & ;The World Tossed at Tennis;unknown;1620;21;13;8;0.62;0.38;0.0;1;1;208;978;4.7;0.0;0.0
+eng000358;eng000358;eng;Thomas Middleton  & William Rowley  &  &  &  &  &  &  &  &  &  &  & ;Wit at Several Weapons;unknown;1613;17;12;5;0.71;0.29;0.29;6;4;1074;2541;2.37;0.83;0.7
+eng000159;eng000159;eng;Thomas Middleton  &  &  & ;The Family of Love;unknown;1603;15;11;3;0.73;0.2;0.27;6;10;704;1133;1.61;0.87;0.66
+eng000161;eng000161;eng;Thomas Middleton  &  &  & ;The Inner-Temple Masque, or The Masque of Heroes;unknown;1619;7;6;1;0.86;0.14;0.26;0;5;66;317;4.8;1.0;0.63
+eng000393;eng000393;eng;Thomas Middleton  &  &  & ;The Mayor of Quinborough;unknown;1618;35;31;4;0.89;0.11;0.09;5;9;864;2552;2.95;0.42;0.89
+eng000164;eng000164;eng;Thomas Middleton  &  &  & ;The Phoenix;unknown;1603;43;33;4;0.77;0.09;0.0;1;1;1131;1681;1.49;0.0;0.0
+eng000202;eng000202;eng;Thomas Middleton  &  &  &  &  &  &  & ;The Puritan, or The Widow of Watling Street;unknown;1606;25;22;3;0.88;0.12;0.0;4;4;852;1048;1.23;0.0;0.0
+eng000240;eng000240;eng;Thomas Middleton  &  &  &  & ;The Revenger's Tragedy;unknown;1605;32;29;3;0.91;0.09;0.0;4;4;1105;2646;2.39;0.0;0.0
+eng000380;eng000380;eng;Thomas Middleton  &  &  &  &  &  &  & ;The Widow;unknown;1615;18;14;4;0.78;0.22;0.35;6;8;1122;2341;2.09;0.58;0.62
+eng000168;eng000168;eng;Thomas Middleton  & William Rowley  &  &  &  &  & ;A Fair Quarrel;unknown;1615;28;22;6;0.79;0.21;0.0;5;5;1000;2336;2.34;0.0;0.0
+eng000396;eng000396;eng;Thomas Middleton  &  &  & ;Women Beware Women;unknown;1621;28;20;7;0.71;0.25;0.43;5;13;909;3304;3.63;0.48;0.5
+eng000412;eng000412;eng;Thomas Middleton  &  &  & ;Your Five Gallants;unknown;1607;41;34;7;0.83;0.17;0.03;4;1;1352;1755;1.3;0.23;0.26
+eng000169;eng000169;eng;John Milton  &  &  &  &  & ;Comus;unknown;1637;6;3;2;0.5;0.33;0.18;0;1;66;1052;15.94;1.0;0.42
+eng000600;eng000600;eng;Peter Motteux  &  &  &  & ;Beauty in Distress;unknown;1698;20;15;5;0.75;0.25;0.0;6;5;760;2527;3.33;0.0;0.0
+eng000519;eng000519;eng;Peter Motteux  &  & ;Love's a Jest;unknown;1696;24;17;7;0.71;0.29;0.04;6;5;832;1070;1.29;0.02;0.05
+eng000618;eng000618;eng;Peter Motteux  &  &  &  &  &  & ;The Island Princess, or The Generous Portuguese;unknown;1699;47;36;8;0.77;0.17;0.14;6;11;533;1623;3.05;0.18;0.51
+eng000521;eng000521;eng;William Mountfort  &  &  &  & ;Doctor Faustus, with the Humours of Harlequin and Scaramouche;unknown;1697;29;15;1;0.52;0.03;0.0;3;5;366;496;1.36;0.33;0.78
+eng000610;eng000610;eng;William Mountfort  &  &  &  & ;Edward III, with the Fall of Mortimer;unknown;1691;26;22;3;0.85;0.12;0.18;5;9;512;1749;3.42;0.32;0.59
+eng000520;eng000520;eng;William Mountfort  &  & ;Greenwich Park;unknown;1691;24;14;9;0.58;0.38;0.41;7;14;1149;1524;1.33;0.6;0.53
+eng000685;eng000685;eng;William Mountfort  &  & ;The Injured Lovers, or The Ambitious Father;unknown;1688;14;11;3;0.79;0.21;0.22;6;7;838;2568;3.06;0.52;0.74
+eng000171;eng000171;eng;Anthony Munday  & Henry Chettle  &  &  &  &  & ;The Death of Robert, Earl of Huntingdon;unknown;1598;32;26;5;0.81;0.16;0.16;0;5;775;2799;3.61;0.76;0.83
+eng000181;eng000181;eng;Anthony Munday  & Michael Drayton  & Robert Wilson  & Richard Hathaway  &  &  &  &  &  &  &  & ;1 Sir John Oldcastle;unknown;1599;63;58;5;0.92;0.08;0.0;1;1;903;2165;2.4;0.0;0.0
+eng000173;eng000173;eng;Thomas Nabbes  &  &  & ;Covent Garden;unknown;1633;19;15;4;0.79;0.21;0.27;6;30;811;1576;1.94;0.67;0.69
+eng000174;eng000174;eng;Thomas Nabbes  &  &  & ;Hannibal and Scipio;unknown;1635;23;18;5;0.78;0.22;0.1;6;24;350;2404;6.87;0.28;0.83
+eng000172;eng000172;eng;Thomas Nabbes  &  &  & ;The Bride;unknown;1638;22;18;3;0.82;0.14;0.13;6;30;648;1851;2.86;0.49;0.85
+eng000434;eng000434;eng;Thomas Nabbes  &  & ;The Spring's Glory;unknown;1625;16;11;5;0.69;0.31;0.04;0;5;95;953;10.03;0.17;0.17
+eng000176;eng000176;eng;Thomas Nabbes  &  &  & ;The Unfortunate Mother;unknown;1639;14;9;5;0.64;0.36;0.0;5;5;527;2147;4.07;0.0;0.0
+eng000175;eng000175;eng;Thomas Nabbes  &  &  & ;Tottenham Court;unknown;1633;20;15;5;0.75;0.25;0.26;6;31;796;1871;2.35;0.64;0.7
+eng000177;eng000177;eng;Thomas Nashe  &  &  & ;Summer's Last Will and Testament;unknown;1592;12;12;0;1.0;0.0;0.0;0;1;200;1236;6.18;1.0;0.97
+eng000686;eng000686;eng;Richard? Norton  &  &  &  & ;Pausanious, the Betrayer of His Country;unknown;1696;19;13;5;0.68;0.26;0.33;6;10;322;1336;4.15;0.47;0.61
+eng000180;eng000180;eng;Thomas Norton  & Thomas Sackville  &  &  &  &  & ;Gorboduc;unknown;1562;18;16;2;0.89;0.11;0.12;5;9;104;1823;17.53;0.33;0.85
+eng000689;eng000689;eng;Thomas Otway  &  & ;Alcibiades;unknown;1675;27;17;8;0.63;0.3;0.39;6;10;433;2128;4.91;0.5;0.56
+eng000691;eng000691;eng;Thomas Otway  &  &  &  & ;Caius Marius;unknown;1680;36;28;4;0.78;0.11;0.17;6;12;634;2573;4.06;0.32;0.61
+eng000690;eng000690;eng;Thomas Otway  &  &  &  & ;Don Carlos, Prince of Spain;unknown;1676;10;6;4;0.6;0.4;0.0;6;5;530;2442;4.61;0.0;0.0
+eng000524;eng000524;eng;Thomas Otway  &  & ;The Atheist, or The Second Part of the Soldier's Fortune;unknown;1684;28;16;11;0.57;0.39;0.0;6;5;1272;1580;1.24;0.0;0.0
+eng000692;eng000692;eng;Thomas Otway  &  &  &  & ;The Orphan, or The Unhappy Marriage;unknown;1680;12;9;3;0.75;0.25;0.0;6;5;794;2743;3.45;0.0;0.0
+eng000525;eng000525;eng;Thomas Otway  &  &  &  & ;The Soldier's Fortune;unknown;1681;24;18;6;0.75;0.25;0.0;6;5;1171;1311;1.12;0.0;0.0
+eng000693;eng000693;eng;Thomas Otway  &  &  &  &  &  & ;Titus and Berenice, with The Cheats of Scapin;unknown;1677;16;12;4;0.75;0.25;0.08;7;2;751;1823;2.43;0.14;0.15
+eng000440;eng000440;eng;Luigi Pasqualigo  &  &  &  &  & ;Fedele and Fortunia;unknown;1583;12;8;4;0.67;0.33;0.26;5;20;461;1545;3.35;0.83;0.71
+eng000417;eng000417;eng;George Peele  &  & ;Clyomon and Clamydes;unknown;1599;21;17;3;0.81;0.14;0.0;1;1;518;2101;4.06;0.0;0.0
+eng000185;eng000185;eng;George Peele  &  &  & ;Edward the First;unknown;1591;36;26;9;0.72;0.25;0.25;0;1;635;2242;3.53;1.0;0.74
+eng000183;eng000183;eng;George Peele  &  &  &  &  & ;The Arraignment of Paris;unknown;1581;34;19;15;0.56;0.44;0.45;6;16;327;1279;3.91;0.27;0.37
+eng000184;eng000184;eng;George Peele  &  &  & ;The Battle of Alcazar;unknown;1588;28;23;3;0.82;0.11;0.0;3;3;150;1461;9.74;0.0;0.0
+eng000186;eng000186;eng;George Peele  &  &  &  &  & ;The Love of David and Fair Bathsheba;unknown;1590;32;26;6;0.81;0.19;0.0;1;3;303;1930;6.37;0.0;0.0
+eng000187;eng000187;eng;George Peele  &  &  & ;The Old Wives Tale;unknown;1588;30;21;6;0.7;0.2;0.11;0;1;299;552;1.85;0.94;0.81
+eng000619;eng000619;eng;Pierre Perrin  &  &  &  &  &  & ;Ariadne, or The Marriage of Bacchus;unknown;1674;29;17;12;0.59;0.41;0.36;6;37;223;680;3.05;0.11;0.38
+eng000526;eng000526;eng;William Phillips  &  & ;St Stephen's Green, or The Generous Lovers;unknown;1700;12;8;4;0.67;0.33;0.03;6;1;837;958;1.14;1.0;0.1
+eng000694;eng000694;eng;William Phillips  &  &  &  & ;The Revengeful Queen;unknown;1698;14;10;4;0.71;0.29;0.0;6;5;437;1581;3.62;0.0;0.0
+eng000188;eng000188;eng;John Pikering  &  &  & ;Horestes;unknown;1567;26;14;3;0.54;0.12;0.07;0;1;210;1213;5.78;1.0;0.56
+eng000697;eng000697;eng;Mary Pix  &  & ;Ibrahim, the Thirteenth Emperor of the Turks;unknown;1696;18;13;5;0.72;0.28;0.01;6;5;312;1776;5.69;0.01;0.01
+eng000527;eng000527;eng;Mary Pix  &  &  &  & ;The Beau Defeated, or The Lucky Younger Brother;unknown;1700;21;12;9;0.57;0.43;0.0;6;5;999;1150;1.15;0.0;0.0
+eng000528;eng000528;eng;Mary Pix  &  & ;The Deceiver Deceived;unknown;1698;27;18;9;0.67;0.33;0.0;6;1;926;1104;1.19;0.0;0.0
+eng000696;eng000696;eng;Mary Pix  &  & ;The False Friend, or The Fate of Disobedience;unknown;1699;13;7;6;0.54;0.46;0.25;6;6;606;2321;3.83;0.68;0.26
+eng000529;eng000529;eng;Mary Pix  &  &  &  & ;The Innocent Mistress;unknown;1697;0;0;0;0.0;0.0;0.0;6;5;941;1124;1.19;0.0;0.0
+eng000530;eng000530;eng;Mary Pix  &  &  &  & ;The Spanish Wives;unknown;1696;17;9;5;0.53;0.29;0.27;4;13;579;858;1.48;0.62;0.61
+eng000698;eng000698;eng;Samuel Pordage  &  &  &  & ;Herod and Mariamne;unknown;1673;19;15;4;0.79;0.21;0.38;6;22;600;2060;3.43;0.56;0.59
+eng000601;eng000601;eng;Samuel Pordage  &  & ;The Siege of Babylon;unknown;1678;17;11;6;0.65;0.35;0.5;6;15;440;2320;5.27;0.78;0.47
+eng000749;eng000749;eng;Thomas Porter  &  & ;A Witty Combat, or The Female Victor;unknown;1663;27;22;5;0.81;0.19;0.38;10;10;750;824;1.1;0.28;0.59
+eng000531;eng000531;eng;Thomas Porter  &  & ;The Carnival;unknown;1664;27;22;5;0.81;0.19;0.04;5;3;831;2224;2.68;0.18;0.17
+eng000532;eng000532;eng;Thomas Porter  &  &  &  & ;The French Conjurer;unknown;1678;19;13;5;0.68;0.26;0.0;6;5;794;980;1.23;0.0;0.0
+eng000189;eng000189;eng;Henry Porter  &  &  & ;The Two Angry Women of Abingdon;unknown;1598;15;11;4;0.73;0.27;0.0;1;1;1156;2690;2.33;0.0;0.0
+eng000699;eng000699;eng;Thomas Porter  &  & ;The Villain;unknown;1663;27;19;6;0.7;0.22;0.0;6;5;1288;3368;2.61;0.03;0.0
+eng000535;eng000535;eng;George Powell  &  &  &  &  &  & ;A Very Good Wife;unknown;1693;19;14;4;0.74;0.21;0.18;5;7;1004;1393;1.39;0.55;0.46
+eng000700;eng000700;eng;George Powell  &  & ;Alphonso, King of Naples;unknown;1691;18;16;2;0.89;0.11;0.04;6;3;406;1774;4.37;0.19;0.2
+eng000534;eng000534;eng;George Powell  &  & ;The Imposture Defeated, or A Trick to Cheat the Devil;unknown;1698;37;27;7;0.73;0.19;0.02;6;5;547;842;1.54;0.05;0.07
+eng000701;eng000701;eng;George Powell  &  &  &  & ;The Treacherous Brothers;unknown;1690;14;9;5;0.64;0.36;0.19;6;14;426;2434;5.71;0.55;0.49
+eng000190;eng000190;eng;Thomas Randolph  &  &  & ;Aristippus or The Jovial Philosopher;unknown;1630;10;9;1;0.9;0.1;0.0;0;2;216;612;2.83;0.68;0.54
+eng000191;eng000191;eng;Thomas Randolph  &  &  & ;The Jealous Lovers;unknown;1632;23;17;6;0.74;0.26;0.18;5;55;830;3325;4.01;0.46;0.72
+eng000540;eng000540;eng;Edward Ravenscroft  &  &  &  & ;Dame Dobson, or The Cunning Woman;unknown;1684;22;11;11;0.5;0.5;0.6;6;29;1422;1545;1.09;0.68;0.33
+eng000750;eng000750;eng;Edward Ravenscroft  &  & ;King Edgar and Alfreda;unknown;1677;16;9;7;0.56;0.44;0.1;6;3;930;2672;2.87;0.56;0.14
+eng000541;eng000541;eng;Edward Ravenscroft  &  &  &  &  &  & ;Scaramouch a Philosopher, Harlequin a School-boy, Bravo, Merchant, and Magician;unknown;1677;21;11;5;0.52;0.24;0.0;6;5;1712;1821;1.06;0.0;0.0
+eng000608;eng000608;eng;Edward Ravenscroft  &  &  &  &  &  &  &  & ;The Anatomist, or The Sham Doctor;unknown;1697;13;9;4;0.69;0.31;0.32;5;5;769;909;1.18;0.81;0.57
+eng000538;eng000538;eng;Edward Ravenscroft  &  & ;The Canterbury Guests, or A Bargain Broken;unknown;1695;22;14;7;0.64;0.32;0.25;6;42;1380;1477;1.07;0.42;0.69
+eng000539;eng000539;eng;Edward Ravenscroft  &  & ;The Careless Lovers;unknown;1673;22;9;9;0.41;0.41;0.0;6;5;1376;1492;1.08;0.0;0.0
+eng000517;eng000517;eng;Edward Ravenscroft  &  &  &  &  &  & ;The Citizen Turned Gentleman;unknown;1672;28;17;4;0.61;0.14;0.0;4;2;1995;2270;1.14;0.0;0.0
+eng000536;eng000536;eng;Edward Ravenscroft  &  &  &  & ;The English Lawyer;unknown;1678;17;13;4;0.76;0.24;0.17;6;5;1200;1294;1.08;0.79;0.8
+eng000703;eng000703;eng;Edward Ravenscroft  &  & ;The Italian Husband;unknown;1698;27;16;9;0.59;0.33;0.33;4;4;532;1398;2.63;0.47;0.49
+eng000542;eng000542;eng;Edward Ravenscroft  &  & ;The Wrangling Lovers, or The Invisible Mistress;unknown;1677;13;9;4;0.69;0.31;0.0;5;5;948;1069;1.13;0.0;0.0
+eng000717;eng000717;eng;Edward Ravenscroft  &  &  &  & ;Titus Andronicus, or The Rape of Lavinia;unknown;1687;21;18;3;0.86;0.14;0.14;8;7;667;2436;3.65;0.63;0.79
+eng000192;eng000192;eng;Thomas Rawlins  &  &  & ;The Rebellion;unknown;1638;31;27;4;0.87;0.13;0.13;4;4;633;2340;3.7;0.57;0.59
+eng000543;eng000543;eng;Thomas Rawlins  &  &  &  &  &  & ;Tom Essence, or The Modish Wife;unknown;1677;15;8;7;0.53;0.47;0.42;6;14;662;1085;1.64;0.68;0.47
+eng000544;eng000544;eng;Thomas Rawlins  &  & ;Tunbridge Wells, or A Day's Courtship;unknown;1678;21;15;5;0.71;0.24;0.2;6;12;948;1076;1.14;0.6;0.39
+eng000413;eng000413;eng;Nathaniel Richards  &  &  &  &  & ;Messalina, the Roman Empress;unknown;1634;34;19;13;0.56;0.38;0.28;6;5;472;2346;4.97;0.6;0.65
+eng000732;eng000732;eng;Fernando de Rojas  &  &  &  &  & ;The Spanish Bawd;unknown;1631;14;7;7;0.5;0.5;0.0;22;21;1262;1385;1.1;0.0;0.0
+eng000196;eng000196;eng;William Rowley  &  &  & ;A Match at Midnight;unknown;1622;23;17;6;0.74;0.26;0.0;5;5;1069;1226;1.15;0.0;0.0
+eng000198;eng000198;eng;William Rowley  &  &  & ;A New Wonder, A Woman Never Vexed;unknown;1611;23;18;5;0.78;0.22;0.0;5;5;1027;2792;2.72;0.0;0.0
+eng000197;eng000197;eng;William Rowley  &  &  & ;A Shoemaker a Gentleman;unknown;1607;35;29;5;0.83;0.14;0.0;5;5;885;2255;2.55;0.0;0.0
+eng000199;eng000199;eng;William Rowley  &  &  & ;All's Lost by Lust;unknown;1619;21;16;5;0.76;0.24;0.0;6;5;715;2080;2.91;0.0;0.0
+eng000401;eng000401;eng;William Rowley  &  &  &  &  & ;The Birth of Merlin;unknown;1608;36;30;6;0.83;0.17;0.0;5;5;840;1065;1.27;0.0;0.0
+eng000195;eng000195;eng;Samuel Rowley  &  &  & ;When You See Me You Know Me;unknown;1604;45;39;6;0.87;0.13;0.09;0;1;887;2423;2.73;1.0;0.9
+eng000537;eng000537;eng;George Ruggle  &  &  &  & ;Ignoramus;unknown;1662;31;22;5;0.71;0.16;0.13;7;53;2445;2587;1.06;0.2;0.76
+eng000200;eng000200;eng;Joseph Rutter  &  &  & ;The Shepherds' Holiday;unknown;1633;19;12;6;0.63;0.32;0.45;6;22;613;2714;4.43;0.35;0.45
+eng000414;eng000414;eng;S. S.  &  &  &  &  & ;The Honest Lawyer;unknown;1614;19;16;3;0.84;0.16;0.0;5;5;860;2093;2.43;0.0;0.0
+eng000203;eng000203;eng;W. S.  &  &  &  &  &  &  & ;Thomas Lord Cromwell;unknown;1599;40;35;1;0.88;0.03;0.0;0;1;455;1587;3.49;0.91;0.9
+eng000204;eng000204;eng;William Sampson  &  &  & ;The Vow Breaker, or The Fair Maid of Clifton;unknown;1625;27;20;7;0.74;0.26;0.28;6;5;587;1923;3.28;0.74;0.69
+eng000722;eng000722;eng;Charles Saunders  &  &  &  &  &  & ;Tamerlane the Great;unknown;1681;19;11;4;0.58;0.21;0.0;6;5;472;2337;4.95;0.0;0.0
+eng000704;eng000704;eng;Charles Sedley  &  & ;Antony and Cleopatra;unknown;1677;20;16;4;0.8;0.2;0.23;6;12;607;2299;3.79;0.67;0.74
+eng000545;eng000545;eng;Charles Sedley  &  &  &  & ;Bellamira, or The Mistress;unknown;1687;18;13;5;0.72;0.28;0.0;6;5;1191;1352;1.14;0.0;0.0
+eng000546;eng000546;eng;Charles Sedley  &  &  &  & ;The Mulberry Garden;unknown;1668;17;13;4;0.76;0.24;0.24;6;11;665;2686;4.04;0.81;0.75
+eng000634;eng000634;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Agamemnon;unknown;1566;9;4;4;0.44;0.44;0.1;5;4;107;1376;12.86;0.19;0.05
+eng000627;eng000627;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Hercules Furens;unknown;1561;5;4;1;0.8;0.2;0.0;5;5;122;1385;11.35;0.0;0.0
+eng000636;eng000636;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Hercules Oetaeus;unknown;1566;8;4;3;0.5;0.38;0.0;5;5;127;2179;17.16;0.0;0.0
+eng000630;eng000630;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Hippolytus;unknown;1567;6;3;2;0.5;0.33;0.12;5;1;110;1531;13.92;0.14;0.0
+eng000633;eng000633;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Medea;unknown;1566;6;3;2;0.5;0.33;0.0;5;5;119;1532;12.87;0.0;0.0
+eng000635;eng000635;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Octavia;unknown;1566;9;4;4;0.44;0.44;0.25;4;15;129;1615;12.52;0.19;0.22
+eng000631;eng000631;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Oedipus;unknown;1560;8;4;2;0.5;0.25;0.07;5;7;141;1211;8.59;0.39;0.47
+eng000629;eng000629;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Thebais;unknown;1581;5;3;2;0.6;0.4;0.0;4;4;24;1062;44.25;0.0;0.0
+eng000628;eng000628;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Thyestes;unknown;1560;8;6;1;0.75;0.12;0.0;5;4;131;1260;9.62;0.08;0.15
+eng000705;eng000705;eng;Lucius Annaeus  &  &  &  & ;Troades, or The Royal Captives;unknown;1679;13;9;4;0.69;0.31;0.59;5;8;144;1555;10.8;0.27;0.35
+eng000632;eng000632;eng;Lucius Annaeus  &  &  &  &  &  &  &  &  &  &  &  &  & ;Troas;unknown;1558;13;8;4;0.62;0.31;0.1;5;6;132;1483;11.23;0.1;0.11
+eng000707;eng000707;eng;Elkanah Settle  &  & ;Cambyses, King of Persia;unknown;1671;26;18;6;0.69;0.23;0.22;6;20;663;3033;4.57;0.45;0.73
+eng000710;eng000710;eng;Elkanah Settle  &  & ;Fatal Love, or The Forced Inconstancy;unknown;1680;9;6;3;0.67;0.33;0.0;6;5;440;1933;4.39;0.0;0.0
+eng000712;eng000712;eng;Elkanah Settle  &  &  &  & ;Ibrahim, the Illustrious Bassa;unknown;1677;11;5;6;0.45;0.55;0.0;6;5;546;2881;5.28;0.0;0.0
+eng000713;eng000713;eng;Elkanah Settle  &  & ;Love and Revenge;unknown;1675;15;11;3;0.73;0.2;0.36;6;7;632;2790;4.41;0.56;0.35
+eng000751;eng000751;eng;Elkanah Settle  &  &  &  &  &  & ;Pastor Fido, or The Faithful Shepherd;unknown;1677;16;10;5;0.62;0.31;0.21;6;7;525;2374;4.52;0.26;0.27
+eng000706;eng000706;eng;Elkanah Settle  &  & ;The Ambitious Slave, or A Generous Revenge;unknown;1694;16;12;4;0.75;0.25;0.0;6;5;569;2383;4.19;0.0;0.0
+eng000708;eng000708;eng;Elkanah Settle  &  & ;The Conquest of China by the Tartars;unknown;1676;20;16;4;0.8;0.2;0.27;6;8;448;2549;5.69;0.63;0.5
+eng000709;eng000709;eng;Elkanah Settle  &  & ;The Empress of Morocco;unknown;1673;0;0;0;0.0;0.0;0.0;8;9;429;2415;5.63;0.0;0.0
+eng000711;eng000711;eng;Elkanah Settle  &  & ;The Female Prelate, Being the History of the Life and Death of Pope Joan;unknown;1680;33;29;1;0.88;0.03;0.0;5;2;628;2507;3.99;0.22;0.23
+eng000603;eng000603;eng;Elkanah Settle  &  & ;The Heir of Morocco, with the Death of Gayland;unknown;1682;15;13;2;0.87;0.13;0.11;6;2;422;1933;4.58;0.44;0.33
+eng000622;eng000622;eng;Elkanah Settle  &  &  &  &  &  & ;The World in the Moon;unknown;1697;22;12;9;0.55;0.41;0.07;7;5;759;1298;1.71;0.05;0.03
+eng000555;eng000555;eng;Thomas Shadwell  &  &  &  & ;A True Widow;unknown;1679;37;26;7;0.7;0.19;0.0;6;5;1372;1526;1.11;0.0;0.0
+eng000547;eng000547;eng;Thomas Shadwell  &  & ;Bury Fair;unknown;1689;33;21;11;0.64;0.33;0.0;6;5;1239;1379;1.11;0.0;0.0
+eng000548;eng000548;eng;Thomas Shadwell  &  & ;Epsom Wells;unknown;1673;26;16;7;0.62;0.27;0.0;7;5;1460;1661;1.14;0.0;0.0
+eng000715;eng000715;eng;Thomas Shadwell  &  &  &  &  &  &  &  & ;Psyche;unknown;1675;59;29;19;0.49;0.32;0.0;6;5;521;2146;4.12;0.0;0.0
+eng000549;eng000549;eng;Thomas Shadwell  &  & ;The Humorists;unknown;1671;18;12;6;0.67;0.33;0.0;6;5;1192;1394;1.17;0.0;0.0
+eng000550;eng000550;eng;Thomas Shadwell  &  & ;The Lancashire Witches, and Tegue O'Divelly the Irish Priest;unknown;1682;32;17;13;0.53;0.41;0.0;6;5;1289;1847;1.43;0.0;0.0
+eng000714;eng000714;eng;Thomas Shadwell  &  &  &  & ;The Libertine;unknown;1676;47;25;19;0.53;0.4;0.02;6;3;1274;1809;1.42;0.14;0.16
+eng000551;eng000551;eng;Thomas Shadwell  &  &  &  & ;The Miser;unknown;1672;24;18;6;0.75;0.25;0.0;6;5;1479;1598;1.08;0.0;0.0
+eng000752;eng000752;eng;Thomas Shadwell  &  &  &  & ;The Royal Shepherdess;unknown;1669;0;0;0;0.0;0.0;0.0;4;1;439;1214;2.77;0.0;0.0
+eng000552;eng000552;eng;Thomas Shadwell  &  & ;The Scowrers;unknown;1691;29;28;0;0.97;0.0;0.0;6;5;1138;1417;1.25;0.0;0.0
+eng000553;eng000553;eng;Thomas Shadwell  &  & ;The Squire of Alsatia;unknown;1688;36;24;9;0.67;0.25;0.0;6;5;1268;1449;1.14;0.0;0.0
+eng000554;eng000554;eng;Thomas Shadwell  &  &  &  & ;The Sullen Lovers, or The Impertinents;unknown;1668;19;14;5;0.74;0.26;0.0;6;5;1416;1845;1.3;0.0;0.0
+eng000556;eng000556;eng;Thomas Shadwell  &  & ;The Virtuoso;unknown;1676;34;15;9;0.44;0.26;0.11;6;5;1318;1460;1.11;0.42;0.25
+eng000557;eng000557;eng;Thomas Shadwell  &  & ;The Woman Captain;unknown;1680;30;19;6;0.63;0.2;0.0;6;5;1255;1486;1.18;0.0;0.0
+eng000207;eng000207;eng;Edward Sharpham  &  &  &  &  & ;Cupid's Whirligig;unknown;1607;21;17;4;0.81;0.19;0.25;6;5;929;1125;1.21;0.83;0.69
+eng000208;eng000208;eng;Edward Sharpham  &  &  &  &  & ;The Fleer;unknown;1606;20;15;5;0.75;0.25;0.04;5;1;875;962;1.1;0.19;0.12
+eng000718;eng000718;eng;Thomas Shipman  &  & ;Henry III of France, Stabbed by a Friar, with the Fall of the Guise;unknown;1678;38;31;5;0.82;0.13;0.16;6;16;748;2755;3.68;0.34;0.77
+eng000211;eng000211;eng;James Shirley  &  &  & ;Changes, or Love in a Maze;unknown;1632;17;12;5;0.71;0.29;0.0;6;5;1042;2601;2.5;0.0;0.0
+eng000217;eng000217;eng;James Shirley  &  &  & ;Hyde Park;unknown;1632;21;16;5;0.76;0.24;0.0;5;5;1022;2385;2.33;0.0;0.0
+eng000220;eng000220;eng;James Shirley  &  &  & ;Love's Cruelty;unknown;1631;17;14;3;0.82;0.18;0.0;5;5;837;1983;2.37;0.0;0.0
+eng000225;eng000225;eng;James Shirley  &  &  & ;1 Saint Patrick for Ireland;unknown;1639;27;22;4;0.81;0.15;0.0;6;5;727;2164;2.98;0.0;0.0
+eng000223;eng000223;eng;James Shirley  &  &  &  &  & ;The Arcadia;unknown;1640;21;16;5;0.76;0.24;0.0;5;5;855;2076;2.43;0.0;0.0
+eng000285;eng000285;eng;James Shirley  &  &  &  &  & ;The Ball;unknown;1632;19;13;6;0.68;0.32;0.0;5;5;1105;2611;2.36;0.0;0.0
+eng000210;eng000210;eng;James Shirley  &  &  & ;The Bird in a Cage;unknown;1633;25;18;7;0.72;0.28;0.15;5;5;975;1866;1.91;0.73;0.83
+eng000429;eng000429;eng;James Shirley  &  &  & ;The Brothers;unknown;1652;17;13;4;0.76;0.24;0.0;5;5;747;2506;3.35;0.0;0.0
+eng000430;eng000430;eng;James Shirley  &  &  & ;The Cardinal;unknown;1641;31;26;5;0.84;0.16;0.0;6;5;742;2337;3.15;0.0;0.0
+eng000212;eng000212;eng;James Shirley  &  &  & ;The Constant Maid;unknown;1638;30;26;4;0.87;0.13;0.0;5;5;801;2291;2.86;0.0;0.0
+eng000213;eng000213;eng;James Shirley  &  &  & ;The Contention for Honor and Riches;unknown;1631;7;5;2;0.71;0.29;0.31;0;1;206;642;3.12;1.0;0.66
+eng000406;eng000406;eng;James Shirley  &  &  &  &  & ;The Court Secret;unknown;1642;18;15;3;0.83;0.17;0.0;5;5;846;2626;3.1;0.0;0.0
+eng000431;eng000431;eng;James Shirley  &  &  & ;The Doubtful Heir;unknown;1638;21;18;3;0.86;0.14;0.0;6;5;784;2497;3.18;0.0;0.0
+eng000214;eng000214;eng;James Shirley  &  &  & ;The Duke's Mistress;unknown;1636;19;12;7;0.63;0.37;0.0;6;5;845;2631;3.11;0.0;0.0
+eng000215;eng000215;eng;James Shirley  &  &  & ;The Example;unknown;1634;19;13;5;0.68;0.26;0.0;6;5;824;2510;3.05;0.03;0.0
+eng000216;eng000216;eng;James Shirley  &  &  & ;The Gamester;unknown;1633;23;19;4;0.83;0.17;0.0;5;5;1033;2710;2.62;0.0;0.0
+eng000403;eng000403;eng;James Shirley  &  &  & ;The Gentleman of Venice;unknown;1639;24;20;4;0.83;0.17;0.0;5;5;898;2571;2.86;0.0;0.0
+eng000218;eng000218;eng;James Shirley  &  &  & ;The Humorous Courtier;unknown;1631;16;13;3;0.81;0.19;0.0;5;5;912;2397;2.63;0.0;0.0
+eng000405;eng000405;eng;James Shirley  &  &  &  &  & ;The Impostor;unknown;1640;19;13;6;0.68;0.32;0.0;6;5;869;2642;3.04;0.0;0.0
+eng000219;eng000219;eng;James Shirley  &  &  & ;The Lady of Pleasure;unknown;1635;16;10;6;0.62;0.38;0.0;5;5;999;3030;3.03;0.0;0.0
+eng000221;eng000221;eng;James Shirley  &  &  & ;The Maid's Revenge;unknown;1626;18;13;5;0.72;0.28;0.35;5;5;797;2138;2.68;0.9;0.62
+eng000209;eng000209;eng;Henry Shirley  &  &  &  &  & ;The Martyred Soldier;unknown;1618;28;25;2;0.89;0.07;0.01;5;1;700;2179;3.11;0.18;0.17
+eng000222;eng000222;eng;James Shirley  &  &  &  &  & ;The Opportunity;unknown;1634;18;14;4;0.78;0.22;0.03;5;1;916;2533;2.77;0.36;0.17
+eng000404;eng000404;eng;James Shirley  &  &  & ;The Politician;unknown;1639;23;21;2;0.91;0.09;0.0;5;5;971;2587;2.66;0.0;0.0
+eng000224;eng000224;eng;James Shirley  &  &  & ;The Royal Master;unknown;1637;19;14;5;0.74;0.26;0.0;5;5;856;2829;3.3;0.0;0.0
+eng000226;eng000226;eng;James Shirley  &  &  & ;The School of Compliment;unknown;1625;25;18;6;0.72;0.24;0.19;6;5;843;1591;1.89;0.74;0.76
+eng000432;eng000432;eng;James Shirley  &  &  & ;The Sisters;unknown;1642;30;25;5;0.83;0.17;0.0;6;5;723;2023;2.8;0.0;0.0
+eng000227;eng000227;eng;James Shirley  &  &  & ;The Traitor;unknown;1631;23;19;4;0.83;0.17;0.0;5;5;906;2621;2.89;0.0;0.0
+eng000433;eng000433;eng;James Shirley  &  &  & ;The Triumph of Peace;unknown;1633;23;13;10;0.57;0.43;0.58;0;11;134;477;3.56;1.0;0.96
+eng000228;eng000228;eng;James Shirley  &  &  & ;The Wedding;unknown;1626;19;15;4;0.79;0.21;0.0;5;5;1007;2403;2.39;0.0;0.0
+eng000229;eng000229;eng;James Shirley  &  &  & ;The Witty Fair One;unknown;1628;22;18;4;0.82;0.18;0.17;5;5;1045;1656;1.58;0.84;0.75
+eng000230;eng000230;eng;James Shirley  &  &  &  &  & ;The Young Admiral;unknown;1633;22;19;3;0.86;0.14;0.0;5;5;955;2416;2.53;0.0;0.0
+eng000231;eng000231;eng;Wentworth Smith  & William Smith  &  &  & ;The Hector of Germany, or The Palsgrave, Prime Elector;unknown;1614;32;28;4;0.88;0.12;0.0;1;1;644;1988;3.09;0.0;0.0
+eng000720;eng000720;eng;Thomas Southerne  &  &  &  &  &  & ;Oroonoko;unknown;1696;20;14;5;0.7;0.25;0.24;6;15;971;2276;2.34;0.58;0.7
+eng000604;eng000604;eng;Thomas Southerne  &  &  &  & ;The Fatal Marriage, or The Innocent Adultery;unknown;1694;19;13;5;0.68;0.26;0.32;6;13;903;2241;2.48;0.61;0.62
+eng000719;eng000719;eng;Thomas Southerne  &  &  &  & ;The Loyal Brother, or The Persian Prince;unknown;1682;20;14;5;0.7;0.25;0.3;6;12;473;2270;4.8;0.47;0.65
+eng000561;eng000561;eng;Thomas Southerne  &  & ;The Maid's Last Prayer, or Any Rather Than Fail;unknown;1693;24;13;10;0.54;0.42;0.34;6;12;1069;1740;1.63;0.58;0.56
+eng000562;eng000562;eng;Thomas Southerne  &  &  &  & ;The Wives' Excuse, or Cuckolds Make Themselves;unknown;1692;30;21;6;0.7;0.2;0.39;6;11;997;1855;1.86;0.65;0.51
+eng000564;eng000564;eng;Thomas St Serfe  &  &  &  & ;Tarugo's Wiles, or The Coffee-House;unknown;1668;44;24;5;0.55;0.11;0.24;6;8;937;970;1.04;0.13;0.47
+eng000721;eng000721;eng;Robert Stapylton  &  &  &  & ;Hero and Leander;unknown;1669;19;13;6;0.68;0.32;0.0;6;5;632;1671;2.64;0.0;0.0
+eng000563;eng000563;eng;Robert Stapylton  &  & ;The Slighted Maid;unknown;1663;26;11;7;0.42;0.27;0.0;7;5;951;2709;2.85;0.0;0.0
+eng000753;eng000753;eng;Robert Stapylton  &  & ;The Stepmother;unknown;1664;22;15;7;0.68;0.32;0.01;5;5;868;2743;3.16;0.0;0.0
+eng000233;eng000233;eng;John Stephens  &  &  & ;Cynthia's Revenge;unknown;1613;26;23;3;0.88;0.12;0.1;5;43;531;4895;9.22;0.32;0.7
+eng000234;eng000234;eng;William Stevenson  &  &  &  & ;Gammer Gurton's Needle;unknown;1553;8;6;2;0.75;0.25;0.14;6;18;504;1386;2.75;0.75;0.8
+eng000580;eng000580;eng;John Suckling  &  & ;Aglaura;unknown;1638;29;20;8;0.69;0.28;0.37;9;6;634;2647;4.18;0.66;0.57
+eng000407;eng000407;eng;John Suckling  &  &  & ;Brennoralt, or The Discontented Colonel;unknown;1639;27;23;4;0.85;0.15;0.0;5;5;535;1860;3.48;0.0;0.0
+eng000236;eng000236;eng;Robert Tailor  &  &  & ;The Hog Hath Lost His Pearl;unknown;1613;16;13;3;0.81;0.19;0.0;6;5;480;1521;3.17;0.0;0.0
+eng000724;eng000724;eng;Nahum Tate  &  &  &  & ;Brutus of Alba, or The Enchanted Lovers;unknown;1678;22;12;8;0.55;0.36;0.0;6;5;436;2034;4.67;0.0;0.0
+eng000565;eng000565;eng;Nahum Tate  &  & ;Cuckolds Haven, or An Alderman No Conjurer;unknown;1685;29;24;5;0.83;0.17;0.21;4;10;687;821;1.2;0.46;0.69
+eng000605;eng000605;eng;Nahum Tate  &  &  &  & ;The Ingratitude of a Commonwealth, or The Fall of Caius Martius Coriolanus;unknown;1682;38;27;2;0.71;0.05;0.11;6;9;665;2137;3.21;0.39;0.59
+eng000606;eng000606;eng;Nahum Tate  &  &  &  & ;The Island Princess;unknown;1687;24;21;2;0.88;0.08;0.19;5;12;637;1801;2.83;0.59;0.81
+eng000725;eng000725;eng;Nahum Tate  &  &  &  & ;The Loyal General;unknown;1680;25;21;4;0.84;0.16;0.06;6;4;493;2272;4.61;0.39;0.18
+eng000441;eng000441;eng;Terence  &  &  &  &  & ;Andria;unknown;1587;12;10;2;0.83;0.17;0.07;5;26;770;883;1.15;0.58;0.78
+eng000238;eng000238;eng;Thomas Tomkis  &  &  &  &  & ;Albumazar;unknown;1615;14;10;4;0.71;0.29;0.09;6;50;996;2913;2.92;0.46;0.9
+eng000409;eng000409;eng;Thomas Tomkis  &  &  &  &  & ;Lingua, or The Combat of the Tongue and the Five Senses for Superiority;unknown;1657;21;20;1;0.95;0.05;0.12;6;51;941;2038;2.17;0.62;0.84
+eng000239;eng000239;eng;Cyril Tourneur  &  &  & ;The Atheist's Tragedy, or The Honest Man's Revenge;unknown;1611;25;21;4;0.84;0.16;0.0;5;5;784;1805;2.3;0.0;0.0
+eng000241;eng000241;eng;Aurelian Townshend  &  &  & ;Albion's Triumph;unknown;1631;9;5;2;0.56;0.22;0.08;0;4;76;252;3.32;0.18;0.33
+eng000242;eng000242;eng;Aurelian Townshend  &  &  &  &  &  &  & ;Tempe Restored;unknown;1631;8;4;4;0.5;0.5;0.18;0;2;19;178;9.37;1.0;0.16
+eng000651;eng000651;eng;Catherine Trotter  &  &  &  & ;Agnes de Castro;unknown;1696;12;7;5;0.58;0.42;0.52;6;7;421;2275;5.4;0.88;0.38
+eng000652;eng000652;eng;Catherine Trotter  &  & ;Fatal Friendship;unknown;1698;10;6;3;0.6;0.3;0.33;6;10;746;2752;3.69;0.78;0.58
+eng000067;eng000067;eng;Nicholas Udall ;Jacob and Esau;unknown;1553;10;7;3;0.7;0.3;0.24;6;34;560;1792;3.2;0.6;0.7
+eng000243;eng000243;eng;Nicholas Udall  &  &  & ;Ralph Roister Doister;unknown;1552;13;9;4;0.69;0.31;0.24;6;28;1147;2318;2.02;0.51;0.67
+eng000567;eng000567;eng;John Vanbrugh  &  &  &  & ;1 & 2 Aesop;unknown;1697;36;24;9;0.67;0.25;0.0;6;5;893;1787;2.0;0.0;0.0
+eng000568;eng000568;eng;John Vanbrugh  &  & ;The Provoked Wife;unknown;1697;24;17;7;0.71;0.29;0.0;6;5;1201;1492;1.24;0.0;0.0
+eng000569;eng000569;eng;John Vanbrugh  &  & ;The Relapse, or Virtue in Danger;unknown;1697;32;21;9;0.66;0.28;0.44;7;13;1277;1889;1.48;0.49;0.41
+eng000583;eng000583;eng;George Villiers  &  & ;The Rehearsal;unknown;1672;35;25;7;0.71;0.2;0.07;6;10;722;1024;1.42;0.52;0.74
+eng000244;eng000244;eng;J. W.  &  &  &  &  & ;The Valiant Scot;unknown;1625;40;37;2;0.93;0.05;0.0;5;5;953;2095;2.2;0.0;0.0
+eng000728;eng000728;eng;Edmund Waller  &  & ;The Maid's Tragedy;unknown;1690;0;0;0;0.0;0.0;0.0;1;3;80;1191;14.89;0.0;0.0
+eng000245;eng000245;eng;George Wapull  &  &  & ;The Tide Tarrieth No Man;unknown;1576;17;16;1;0.94;0.06;0.0;1;4;328;1881;5.73;0.0;0.0
+eng000408;eng000408;eng;John Webster  & William Rowley  &  &  &  &  & ;The Thracian Wonder;unknown;1599;34;30;4;0.88;0.12;0.0;5;2;623;1209;1.94;0.11;0.11
+eng000246;eng000246;eng;John Webster  &  &  & ;The Devil's Law Case;unknown;1619;25;20;5;0.8;0.2;0.0;5;5;1019;3078;3.02;0.0;0.0
+eng000247;eng000247;eng;John Webster  &  &  & ;The Duchess of Malfi;unknown;1614;30;25;4;0.83;0.13;0.22;5;19;1130;3398;3.01;0.42;0.76
+eng000248;eng000248;eng;John Webster  &  &  & ;The White Devil;unknown;1612;34;26;7;0.76;0.21;0.2;0;1;1144;3147;2.75;0.95;0.79
+eng000726;eng000726;eng;William Whitaker  &  &  &  & ;The Conspiracy, or The Change of Government;unknown;1680;21;17;4;0.81;0.19;0.22;6;4;500;1967;3.93;0.63;0.49
+eng000249;eng000249;eng;George Wilkins  &  &  & ;The Miseries of Enforced Marriage;unknown;1605;22;18;3;0.82;0.14;0.11;0;1;1078;2142;1.99;1.0;0.85
+eng000250;eng000250;eng;Robert Wilmot  & Christopher Hatton  & Henry Noel  & G. Al.  & Roderick Stafford  &  &  &  &  &  &  &  &  &  &  &  &  & ;Tancred and Gismund;unknown;1567;12;6;6;0.5;0.5;0.37;5;16;176;1910;10.85;0.65;0.45
+eng000727;eng000727;eng;John Wilson  &  & ;Andronicus Comnenus;unknown;1664;28;19;2;0.68;0.07;0.07;27;27;812;2929;3.61;0.09;0.82
+eng000754;eng000754;eng;John Wilson  &  & ;Belphegor, or The Marriage of the Devil;unknown;1691;33;22;9;0.67;0.27;0.27;6;19;974;1552;1.59;0.32;0.65
+eng000570;eng000570;eng;John Wilson  &  & ;The Cheats;unknown;1664;17;13;4;0.76;0.24;0.14;7;25;978;1191;1.22;0.86;0.81
+eng000251;eng000251;eng;Robert Wilson  &  &  & ;The Cobbler's Prophecy;unknown;1589;30;17;11;0.57;0.37;0.2;0;6;465;1363;2.93;1.0;0.78
+eng000571;eng000571;eng;John Wilson  &  & ;The Projectors;unknown;1665;13;9;4;0.69;0.31;0.11;6;3;648;709;1.09;0.89;0.47
+eng000254;eng000254;eng;Robert Wilson  &  &  & ;The Three Ladies of London;unknown;1581;23;20;3;0.87;0.13;0.0;1;1;491;1689;3.44;0.0;0.0
+eng000253;eng000253;eng;Robert Wilson  &  &  & ;The Three Lords and Three Ladies of London;unknown;1588;30;25;5;0.83;0.17;0.12;0;1;833;1767;2.12;0.93;0.86
+eng000415;eng000415;eng;Nathaniel Woodes  &  &  & ;The Conflict of Conscience;unknown;1572;17;17;0;1.0;0.0;0.0;7;16;329;2146;6.52;0.24;0.9
+eng000575;eng000575;eng;William Wycherley  &  & ;Love in a Wood, or St James's Park;unknown;1672;19;9;9;0.47;0.47;0.4;6;5;1542;1747;1.13;0.79;0.56
+eng000573;eng000573;eng;William Wycherley  &  &  &  & ;The Country Wife;unknown;1675;16;8;7;0.5;0.44;0.0;6;5;1488;1655;1.11;0.0;0.0
+eng000574;eng000574;eng;William Wycherley  &  & ;The Gentleman Dancing-Master;unknown;1693;13;8;5;0.62;0.38;0.37;6;6;1550;1712;1.1;0.79;0.58
+eng000576;eng000576;eng;William Wycherley  &  & ;The Plain Dealer;unknown;1677;26;21;5;0.81;0.19;0.0;6;5;1556;1718;1.1;0.0;0.0
+eng000256;eng000256;eng;Robert Yarington  &  &  & ;Two Lamentable Tragedies;unknown;1594;41;34;5;0.83;0.12;0.09;0;1;609;2639;4.33;1.0;0.79
+eng000257;eng000257;eng;Richard Zouche  &  &  & ;The Sophister;unknown;1614;22;0;0;0.0;0.0;0.0;6;18;514;1452;2.82;0.52;0.0
