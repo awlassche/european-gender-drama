@@ -1,0 +1,206 @@
+;play_id;corpus;author;title;genre;year;characters;male;female;%_male_chars;%_female_chars;%_female_lines;acts;scenes;speech_turns;lines;mean_sp_length;density;%_male_lines;tokens;%_female_tokens;%_male_tokens
+cal000001;cal000001;cal;Pedro Calderón ;A Dios por razón de estado;unknown;1717;18;7;10;0.39;0.56;0.36;1;12;464;1982;4.27;0.84;0.62;8927;0.37;0.62
+cal000002;cal000002;cal;Pedro Calderón ;A María el corazón;unknown;1717;14;4;9;0.29;0.64;0.48;1;34;392;1662;4.24;0.96;0.48;7302;0.47;0.49
+cal000055;cal000055;cal;Pedro Calderón ;A secreto agravio, secreta venganza;Tragedy;1637;13;11;2;0.85;0.15;0.21;3;53;350;2859;8.17;0.41;0.79;13432;0.21;0.79
+cal000003;cal000003;cal;Pedro Calderón ;Afectos de odio y amor;Comedy;1664;14;9;5;0.64;0.36;0.44;3;91;797;4060;5.09;0.88;0.56;18474;0.44;0.56
+cal000056;cal000056;cal;Pedro Calderón ;Agradecer y no amar;Comedy;1653;10;5;4;0.5;0.4;0.36;3;76;820;3560;4.34;0.8;0.63;16399;0.36;0.63
+cal000057;cal000057;cal;Pedro Calderón ;Amado y aborrecido;Comedy;1657;16;7;8;0.44;0.5;0.33;3;83;879;4003;4.55;0.82;0.65;18655;0.33;0.65
+cal000058;cal000058;cal;Pedro Calderón ;Amar después de la muerte o el tuzaní de la Alpujarra;Comedy;1659;25;18;6;0.72;0.24;0.14;3;54;702;3382;4.82;0.41;0.86;15500;0.13;0.86
+cal000152;cal000152;cal;Pedro Calderón ;La divina Filotea;unknown;1681;25;15;9;0.6;0.36;0.38;1;51;400;2077;5.19;1.0;0.62;9343;0.37;0.63
+cal000059;cal000059;cal;Pedro Calderón ;Amigo, amante y leal;Comedy;1653;9;5;4;0.56;0.44;0.3;3;54;641;3650;5.69;0.67;0.7;16958;0.3;0.7
+cal000004;cal000004;cal;Pedro Calderón ;Amor, honor y poder;Comedy;1623;9;7;2;0.78;0.22;0.28;3;50;592;2962;5.0;0.81;0.72;13746;0.27;0.73
+cal000005;cal000005;cal;Pedro Calderón ;Andrómeda y Perseo;unknown;1759;16;8;7;0.5;0.44;0.53;1;23;361;1818;5.04;0.93;0.46;8368;0.52;0.47
+cal000060;cal000060;cal;Pedro Calderón ;Antes que todo es mi dama;Comedy;1684;11;7;4;0.64;0.36;0.25;3;87;871;3939;4.52;0.73;0.75;18167;0.24;0.76
+cal000061;cal000061;cal;Pedro Calderón ;Apolo y Climene;Comedy;1688;16;7;6;0.44;0.38;0.46;3;62;739;4210;5.7;0.68;0.52;19509;0.46;0.52
+cal000062;cal000062;cal;Pedro Calderón ;Argenis y Poliarco;Comedy;1637;15;9;5;0.6;0.33;0.19;3;33;627;3641;5.81;0.7;0.81;16706;0.19;0.81
+cal000063;cal000063;cal;Pedro Calderón ;Auristela y Lisidante;Comedy;1715;18;11;6;0.61;0.33;0.29;3;77;1107;4585;4.14;0.73;0.7;20933;0.29;0.7
+cal000064;cal000064;cal;Pedro Calderón ;Basta callar;Comedy;1682;14;8;5;0.57;0.36;0.3;3;83;1073;4532;4.22;0.68;0.7;20306;0.29;0.7
+cal000065;cal000065;cal; Pedro   Calderón  ;Bien vengas mal, si vienes solo;Comedy;1635;11;7;4;0.64;0.36;0.41;3;59;690;3300;4.78;0.64;0.59;15070;0.4;0.6
+cal000066;cal000066;cal; Pedro   Calderón  ;Cada uno para sí;Comedy;1661;13;9;4;0.69;0.31;0.24;3;101;1177;4288;3.64;0.82;0.76;18949;0.24;0.76
+cal000006;cal000006;cal;Pedro Calderón ;Casa con dos puertas mala es de guardar;Comedy;1629;10;6;4;0.6;0.4;0.38;3;68;759;3332;4.39;0.8;0.62;15236;0.39;0.61
+cal000067;cal000067;cal;Pedro Calderón ;Céfalo y Pocris;Comedy;1660;22;11;10;0.5;0.45;0.31;3;60;959;2644;2.76;0.55;0.68;11069;0.3;0.69
+cal000068;cal000068;cal;Pedro Calderón ;Celos aun del aire matan;unknown;1660;22;6;11;0.27;0.5;0.51;3;61;593;2484;4.19;0.52;0.48;11487;0.5;0.49
+cal000203;cal000203;cal;Pedro Calderón ;Cómo se comunican dos estrellas contrarias;Comedy;1630;15;9;5;0.6;0.33;0.5;3;54;733;3297;4.5;0.58;0.5;14532;0.51;0.49
+cal000069;cal000069;cal;Pedro Calderón ;Con quien vengo vengo;Comedy;1638;10;7;3;0.7;0.3;0.27;3;67;733;3623;4.94;0.78;0.73;17054;0.27;0.73
+cal000070;cal000070;cal;Pedro Calderón ;¿Cuál es mayor perfección, hermosura o discreción?;Comedy;1663;12;6;6;0.5;0.5;0.48;3;90;862;4084;4.74;0.71;0.52;18392;0.47;0.53
+cal000071;cal000071;cal;Pedro Calderón ;Dar tiempo al tiempo;Comedy;1662;19;13;6;0.68;0.32;0.25;3;74;998;3627;3.63;0.58;0.75;16748;0.24;0.76
+cal000072;cal000072;cal;Pedro Calderón ;Darlo todo, y no dar nada;Comedy;1657;20;9;6;0.45;0.3;0.28;3;89;985;4471;4.54;0.52;0.7;20113;0.27;0.71
+cal000073;cal000073;cal;Pedro Calderón ;De una causa, dos efectos;Comedy;1682;14;8;6;0.57;0.43;0.36;3;55;645;3607;5.59;0.72;0.64;16413;0.35;0.65
+cal000074;cal000074;cal;Pedro Calderón ;Dicha y desdicha del nombre;Comedy;1662;15;10;4;0.67;0.27;0.3;3;108;1205;4570;3.79;0.6;0.69;20916;0.3;0.7
+cal000075;cal000075;cal;Pedro Calderón ;Duelos de amor y lealtad;Comedy;1691;22;13;6;0.59;0.27;0.33;3;77;789;4101;5.2;0.54;0.66;18482;0.33;0.66
+cal000076;cal000076;cal;Pedro Calderón ;Eco y Narciso;Comedy;1661;13;6;6;0.46;0.46;0.36;3;70;776;3410;4.39;1.0;0.63;15561;0.35;0.65
+cal000077;cal000077;cal;Pedro Calderón ;El acaso y el error;Comedy;1660;18;11;5;0.61;0.28;0.41;3;27;991;4107;4.14;0.76;0.59;18668;0.41;0.59
+cal000078;cal000078;cal; Pedro   Calderón  ;El agua mansa;Comedy;1649;11;7;4;0.64;0.36;0.36;3;88;894;3229;3.61;1.0;0.64;14853;0.36;0.64
+cal000079;cal000079;cal;Pedro Calderón ;El alcaide de sí mismo;Comedy;1627;21;16;4;0.76;0.19;0.4;3;55;545;3003;5.51;0.31;0.6;13840;0.4;0.6
+cal000080;cal000080;cal;Pedro Calderón ;El alcalde de Zalamea;Tragedy;1651;16;13;3;0.81;0.19;0.19;3;72;788;3027;3.84;0.7;0.81;13656;0.19;0.81
+cal000153;cal000153;cal;Pedro Calderón ;El año santo en Madrid;unknown;1652;16;5;9;0.31;0.56;0.52;1;18;394;1949;4.95;1.0;0.47;9073;0.53;0.47
+cal000007;cal000007;cal;Pedro Calderón ;El año sancto de Roma;unknown;1759;18;10;7;0.56;0.39;0.22;1;29;637;2045;3.21;0.93;0.77;9119;0.21;0.77
+cal000154;cal000154;cal;Pedro Calderón ;El árbol de mejor fruto;unknown;1677;21;10;9;0.48;0.43;0.5;1;27;351;2049;5.84;0.92;0.45;9638;0.51;0.45
+cal000155;cal000155;cal;Pedro Calderón ;El arca de Dios cautiva;unknown;1673;28;19;3;0.68;0.11;0.3;1;30;304;1810;5.95;0.96;0.65;8557;0.3;0.63
+cal000081;cal000081;cal;Pedro Calderón ;El astrólogo fingido;Comedy;1637;12;8;4;0.67;0.33;0.29;3;66;623;3083;4.95;0.79;0.71;14162;0.28;0.72
+cal000082;cal000082;cal;Pedro Calderón ;El castillo de Lindabridis;Comedy;1691;16;10;4;0.62;0.25;0.4;3;80;630;3682;5.84;0.84;0.57;17717;0.38;0.59
+cal000083;cal000083;cal;Pedro Calderón ;El conde Lucanor;Comedy;1661;19;10;7;0.53;0.37;0.36;3;83;1113;4181;3.76;0.71;0.63;19128;0.37;0.62
+cal000156;cal000156;cal;Pedro Calderón ;El convite general;unknown;1648;21;14;6;0.67;0.29;0.34;1;30;377;3152;8.36;1.0;0.64;14811;0.35;0.64
+cal000008;cal000008;cal;Pedro Calderón ;El cordero de Isaías;unknown;1759;18;13;4;0.72;0.22;0.19;1;46;411;2422;5.89;0.96;0.8;11156;0.19;0.8
+cal000157;cal000157;cal;Pedro Calderón ;El cubo de la Almudena;unknown;1651;16;9;5;0.56;0.31;0.62;1;38;377;1879;4.98;0.92;0.36;8485;0.64;0.35
+cal000158;cal000158;cal;Pedro Calderón ;El día mayor de los días;unknown;1678;20;8;8;0.4;0.4;0.36;1;45;495;2325;4.7;1.0;0.61;11168;0.37;0.6
+cal000009;cal000009;cal;Pedro Calderón ;El diablo mudo;unknown;1660;13;7;5;0.54;0.38;0.37;1;39;436;1810;4.15;1.0;0.61;8192;0.36;0.61
+cal000010;cal000010;cal;Pedro Calderón ;El diablo mudo;unknown;1681;14;8;5;0.57;0.36;0.35;1;29;427;1952;4.57;1.0;0.63;8905;0.34;0.64
+cal000159;cal000159;cal;Pedro Calderón ;El divino cazador;unknown;1642;18;9;7;0.5;0.39;0.34;1;28;255;1426;5.59;1.0;0.65;6681;0.34;0.65
+cal000160;cal000160;cal;Pedro Calderón ;El divino Jasón;unknown;1644;9;6;2;0.67;0.22;0.35;1;15;203;1173;5.78;1.0;0.63;5184;0.36;0.62
+cal000012;cal000012;cal;Pedro Calderón ;El divino Orfeo;unknown;1663;17;11;3;0.65;0.18;0.29;1;30;317;1399;4.41;0.95;0.68;6717;0.29;0.68
+cal000161;cal000161;cal;Pedro Calderón ;El divino Orfeo;unknown;1634;7;5;2;0.71;0.29;0.21;1;19;167;1454;8.71;0.81;0.79;6830;0.2;0.8
+cal000084;cal000084;cal;Pedro Calderón ;El encanto sin encanto;Comedy;1672;18;11;5;0.61;0.28;0.37;3;73;1011;3978;3.93;0.59;0.62;17871;0.38;0.61
+cal000085;cal000085;cal;Pedro Calderón ;El escondido y la tapada;Comedy;1657;19;15;4;0.79;0.21;0.32;3;77;822;3439;4.18;0.41;0.68;15758;0.31;0.69
+cal000013;cal000013;cal;Pedro Calderón ;El Faetonte;Comedy;1661;20;8;8;0.4;0.4;0.41;3;69;1054;3843;3.65;0.88;0.55;17659;0.41;0.55
+cal000014;cal000014;cal;Pedro Calderón ;El galán fantasma;Comedy;1637;12;8;4;0.67;0.33;0.28;3;76;702;3358;4.78;0.68;0.72;16209;0.27;0.73
+cal000086;cal000086;cal;Pedro Calderón ;El golfo de las sirenas;unknown;1657;35;15;14;0.43;0.4;0.44;3;32;561;1959;3.49;0.5;0.54;8828;0.43;0.54
+cal000162;cal000162;cal;Pedro Calderón ;El gran duque de Gandía;unknown;1639;12;6;5;0.5;0.42;0.39;1;25;241;1383;5.74;0.65;0.6;6219;0.39;0.6
+cal000163;cal000163;cal;Pedro Calderón ;El gran mercado del mundo;unknown;1638;20;5;12;0.25;0.6;0.51;1;45;514;1795;3.49;0.79;0.45;7938;0.52;0.45
+cal000087;cal000087;cal;Pedro Calderón ;El gran príncipe de Fez;Comedy;1672;23;18;3;0.78;0.13;0.11;3;74;693;4107;5.93;0.47;0.88;19209;0.12;0.88
+cal000015;cal000015;cal;Pedro Calderón ;El gran teatro del mundo;unknown;1717;12;8;3;0.67;0.25;0.16;1;30;309;1622;5.25;0.96;0.82;7746;0.17;0.82
+cal000088;cal000088;cal;Pedro Calderón ;El hombre pobre todo es trazas;Comedy;1637;10;6;4;0.6;0.4;0.36;3;58;560;3005;5.37;0.71;0.64;13751;0.36;0.64
+cal000016;cal000016;cal;Pedro Calderón ;El indulto general;unknown;1759;17;11;5;0.65;0.29;0.41;1;27;386;1827;4.73;0.74;0.55;8404;0.4;0.56
+cal000017;cal000017;cal;Pedro Calderón ;El jardín de Falerina;unknown;1677;23;12;10;0.52;0.43;0.53;2;44;452;2085;4.61;0.86;0.43;9331;0.53;0.43
+cal000204;cal000204;cal;Pedro Calderón ;El jardín de Falerina;unknown;1675;17;8;7;0.47;0.41;0.48;1;25;375;1909;5.09;1.0;0.49;8512;0.47;0.5
+cal000089;cal000089;cal;Pedro Calderón ;El José de las mujeres;Comedy;1660;15;10;4;0.67;0.27;0.36;3;88;819;3279;4.0;0.61;0.63;14692;0.36;0.62
+cal000164;cal000164;cal;Pedro Calderón ;El laberinto del mundo;unknown;1654;17;6;8;0.35;0.47;0.63;1;31;461;2027;4.4;0.99;0.36;9631;0.64;0.35
+cal000090;cal000090;cal;Pedro Calderón ;El laurel de Apolo;unknown;1664;29;14;10;0.48;0.34;0.49;2;53;541;2439;4.51;0.62;0.49;11074;0.48;0.49
+cal000165;cal000165;cal;Pedro Calderón ;El lirio y el azucena;unknown;1660;16;6;7;0.38;0.44;0.61;1;32;538;2056;3.82;0.91;0.36;9674;0.62;0.35
+cal000166;cal000166;cal;Pedro Calderón ;El Maestrazgo del Tusón;unknown;1659;17;7;6;0.41;0.35;0.63;1;36;365;1998;5.47;1.0;0.35;9121;0.63;0.35
+cal000091;cal000091;cal;Pedro Calderón ;El maestro de danzar;Comedy;1664;14;9;5;0.64;0.36;0.35;3;66;697;3359;4.82;0.83;0.65;15414;0.35;0.65
+cal000092;cal000092;cal;Pedro Calderón ;El mágico prodigioso;Comedy;1637;14;11;2;0.79;0.14;0.15;3;72;738;3365;4.56;0.62;0.85;15431;0.14;0.86
+cal000093;cal000093;cal;Pedro Calderón ;El mayor encanto, amor;Comedy;1637;26;14;11;0.54;0.42;0.4;3;57;647;3420;5.29;0.45;0.59;15828;0.4;0.59
+cal000094;cal000094;cal;Pedro Calderón ;El mayor monstruo del mundo;Comedy;1637;14;9;4;0.64;0.29;0.29;3;32;592;3819;6.45;0.87;0.7;17936;0.3;0.7
+cal000095;cal000095;cal;Pedro Calderón ;El mayor monstruo los celos;unknown;1665;14;9;4;0.64;0.29;0.29;3;54;585;3823;6.54;0.78;0.71;17975;0.29;0.7
+cal000018;cal000018;cal;Pedro Calderón ;El médico de su honra;Tragedy;1641;17;11;5;0.65;0.29;0.24;3;66;640;3196;4.99;0.4;0.76;14709;0.25;0.75
+cal000019;cal000019;cal;Pedro Calderón ;El monstruo de los jardines;Comedy;1674;19;11;7;0.58;0.37;0.19;3;65;901;3635;4.03;0.65;0.79;16363;0.18;0.8
+cal000020;cal000020;cal;Pedro Calderón ;El nuevo hospicio de pobres;unknown;1759;19;8;10;0.42;0.53;0.42;1;35;349;2155;6.17;0.75;0.58;9998;0.41;0.58
+cal000167;cal000167;cal;Pedro Calderón ;El nuevo palacio del Retiro;unknown;1634;13;7;5;0.54;0.38;0.23;1;20;178;1546;8.69;0.96;0.75;7429;0.24;0.75
+cal000168;cal000168;cal;Pedro Calderón ;El orden de Melquisedec;unknown;1657;14;9;4;0.64;0.29;0.46;1;21;490;1879;3.83;0.99;0.53;8484;0.47;0.52
+cal000169;cal000169;cal;Pedro Calderón ;El pastor Fido;unknown;1678;14;8;5;0.57;0.36;0.47;1;37;398;2090;5.25;1.0;0.5;9690;0.48;0.49
+cal000096;cal000096;cal;Pedro Calderón ;El pintor de su deshonra;Tragedy;1648;20;13;6;0.65;0.3;0.33;3;90;885;3462;3.91;0.51;0.67;15447;0.32;0.68
+cal000205;cal000205;cal;Pedro Calderón ;El pintor de su deshonra;unknown;1646;12;5;5;0.42;0.42;0.4;1;29;498;1873;3.76;1.0;0.57;8649;0.4;0.58
+cal000170;cal000170;cal;Pedro Calderón ;El pleito matrimonial;unknown;1646;10;4;5;0.4;0.5;0.41;1;31;414;1599;3.86;0.87;0.57;7270;0.41;0.58
+cal000097;cal000097;cal;Pedro Calderón ;El postrer duelo de España;Comedy;1665;22;16;4;0.73;0.18;0.26;3;71;851;3936;4.63;0.51;0.72;18013;0.26;0.73
+cal000206;cal000206;cal;Pedro Calderón ;El primer blasón del Austria;unknown;1635;13;11;2;0.85;0.15;0.15;1;12;72;819;11.38;0.31;0.85;3763;0.14;0.86
+cal000171;cal000171;cal;Pedro Calderón ;Loa sacramental de El primer refugio del hombre o la probática piscina;unknown;1661;16;9;6;0.56;0.38;0.17;1;3;116;483;4.16;1.0;0.81;2232;0.16;0.82
+cal000172;cal000172;cal;Pedro Calderón ;El primer refugio del hombre y probática piscina;unknown;1661;17;12;4;0.71;0.24;0.2;1;34;497;2016;4.06;1.0;0.79;9192;0.2;0.78
+cal000098;cal000098;cal;Pedro Calderón ;El príncipe constante;Comedy;1636;19;15;4;0.79;0.21;0.02;3;62;496;2915;5.88;0.42;0.98;13702;0.02;0.98
+cal000099;cal000099;cal;Pedro Calderón ;El purgatorio de san Patricio;Comedy;1628;16;13;3;0.81;0.19;0.15;3;53;383;3345;8.73;0.45;0.85;15543;0.16;0.84
+cal000173;cal000173;cal;Pedro Calderón ;El sacro Pernaso;unknown;1659;20;9;7;0.45;0.35;0.37;1;22;458;2065;4.51;0.99;0.59;9318;0.37;0.6
+cal000021;cal000021;cal;Pedro Calderón ;El santo rey don Fernando;unknown;1671;13;7;5;0.54;0.38;0.27;1;52;355;1932;5.44;1.0;0.72;8921;0.27;0.72
+cal000174;cal000174;cal;Pedro Calderón ;El santo rey don Fernando (segunda parte);unknown;1671;20;16;3;0.8;0.15;0.21;1;48;390;2275;5.83;0.91;0.77;10516;0.22;0.76
+cal000100;cal000100;cal;Pedro Calderón ;El secreto a voces;Comedy;1642;10;5;4;0.5;0.4;0.39;3;54;1117;4150;3.72;0.98;0.6;18538;0.4;0.6
+cal000175;cal000175;cal;Pedro Calderón ;El segundo blasón del Austria;unknown;1679;16;10;5;0.62;0.31;0.12;1;18;260;1758;6.76;0.97;0.86;8312;0.12;0.87
+cal000101;cal000101;cal; Pedro   Calderón  ;El segundo Scipión;Comedy;1676;31;21;8;0.68;0.26;0.2;3;101;856;4209;4.92;1.0;0.78;19116;0.2;0.79
+cal000102;cal000102;cal;Pedro Calderón ;El sitio de Bredá;Comedy;1626;24;20;4;0.83;0.17;0.17;3;49;520;3346;6.43;0.47;0.83;15634;0.18;0.82
+cal000022;cal000022;cal;Pedro Calderón ;El socorro general;unknown;1644;14;7;6;0.5;0.43;0.69;1;28;345;1756;5.09;1.0;0.3;7735;0.7;0.29
+cal000176;cal000176;cal;Pedro Calderón ;El tesoro escondido;unknown;1679;19;9;8;0.47;0.42;0.49;1;27;450;2269;5.04;1.0;0.48;10415;0.49;0.47
+cal000177;cal000177;cal;Pedro Calderón ;El valle de la Zarzuela;unknown;1657;13;4;8;0.31;0.62;0.49;1;54;387;2155;5.57;1.0;0.51;10169;0.49;0.51
+cal000023;cal000023;cal;Pedro Calderón ;El veneno y la triaca;unknown;1717;11;6;4;0.55;0.36;0.4;1;31;301;1722;5.72;0.91;0.58;7807;0.4;0.58
+cal000178;cal000178;cal;Pedro Calderón ;El verdadero Dios Pan;unknown;1670;18;7;8;0.39;0.44;0.36;1;54;445;2133;4.79;0.99;0.61;9865;0.36;0.61
+cal000179;cal000179;cal;Pedro Calderón ;El viático cordero;unknown;1665;15;12;2;0.8;0.13;0.25;1;16;372;1907;5.13;1.0;0.72;8715;0.25;0.72
+cal000103;cal000103;cal;Pedro Calderón ;En la vida todo es verdad y todo mentira;Comedy;1664;35;18;10;0.51;0.29;0.2;3;80;1078;4156;3.86;0.48;0.78;18798;0.2;0.79
+cal000104;cal000104;cal;Pedro Calderón ;Fieras afemina amor;Comedy;1677;27;9;12;0.33;0.44;0.36;3;56;617;3513;5.69;0.62;0.62;16293;0.35;0.63
+cal000105;cal000105;cal;Pedro Calderón ;Fineza contra fineza;Comedy;1672;12;6;3;0.5;0.25;0.37;3;64;593;3637;6.13;0.68;0.62;16880;0.37;0.62
+cal000106;cal000106;cal;Pedro Calderón ;Fortunas de Andrómeda y Perseo;Comedy;1653;41;18;22;0.44;0.54;0.31;3;87;865;3791;4.38;0.24;0.69;17232;0.31;0.69
+cal000107;cal000107;cal; Pedro   Calderón  ;Fuego de dios en el querer bien;Comedy;1642;13;8;4;0.62;0.31;0.4;3;79;1169;3818;3.27;1.0;0.59;16351;0.4;0.6
+cal000108;cal000108;cal;Pedro Calderón ;Gustos y disgustos son no más que imaginación;Comedy;1657;10;5;4;0.5;0.4;0.37;3;77;821;3713;4.52;0.78;0.63;16782;0.36;0.64
+cal000109;cal000109;cal; Pedro   Calderón  ;Hado y divisa de Leonido y Marfisa;Comedy;1682;20;11;9;0.55;0.45;0.36;3;87;945;5094;5.39;0.78;0.64;23424;0.36;0.64
+cal000110;cal000110;cal;Pedro Calderón ;Judas Macabeo;Comedy;1623;14;12;1;0.86;0.07;0.09;3;62;518;2869;5.54;0.54;0.9;12696;0.09;0.9
+cal000024;cal000024;cal;Pedro Calderón ;La aurora en Copacabana;Comedy;1674;28;19;8;0.68;0.29;0.26;3;86;766;4531;5.92;0.5;0.73;20224;0.26;0.72
+cal000111;cal000111;cal;Pedro Calderón ;La banda y la flor;Comedy;1632;10;5;4;0.5;0.4;0.32;3;78;826;3205;3.88;0.91;0.68;14615;0.31;0.69
+cal000180;cal000180;cal;Pedro Calderón ;La cena del rey Baltasar;unknown;1634;8;3;4;0.38;0.5;0.37;1;22;235;1627;6.92;0.89;0.62;7776;0.38;0.61
+cal000112;cal000112;cal;Pedro Calderón ;La cisma de Ingalaterra;Comedy;1627;14;9;5;0.64;0.36;0.3;3;74;475;3056;6.43;0.67;0.7;14138;0.29;0.71
+cal000181;cal000181;cal;Pedro Calderón ;La cura y la enfermedad;unknown;1658;14;4;9;0.29;0.64;0.56;1;58;553;2185;3.95;1.0;0.43;9937;0.57;0.42
+cal000025;cal000025;cal;Pedro Calderón ;La dama duende;Comedy;1636;9;5;4;0.56;0.44;0.35;3;76;763;3406;4.46;0.72;0.65;15890;0.35;0.65
+cal000113;cal000113;cal; Pedro   Calderón  ;La desdicha de la voz;Comedy;1639;14;8;5;0.57;0.36;0.42;3;83;875;4115;4.7;0.67;0.58;18939;0.42;0.58
+cal000026;cal000026;cal;Pedro Calderón ;La devoción de la Cruz;Comedy;1625;18;13;4;0.72;0.22;0.25;3;49;469;2748;5.86;0.46;0.75;12652;0.24;0.76
+cal000027;cal000027;cal;Pedro Calderón ;La devoción de la misa;unknown;1760;12;9;2;0.75;0.17;0.18;1;34;329;1988;6.04;1.0;0.81;9104;0.18;0.81
+cal000114;cal000114;cal;Pedro Calderón ;La estatua de Prometeo;Comedy;1683;14;6;7;0.43;0.5;0.32;3;56;533;2862;5.37;0.92;0.66;13097;0.31;0.66
+cal000115;cal000115;cal; Pedro   Calderón  ;La exaltación de la cruz;Comedy;1648;22;16;3;0.73;0.14;0.1;3;68;790;3686;4.67;1.0;0.89;16858;0.1;0.88
+cal000028;cal000028;cal;Pedro Calderón ;La fiera, el rayo y la piedra;Comedy;1652;25;12;12;0.48;0.48;0.47;3;91;1049;4402;4.2;0.72;0.52;20387;0.47;0.52
+cal000116;cal000116;cal;Pedro Calderón ;La gran Cenobia;Comedy;1625;16;12;4;0.75;0.25;0.36;3;54;455;3044;6.69;0.39;0.64;13722;0.35;0.65
+cal000029;cal000029;cal;Pedro Calderón ;La hidalga del valle;unknown;1717;12;6;5;0.5;0.42;0.53;1;19;209;1514;7.24;0.71;0.46;7310;0.51;0.47
+cal000117;cal000117;cal;Pedro Calderón ;La hija del aire;Comedy;1643;15;10;4;0.67;0.27;0.28;3;75;768;3579;4.66;0.53;0.72;16600;0.27;0.73
+cal000118;cal000118;cal;Pedro Calderón ;La hija del aire;Comedy;1643;15;10;4;0.67;0.27;0.36;3;61;724;3582;4.95;0.56;0.64;16564;0.36;0.64
+cal000030;cal000030;cal;Pedro Calderón ;La humildad coronada;unknown;1644;12;8;3;0.67;0.25;0.25;1;22;379;1589;4.19;1.0;0.71;7296;0.24;0.72
+cal000182;cal000182;cal;Pedro Calderón ;La iglesia sitiada;unknown;1636;11;4;6;0.36;0.55;0.9;1;26;276;1380;5.0;0.82;0.08;6198;0.9;0.08
+cal000031;cal000031;cal;Pedro Calderón ;La inmunidad del sagrado;unknown;1664;16;9;6;0.56;0.38;0.48;1;30;401;1590;3.97;0.97;0.51;7223;0.48;0.51
+cal000183;cal000183;cal;Pedro Calderón ;La lepra de Constantino;unknown;1657;21;9;8;0.43;0.38;0.48;1;36;423;1865;4.41;0.99;0.5;8747;0.49;0.5
+cal000032;cal000032;cal;Pedro Calderón ;La nave del mercader;unknown;1759;15;10;4;0.67;0.27;0.35;1;39;492;2530;5.14;0.9;0.62;11726;0.36;0.61
+cal000119;cal000119;cal;Pedro Calderón ;La niña de Gómez Arias;Tragedy;1651;17;11;5;0.65;0.29;0.35;3;66;726;3500;4.82;0.45;0.65;15738;0.35;0.65
+cal000033;cal000033;cal;Pedro Calderón ;La piel de Gedeón;unknown;1760;17;13;3;0.76;0.18;0.34;1;38;502;1864;3.71;0.74;0.64;8489;0.34;0.64
+cal000034;cal000034;cal;Pedro Calderón ;La primer flor del Carmelo;unknown;1759;15;9;5;0.6;0.33;0.44;1;34;433;1681;3.88;0.7;0.53;7748;0.43;0.55
+cal000035;cal000035;cal;Pedro Calderón ;La protestación de la fe;unknown;1656;15;5;7;0.33;0.47;0.84;1;23;276;1711;6.2;0.72;0.13;7896;0.85;0.12
+cal000120;cal000120;cal;Pedro Calderón ;La puente de Mantible;Comedy;1636;17;14;2;0.82;0.12;0.04;3;59;542;3254;6.0;0.65;0.96;15172;0.04;0.96
+cal000121;cal000121;cal;Pedro Calderón ;La púrpura de la rosa;unknown;1664;21;9;9;0.43;0.43;0.36;1;44;366;1488;4.07;0.62;0.61;6552;0.35;0.63
+cal000184;cal000184;cal;Pedro Calderón ;La redención de cautivos;unknown;1677;14;10;3;0.71;0.21;0.27;1;33;300;1851;6.17;1.0;0.73;8613;0.27;0.73
+cal000036;cal000036;cal;Pedro Calderón ;La segunda esposa;unknown;1648;13;7;5;0.54;0.38;0.42;1;19;327;1527;4.67;1.0;0.57;6984;0.42;0.57
+cal000207;cal000207;cal;Pedro Calderón ;La selva confusa;Comedy;1623;12;9;3;0.75;0.25;0.29;3;55;941;3894;4.14;0.8;0.71;18083;0.28;0.72
+cal000185;cal000185;cal;Pedro Calderón ;La semilla y la cizaña;unknown;1651;17;5;10;0.29;0.59;0.55;1;37;391;1983;5.07;1.0;0.44;9096;0.55;0.44
+cal000122;cal000122;cal;Pedro Calderón ;La señora y la criada;Comedy;1679;16;11;5;0.69;0.31;0.41;3;76;761;3260;4.28;0.57;0.59;14915;0.41;0.59
+cal000186;cal000186;cal;Pedro Calderón ;La serpiente de metal;unknown;1676;22;16;5;0.73;0.23;0.29;1;45;416;2242;5.39;0.99;0.69;10511;0.29;0.69
+cal000123;cal000123;cal;Pedro Calderón ;La sibila del Oriente y gran reina de Sabá;Comedy;1636;17;10;6;0.59;0.35;0.44;3;31;341;2500;7.33;0.52;0.55;12063;0.44;0.55
+cal000187;cal000187;cal;Pedro Calderón ;La siembra del Señor (Los obreros del señor);unknown;1655;17;10;5;0.59;0.29;0.33;1;40;353;1613;4.57;0.91;0.66;7684;0.33;0.66
+cal000188;cal000188;cal;Pedro Calderón ;La torre de Babilonia;unknown;1637;19;14;5;0.74;0.26;0.02;1;28;207;1573;7.6;0.94;0.98;7513;0.02;0.98
+cal000189;cal000189;cal;Pedro Calderón ;La universal redención;unknown;1647;14;5;8;0.36;0.57;0.48;1;24;261;1091;4.18;0.43;0.52;5204;0.47;0.53
+cal000190;cal000190;cal;Pedro Calderón ;La vacante general;unknown;1647;14;9;3;0.64;0.21;0.35;1;20;298;1482;4.97;0.99;0.63;6700;0.34;0.64
+cal000037;cal000037;cal;Pedro Calderón ;La vida es sueño;Tragedy;1636;14;11;2;0.79;0.14;0.25;3;59;479;3443;7.19;0.91;0.75;16356;0.25;0.75
+cal000191;cal000191;cal;Pedro Calderón ;La vida es sueño, primera versión;unknown;1636;11;5;5;0.45;0.45;0.28;1;28;209;1452;6.95;0.96;0.71;6808;0.29;0.71
+cal000192;cal000192;cal;Pedro Calderón ;La vida es sueño, segunda versión;unknown;1677;17;10;6;0.59;0.35;0.34;1;24;424;2028;4.78;0.92;0.64;9371;0.34;0.63
+cal000193;cal000193;cal;Pedro Calderón ;La viña del Señor;unknown;1674;17;11;5;0.65;0.29;0.39;1;44;542;2562;4.73;0.97;0.57;11950;0.39;0.57
+cal000124;cal000124;cal;Pedro Calderón ;Lances de amor y fortuna;Comedy;1625;11;8;3;0.73;0.27;0.35;3;53;545;3234;5.93;0.6;0.65;15075;0.34;0.66
+cal000125;cal000125;cal;Pedro Calderón ;Las armas de la hermosura;Comedy;1678;25;14;7;0.56;0.28;0.27;3;75;645;4047;6.27;0.43;0.73;18519;0.27;0.73
+cal000126;cal000126;cal;Pedro Calderón ;Las cadenas del demonio;Comedy;1644;13;8;4;0.62;0.31;0.22;3;50;656;2860;4.36;0.74;0.77;13190;0.22;0.77
+cal000194;cal000194;cal;Pedro Calderón ;Las espigas de Ruth;unknown;1663;30;19;5;0.63;0.17;0.36;1;25;417;1792;4.3;0.98;0.6;8346;0.35;0.61
+cal000127;cal000127;cal;Pedro Calderón ;Las manos blancas no ofenden;Comedy;1640;15;8;6;0.53;0.4;0.29;3;79;964;4726;4.9;0.9;0.71;21648;0.27;0.73
+cal000039;cal000039;cal;Pedro Calderón ;Las Órdenes Militares;unknown;1662;19;13;5;0.68;0.26;0.55;1;34;421;2231;5.3;0.8;0.43;10134;0.55;0.43
+cal000128;cal000128;cal;Pedro Calderón ;Las tres justicias en una;Tragedy;1661;13;8;4;0.62;0.31;0.29;3;69;702;3264;4.65;0.6;0.71;14829;0.28;0.72
+cal000040;cal000040;cal;Pedro Calderón ;Las visiones de la muerte;unknown;1673;11;9;1;0.82;0.09;0.05;1;9;111;280;2.52;0.84;0.93;1381;0.06;0.93
+cal000195;cal000195;cal;Pedro Calderón ;Llamados y escogidos.;unknown;1643;20;5;11;0.25;0.55;0.64;1;25;345;1463;4.24;1.0;0.31;6699;0.64;0.31
+cal000196;cal000196;cal;Pedro Calderón ;Lo que va del hombre a Dios;unknown;1657;14;7;5;0.5;0.36;0.39;1;30;537;2280;4.25;1.0;0.6;10530;0.39;0.59
+cal000041;cal000041;cal;Pedro Calderón ;Loa a El año santo de Roma;unknown;1759;12;7;2;0.58;0.17;0.4;1;8;43;376;8.74;0.79;0.43;1856;0.36;0.47
+cal000042;cal000042;cal;Pedro Calderón ;Loa a El divino Orfeo;unknown;1759;13;7;5;0.54;0.38;0.42;1;12;94;360;3.83;1.0;0.5;1649;0.42;0.51
+cal000043;cal000043;cal;Pedro Calderón ;Loa a «Fieras afemina amor»;Comedy;1717;28;27;0;0.96;0.0;0.0;1;1;70;436;6.23;1.0;0.95;2086;0.0;0.96
+cal000044;cal000044;cal;Pedro Calderón ;Loa en metáfora de la piadosa Hermandad del Refugio discurriendo por calles y templos de Madrid;unknown;1759;8;4;3;0.5;0.38;0.81;1;3;99;414;4.18;1.0;0.14;1915;0.78;0.15
+cal000045;cal000045;cal;Pedro Calderón ;Loa para el auto sacramental intitulado El gran teatro del mundo;unknown;1717;10;4;5;0.4;0.5;0.64;1;5;29;386;13.31;1.0;0.35;1797;0.64;0.35
+cal000046;cal000046;cal;Pedro Calderón ;Loa para el auto sacramental intitulado «La humildad coronada de las plantas»;unknown;1717;10;5;4;0.5;0.4;0.58;1;3;38;391;10.29;1.0;0.42;1860;0.58;0.42
+cal000047;cal000047;cal;Pedro Calderón ;Loa para el auto sacramental intitulado «Psiquis y Cupido»;unknown;1717;12;6;5;0.5;0.42;0.41;1;10;92;355;3.86;0.78;0.52;1568;0.41;0.52
+cal000197;cal000197;cal;Pedro Calderón ;Los alimentos del hombre;unknown;1676;18;10;4;0.56;0.22;0.18;1;25;379;2306;6.08;0.98;0.79;10609;0.18;0.8
+cal000129;cal000129;cal;Pedro Calderón ;Los cabellos de Absalón;Comedy;1640;17;14;2;0.82;0.12;0.2;3;91;755;3432;4.55;0.56;0.79;16167;0.2;0.8
+cal000130;cal000130;cal;Pedro Calderón ;Los dos amantes del cielo;Comedy;1640;15;8;4;0.53;0.27;0.26;3;59;667;3640;5.46;0.63;0.72;16721;0.27;0.72
+cal000131;cal000131;cal;Pedro Calderón ;Los empeños de un acaso;Comedy;1639;11;6;4;0.55;0.36;0.25;3;73;765;3377;4.41;0.71;0.75;15646;0.24;0.76
+cal000048;cal000048;cal;Pedro Calderón ;Los encantos de la culpa;unknown;1645;14;7;6;0.5;0.43;0.38;1;23;245;1387;5.66;0.99;0.6;6362;0.38;0.6
+cal000132;cal000132;cal;Pedro Calderón ;Los hijos de la fortuna, Teágenes y Cariclea;Comedy;1651;31;14;14;0.45;0.45;0.36;3;81;762;4110;5.39;0.32;0.64;18662;0.35;0.64
+cal000198;cal000198;cal;Pedro Calderón ;Los misterios de la misa;unknown;1640;13;9;3;0.69;0.23;0.41;1;12;322;1432;4.45;0.68;0.56;6530;0.41;0.56
+cal000133;cal000133;cal;Pedro Calderón ;Los tres afectos de amor, piedad, desmayo y valor;Comedy;1660;28;14;5;0.5;0.18;0.39;3;69;898;3675;4.09;0.52;0.59;16384;0.4;0.59
+cal000134;cal000134;cal;Pedro Calderón ;Los tres mayores prodigios;Comedy;1637;35;23;12;0.66;0.34;0.31;3;77;864;4192;4.85;0.34;0.69;19460;0.32;0.68
+cal000135;cal000135;cal;Pedro Calderón ;Luis Pérez el Gallego;Comedy;1628;25;19;4;0.76;0.16;0.12;3;72;581;3113;5.36;0.28;0.88;14230;0.12;0.88
+cal000136;cal000136;cal; Pedro   Calderón  ;Mañana será otro día;Comedy;1635;19;12;6;0.63;0.32;0.44;3;81;1041;4239;4.07;0.98;0.56;19085;0.45;0.55
+cal000137;cal000137;cal;Pedro Calderón ;Mañanas de abril y mayo;Comedy;1640;11;5;5;0.45;0.45;0.35;3;67;606;2945;4.86;0.69;0.64;14146;0.35;0.64
+cal000138;cal000138;cal;Pedro Calderón ;Mejor está que estaba;Comedy;1633;10;6;4;0.6;0.4;0.37;3;61;689;3304;4.8;0.96;0.63;15097;0.36;0.64
+cal000199;cal000199;cal;Pedro Calderón ;Mística y real Babilonia;unknown;1662;14;12;1;0.86;0.07;0.17;1;28;440;1987;4.52;1.0;0.8;9067;0.19;0.79
+cal000139;cal000139;cal;Pedro Calderón ;Mujer, llora y vencerás;Comedy;1662;15;8;3;0.53;0.2;0.37;3;69;841;3799;4.52;0.79;0.61;17182;0.37;0.62
+cal000140;cal000140;cal;Pedro Calderón ;Nadie fíe su secreto;Comedy;1629;9;6;3;0.67;0.33;0.12;3;69;676;3137;4.64;0.92;0.88;14463;0.11;0.89
+cal000141;cal000141;cal;Pedro Calderón ;Ni Amor se libra de amor;Comedy;1664;20;9;5;0.45;0.25;0.35;3;63;830;3574;4.31;0.62;0.61;16160;0.34;0.62
+cal000142;cal000142;cal;Pedro Calderón ;No hay burlas con el amor;Comedy;1635;9;6;3;0.67;0.33;0.35;3;61;786;3089;3.93;1.0;0.65;14057;0.35;0.65
+cal000143;cal000143;cal;Pedro Calderón ;No hay cosa como callar;Tragedy;1639;16;11;4;0.69;0.25;0.38;3;87;930;3808;4.09;0.52;0.62;16949;0.38;0.61
+cal000049;cal000049;cal;Pedro Calderón ;No hay instante sin milagro;unknown;1677;18;8;9;0.44;0.5;0.64;1;37;248;1722;6.94;1.0;0.35;8167;0.64;0.35
+cal000200;cal000200;cal;Pedro Calderón ;No hay más Fortuna que Dios;unknown;1653;17;5;7;0.29;0.41;0.48;1;40;363;1863;5.13;0.99;0.49;8548;0.48;0.49
+cal000144;cal000144;cal;Pedro Calderón ;No siempre lo peor es cierto;Comedy;1651;9;6;3;0.67;0.33;0.37;3;70;822;3405;4.14;0.83;0.63;15564;0.37;0.63
+cal000145;cal000145;cal;Pedro Calderón ;Origen, pérdida y restauración de la Virgen del Sagrario;Comedy;1637;36;27;8;0.75;0.22;0.17;3;49;441;2751;6.24;0.24;0.82;13055;0.17;0.82
+cal000146;cal000146;cal;Pedro Calderón ;Para vencer a amor, querer vencerle;Comedy;1654;16;11;4;0.69;0.25;0.32;3;81;772;3510;4.55;0.44;0.67;15884;0.33;0.67
+cal000147;cal000147;cal;Pedro Calderón ;Peor está que estaba;Comedy;1636;14;10;4;0.71;0.29;0.43;3;61;663;3173;4.79;0.45;0.57;14460;0.42;0.58
+cal000148;cal000148;cal;Pedro Calderón ;Primero soy yo;Comedy;1642;11;7;4;0.64;0.36;0.42;3;84;910;3343;3.67;0.76;0.58;14864;0.42;0.58
+cal000050;cal000050;cal;Pedro Calderón ;Primero y segundo Isaac;unknown;1677;21;14;6;0.67;0.29;0.41;1;28;410;1862;4.54;1.0;0.57;8783;0.41;0.56
+cal000051;cal000051;cal;Pedro Calderón ;Psiquis y Cupido, que escribió para esta villa de Madrid;unknown;1665;17;8;8;0.47;0.47;0.47;1;38;453;1854;4.09;0.73;0.5;8472;0.46;0.51
+cal000201;cal000201;cal;Pedro Calderón ;Psiquis y Cupido (Toledo);unknown;1640;14;4;6;0.29;0.43;0.52;1;30;339;1589;4.69;0.99;0.44;7288;0.52;0.44
+cal000052;cal000052;cal;Pedro Calderón ;¿Quién hallará mujer fuerte?;unknown;1672;21;10;10;0.48;0.48;0.69;1;44;352;1880;5.34;0.67;0.3;8559;0.69;0.3
+cal000149;cal000149;cal;Pedro Calderón ;Saber del mal y el bien;Comedy;1636;13;9;4;0.69;0.31;0.21;3;59;448;3043;6.79;0.5;0.79;14090;0.2;0.8
+cal000053;cal000053;cal;Pedro Calderón ;Sueños hay que verdad son;unknown;1670;27;19;7;0.7;0.26;0.18;1;44;388;2222;5.73;0.88;0.82;10263;0.18;0.81
+cal000150;cal000150;cal;Pedro Calderón ;También hay duelo en las damas;Comedy;1664;15;11;4;0.73;0.27;0.35;3;95;1158;4412;3.81;0.68;0.65;20074;0.36;0.64
+cal000054;cal000054;cal;Pedro Calderón ;Triunfar muriendo;unknown;1759;13;7;5;0.54;0.38;0.36;1;27;361;1831;5.07;1.0;0.62;8392;0.36;0.62
+cal000202;cal000202;cal;Pedro Calderón ;Tu prójimo como a ti (primera versión);unknown;1653;19;10;7;0.53;0.37;0.46;1;46;360;1862;5.17;0.92;0.53;8676;0.46;0.53
+cal000151;cal000151;cal;Pedro Calderón ;Un castigo en tres venganzas;Tragedy;1634;13;10;3;0.77;0.23;0.27;3;63;715;3138;4.39;0.51;0.73;14367;0.27;0.73

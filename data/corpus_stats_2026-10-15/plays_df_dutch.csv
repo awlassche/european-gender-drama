@@ -1,0 +1,217 @@
+;play_id;corpus;author;title;genre;year;characters;male;female;%_male_chars;%_female_chars;%_female_lines;acts;scenes;speech_turns;lines;mean_sp_length;density;%_male_lines;tokens;%_female_tokens;%_male_tokens
+dut000242;dut000242;dutch;De Heilige Geest/ Alpha et Omega ;Ipre;unknown;1539;4;4;0;1.0;0.0;0.0;1;1;111;529;4.77;1.0;1.0;3489;0.0;1.0
+dut000243;dut000243;dutch;Altoos Doende ;Leffijnghe;unknown;1539;3;2;1;0.67;0.33;0.29;1;1;141;590;4.18;1.0;0.71;3449;0.29;0.71
+dut000073;dut000073;dutch;Jan Arp ;Singhende klucht van droncke Goosen;unknown;1639;3;2;1;0.67;0.33;0.58;5;5;35;151;4.31;1.0;0.42;950;0.56;0.44
+dut000119;dut000119;dutch;Thomas Asselijn ;De kwakzalver;unknown;1692;7;3;4;0.43;0.57;0.2;1;13;311;557;1.79;0.81;0.8;7370;0.19;0.81
+dut000249;dut000249;dutch;De Baptisten ;Wynoxberghe;unknown;1539;5;5;0;1.0;0.0;0.0;1;1;107;511;4.78;1.0;1.0;3556;0.0;1.0
+dut000239;dut000239;dutch;De Barbaristen ;Cortrijcke;unknown;1539;4;4;0;1.0;0.0;0.0;1;1;85;519;6.11;1.0;1.0;3221;0.0;1.0
+dut000244;dut000244;dutch;De Barbaristen ;Meenene;unknown;1539;4;1;0;0.25;0.0;0.0;1;1;95;497;5.23;1.0;0.17;3376;0.0;0.17
+dut000045;dut000045;dutch;Willem Baudous ;Tragedie ofte treur-spel, van Edipes en Antigone;unknown;1618;21;16;5;0.76;0.24;0.4;5;19;521;2155;4.14;0.31;0.6;19828;0.38;0.62
+dut000238;dut000238;dutch;De Berkenisten ;Caprijcke;unknown;1539;9;2;7;0.22;0.78;0.57;1;1;245;572;2.33;1.0;0.43;3626;0.57;0.43
+dut000101;dut000101;dutch;Govert Bidloo ;Fabius Severus;unknown;1680;11;8;3;0.73;0.27;0.32;5;43;495;1874;3.79;0.93;0.68;15664;0.32;0.68
+dut000096;dut000096;dutch;Adriaan Boelens ;Bedrooge vryer;unknown;1649;12;7;5;0.58;0.42;0.45;1;8;221;495;2.24;0.61;0.55;5606;0.46;0.54
+dut000135;dut000135;dutch;Michiel Breda ;Krispyn, poëet, en officier;unknown;1685;8;5;3;0.62;0.38;0.28;1;16;315;957;3.04;0.93;0.72;7556;0.28;0.72
+dut000037;dut000037;dutch;Gerbrand Adriaenszoon Bredero ;Rodd'rick ende Alphonsus;unknown;1611;14;10;4;0.71;0.29;0.38;3;15;269;2624;9.75;0.44;0.62;21645;0.34;0.66
+dut000046;dut000046;dutch;Gerbrand Adriaenszoon Bredero ;Spaanschen Brabander;unknown;1617;26;19;7;0.73;0.27;0.22;6;12;531;2393;4.51;0.46;0.78;23363;0.22;0.78
+dut000102;dut000102;dutch;Thomas Corneille  & Noël Breton Hauteroche  & Thomas Corneille  & Pieter Lacroix ;De vermakelyke rouw;unknown;1685;7;5;2;0.71;0.29;0.14;1;15;295;785;2.66;1.0;0.86;4805;0.14;0.86
+dut000292;dut000292;dutch;Maria Geertruida Werken  & Jean-François Ducis  & William Shakespeare ;Hamlet;unknown;1778;9;6;3;0.67;0.33;0.43;5;31;329;1583;4.81;0.42;0.57;14056;0.43;0.57
+dut000294;dut000294;dutch;Maria Geertruida Werken  & Claude Guimond Touche ;Iphigenia in Tauris;unknown;1771;8;5;3;0.62;0.38;0.5;5;35;320;1419;4.43;0.46;0.5;12749;0.5;0.5
+dut000293;dut000293;dutch;Maria Geertruida Werken  & Jean-François Ducis ;Oedipus aan het hof van Admetus;unknown;1783;11;9;2;0.82;0.18;0.27;5;26;420;1659;3.95;0.47;0.73;14581;0.27;0.73
+dut000075;dut000075;dutch;Pierre Corneille  & Johan Heemskerck ;De Cid;unknown;1641;12;8;4;0.67;0.33;0.44;5;33;380;1974;5.19;0.44;0.56;18307;0.45;0.55
+dut000103;dut000103;dutch;Pierre Corneille  & Govert Bidloo ;De dood van Pompeus;unknown;1684;16;9;3;0.56;0.19;0.34;6;24;197;1969;9.99;0.23;0.62;17981;0.34;0.63
+dut000219;dut000219;dutch;Samuel Coster ;Iphigenia;unknown;1617;16;13;2;0.81;0.12;0.1;5;21;352;1914;5.44;0.71;0.89;16687;0.09;0.9
+dut000220;dut000220;dutch;Samuel Coster  & Pieter Corneliszoon Hooft ;Isabella;unknown;1618;13;10;2;0.77;0.15;0.29;5;22;475;2162;4.55;0.37;0.63;18301;0.3;0.65
+dut000222;dut000222;dutch;Samuel Coster ;Ithys;unknown;1615;11;5;5;0.45;0.45;0.59;5;26;220;1896;8.62;0.35;0.29;16348;0.6;0.29
+dut000221;dut000221;dutch;Samuel Coster ;Polyxena;unknown;1619;15;7;5;0.47;0.33;0.36;5;35;262;2314;8.83;0.31;0.54;20118;0.36;0.56
+dut000105;dut000105;dutch;Pieter Lacroix ;De gewaande advocaat;unknown;1683;7;6;1;0.86;0.14;0.06;1;25;338;1110;3.28;1.0;0.94;6802;0.06;0.94
+dut000104;dut000104;dutch;Pieter Lacroix ;De meid juffrouw;unknown;1685;7;5;2;0.71;0.29;0.18;1;15;391;579;1.48;1.0;0.82;5127;0.14;0.86
+dut000247;dut000247;dutch;De Fonteine ;Thienen;unknown;1539;8;5;0;0.62;0.0;0.0;1;1;116;555;4.78;1.0;0.84;3286;0.0;0.87
+dut000253;dut000253;dutch;De Pellicaen ;Abrahams offerande;unknown;1600;13;10;3;0.77;0.23;0.26;1;4;359;1163;3.24;0.56;0.74;7867;0.24;0.76
+dut000318;dut000318;dutch;De Pellicaen  & Louris Jansz ;Afval vant gotsalige weesen;unknown;1598;8;7;1;0.88;0.12;0.07;1;5;223;1033;4.63;0.71;0.93;8664;0.07;0.93
+dut000263;dut000263;dutch;De Pellicaen ;Avont, nacht ende morgenstont;unknown;1600;6;3;2;0.5;0.33;0.37;1;4;316;1089;3.45;0.73;0.47;7349;0.38;0.46
+dut000274;dut000274;dutch;De Pellicaen ;Christum liefde bewijsen;unknown;1600;15;7;7;0.47;0.47;0.49;1;2;460;1890;4.11;0.99;0.51;15674;0.48;0.52
+dut000254;dut000254;dutch;De Pellicaen ;Coninck Proetus Abantus;unknown;1589;14;3;4;0.21;0.29;0.14;1;4;412;1180;2.86;0.59;0.3;7273;0.14;0.3
+dut000264;dut000264;dutch;De Pellicaen ;Cranckheijt des vleijsch;unknown;1600;7;2;0;0.29;0.0;0.0;1;5;282;1034;3.67;0.62;0.22;6996;0.0;0.21
+dut000310;dut000310;dutch;De Pellicaen ;De andere Meij;unknown;1598;10;5;2;0.5;0.2;0.23;1;4;194;718;3.7;0.78;0.76;5329;0.23;0.76
+dut000265;dut000265;dutch;De Pellicaen ;De appelboom;unknown;1600;9;5;1;0.56;0.11;0.11;1;1;227;499;2.2;1.0;0.62;2902;0.11;0.63
+dut000266;dut000266;dutch;De Pellicaen ;De clockreep;unknown;1600;9;5;3;0.56;0.33;0.46;1;3;177;955;5.4;0.58;0.44;6510;0.49;0.42
+dut000300;dut000300;dutch;De Pellicaen ;De Desolate Mensch;unknown;1598;7;1;3;0.14;0.43;0.59;1;1;145;665;4.59;1.0;0.12;6326;0.58;0.11
+dut000285;dut000285;dutch;De Pellicaen  & Louris Jansz ;De Gebooren Blinde;unknown;1579;16;12;1;0.75;0.06;0.01;1;7;272;1210;4.45;0.52;0.71;9452;0.01;0.72
+dut000275;dut000275;dutch;De Pellicaen ;De Ghichtige Mensche;unknown;1582;13;11;1;0.85;0.08;0.0;1;1;246;933;3.79;1.0;0.9;6793;0.0;0.91
+dut000312;dut000312;dutch;De Pellicaen ;De groote hel;unknown;1598;9;8;0;0.89;0.0;0.0;1;3;101;1236;12.24;0.89;0.98;9267;0.0;0.98
+dut000276;dut000276;dutch;De Pellicaen ;De Heijlige Kerck;unknown;1600;8;4;3;0.5;0.38;0.4;1;11;433;1857;4.29;0.61;0.48;11981;0.39;0.48
+dut000261;dut000261;dutch;De Pellicaen ;De hel vant brouwersgilde;unknown;1600;7;7;0;1.0;0.0;0.0;1;1;15;619;41.27;1.0;1.0;5089;0.0;1.0
+dut000277;dut000277;dutch;De Pellicaen ;De hoecksteen;unknown;1600;29;22;2;0.76;0.07;0.17;1;1;160;1106;6.91;1.0;0.81;7715;0.17;0.81
+dut000255;dut000255;dutch;De Pellicaen ;De katmaecker;unknown;1578;5;2;3;0.4;0.6;0.42;1;1;255;603;2.36;1.0;0.58;3941;0.42;0.58
+dut000314;dut000314;dutch;De Pellicaen  & Heyns Adriaensz ;De Meij;unknown;1598;10;7;3;0.7;0.3;0.24;1;2;154;625;4.06;0.44;0.76;4263;0.22;0.78
+dut000303;dut000303;dutch;De Pellicaen ;De mensche den Doot onderworpen;unknown;1598;10;8;0;0.8;0.0;0.0;1;2;135;557;4.13;0.87;0.85;5140;0.0;0.86
+dut000267;dut000267;dutch;De Pellicaen ;De menschwerdinge Christi;unknown;1600;12;8;2;0.67;0.17;0.15;1;2;480;1450;3.02;1.0;0.77;9986;0.13;0.78
+dut000256;dut000256;dutch;De Pellicaen ;De minckijsers;unknown;1600;9;5;2;0.56;0.22;0.13;1;2;311;1281;4.12;0.5;0.63;8808;0.12;0.62
+dut000316;dut000316;dutch;De Pellicaen  & Heyns Adriaensz ;De Neering;unknown;1598;22;19;1;0.86;0.05;0.06;1;3;190;590;3.11;0.87;0.87;4120;0.07;0.86
+dut000278;dut000278;dutch;De Pellicaen ;De Oude Tobijas;unknown;1600;15;9;6;0.6;0.4;0.19;1;5;308;1355;4.4;0.96;0.81;10055;0.2;0.8
+dut000268;dut000268;dutch;De Pellicaen ;De propheet Eliseus;unknown;1600;15;12;1;0.8;0.07;0.02;1;5;203;925;4.56;0.49;0.86;7851;0.02;0.87
+dut000284;dut000284;dutch;De Pellicaen ;De Rijcke Wrecke ende Lazarus;unknown;1600;14;6;0;0.43;0.0;0.0;1;4;211;645;3.06;0.66;0.51;5504;0.0;0.52
+dut000286;dut000286;dutch;De Pellicaen  & Louris Jansz ;De saijer die goet saet saijde;unknown;1600;10;8;0;0.8;0.0;0.0;1;11;252;1110;4.4;0.53;0.87;8603;0.0;0.88
+dut000279;dut000279;dutch;De Pellicaen ;De seven wercken der barmherticheijden;unknown;1606;18;4;0;0.22;0.0;0.0;1;10;333;992;2.98;0.32;0.28;7176;0.0;0.27
+dut000280;dut000280;dutch;De Pellicaen ;De troost der sondaren;unknown;1600;10;9;0;0.9;0.0;0.0;1;2;234;937;4.0;1.0;0.84;6780;0.0;0.85
+dut000257;dut000257;dutch;De Pellicaen ;De wellustige mensch;unknown;1600;19;7;4;0.37;0.21;0.09;1;2;540;1456;2.7;0.8;0.4;9806;0.08;0.42
+dut000317;dut000317;dutch;De Pellicaen  & Louris Jansz ;dEenvoudige Mensch en Schijn van Deuchden;unknown;1598;11;6;4;0.55;0.36;0.2;1;5;263;1036;3.94;0.95;0.76;8043;0.2;0.76
+dut000313;dut000313;dutch;De Pellicaen  & Jan Tomiszoon ;Die becooringe des Duvels;unknown;1598;4;4;0;1.0;0.0;0.0;1;6;337;854;2.53;1.0;1.0;5953;0.0;1.0
+dut000309;dut000309;dutch;De Pellicaen  & Jan Prins ;Die daet der tirannen;unknown;1595;8;2;1;0.25;0.12;0.25;1;5;222;673;3.03;0.71;0.38;5610;0.26;0.38
+dut000304;dut000304;dutch;De Pellicaen  & Louris Jansz ;Die geboorte Johannes Babtista;unknown;1578;13;8;5;0.62;0.38;0.3;1;9;216;1192;5.52;0.53;0.7;8830;0.3;0.7
+dut000321;dut000321;dutch;De Pellicaen  & Louris Jansz ;Die Ghenaede Goodts;unknown;1598;7;5;2;0.71;0.29;0.03;1;5;346;1202;3.47;0.9;0.97;8562;0.03;0.97
+dut000301;dut000301;dutch;De Pellicaen ;Die Heijlige Kerck tegen Heresije;unknown;1598;11;3;3;0.27;0.27;0.4;1;2;396;1081;2.73;0.67;0.26;8177;0.39;0.27
+dut000299;dut000299;dutch;De Pellicaen ;Die Huisvader ende Huismoeder;unknown;1598;9;8;1;0.89;0.11;0.13;1;5;215;697;3.24;1.0;0.87;6704;0.12;0.88
+dut000258;dut000258;dutch;De Pellicaen ;Die mane;unknown;1600;5;3;2;0.6;0.4;0.38;1;2;353;779;2.21;1.0;0.62;5216;0.38;0.62
+dut000305;dut000305;dutch;De Pellicaen  & Louris Jansz ;Die Mensch veracht die Redelickheijt;unknown;1598;13;11;2;0.85;0.15;0.19;1;5;321;1118;3.48;0.69;0.81;8410;0.19;0.81
+dut000306;dut000306;dutch;De Pellicaen  & Louris Jansz ;Die Mensch wil die werlt bevechten;unknown;1598;8;2;4;0.25;0.5;0.5;1;3;285;1060;3.72;0.71;0.47;7327;0.5;0.48
+dut000281;dut000281;dutch;De Pellicaen ;Die propheet Jonas;unknown;1600;17;10;0;0.59;0.0;0.0;1;4;294;1056;3.59;0.62;0.61;8163;0.0;0.62
+dut000297;dut000297;dutch;De Pellicaen ;Emaus;unknown;1598;7;4;2;0.57;0.29;0.17;1;3;53;351;6.62;0.71;0.73;3190;0.18;0.73
+dut000259;dut000259;dutch;De Pellicaen ;Evangelische maeltijt;unknown;1592;15;11;1;0.73;0.07;0.18;1;10;305;1625;5.33;0.36;0.62;12642;0.17;0.63
+dut000294;dut000294;dutch;De Pellicaen  & Louris Jansz ;Goetheijt, Lijefde en Eendracht;unknown;1579;13;5;3;0.38;0.23;0.15;1;9;262;1195;4.56;0.31;0.45;9033;0.15;0.45
+dut000287;dut000287;dutch;De Pellicaen  & Louris Jansz ;Goodts Ordonancij;unknown;1583;15;12;1;0.8;0.07;0.25;1;13;228;1271;5.57;0.55;0.49;9748;0.25;0.49
+dut000311;dut000311;dutch;De Pellicaen  & Louris Jansz ;Het Cooren;unknown;1565;9;8;1;0.89;0.11;0.13;1;10;318;1176;3.7;0.5;0.87;8584;0.13;0.87
+dut000298;dut000298;dutch;De Pellicaen ;Het lichamelijcke huis;unknown;1598;19;1;15;0.05;0.79;0.31;1;1;195;648;3.32;1.0;0.05;5553;0.29;0.06
+dut000295;dut000295;dutch;De Pellicaen  & Louris Jansz ;Jesus onder die leeraers;unknown;1598;10;9;1;0.9;0.1;0.11;1;8;336;1147;3.41;0.53;0.89;8275;0.11;0.89
+dut000296;dut000296;dutch;De Pellicaen ;Joseph ende Maria;unknown;1598;15;11;4;0.73;0.27;0.21;1;1;301;956;3.18;1.0;0.79;8115;0.21;0.79
+dut000273;dut000273;dutch;De Pellicaen ;Lazarus doot;unknown;1600;15;12;3;0.8;0.2;0.25;1;8;252;1082;4.29;0.58;0.75;7886;0.24;0.76
+dut000288;dut000288;dutch;De Pellicaen  & Louris Jansz ;Lieft boven al;unknown;1581;10;6;3;0.6;0.3;0.26;1;2;130;887;6.82;1.0;0.51;6788;0.26;0.51
+dut000260;dut000260;dutch;De Pellicaen ;Machabeen;unknown;1590;23;12;1;0.52;0.04;0.1;1;4;503;1915;3.81;0.72;0.32;14933;0.11;0.32
+dut000307;dut000307;dutch;De Pellicaen  & Louris Jansz ;Meestal die om Paijs roepen;unknown;1559;11;8;3;0.73;0.27;0.27;1;6;212;1017;4.8;0.49;0.73;7219;0.27;0.73
+dut000289;dut000289;dutch;De Pellicaen  & Louris Jansz ;Meestal verjaecht Neering;unknown;1600;11;6;3;0.55;0.27;0.22;1;4;244;915;3.75;0.49;0.73;6512;0.22;0.73
+dut000293;dut000293;dutch;De Pellicaen  & Louris Jansz ;Menich Bedruct Hart aen een droege chijsterne verleijt;unknown;1577;11;9;1;0.82;0.09;0.1;1;4;249;1176;4.72;0.38;0.86;8868;0.1;0.86
+dut000308;dut000308;dutch;De Pellicaen  & Jan Prins ;Mennich Eenvoudich Mensch soect lijefdebewijs;unknown;1597;7;4;2;0.57;0.29;0.32;1;6;290;948;3.27;0.81;0.45;7667;0.31;0.45
+dut000320;dut000320;dutch;De Pellicaen  & Louris Jansz ;Mennich Goet Hart verlangt nae die Waerheijt;unknown;1598;9;7;2;0.78;0.22;0.06;1;1;266;1102;4.14;1.0;0.94;8560;0.06;0.94
+dut000269;dut000269;dutch;De Pellicaen ;Paulus ende Barnabas;unknown;1600;14;13;0;0.93;0.0;0.0;1;5;227;926;4.08;0.7;0.99;6789;0.0;0.99
+dut000270;dut000270;dutch;De Pellicaen ;Piramus en Thisbe;unknown;1600;6;2;1;0.33;0.17;0.12;1;2;282;671;2.38;1.0;0.31;4008;0.13;0.35
+dut000282;dut000282;dutch;De Pellicaen ;Retorijka en Justicia;unknown;1579;8;5;3;0.62;0.38;0.49;1;1;129;520;4.03;1.0;0.51;3873;0.49;0.51
+dut000290;dut000290;dutch;De Pellicaen ;Saul ende David;unknown;1600;11;10;1;0.91;0.09;0.1;1;12;205;580;2.83;0.65;0.9;5097;0.11;0.89
+dut000271;dut000271;dutch;De Pellicaen ;Sincte Paulus bekeringe;unknown;1600;15;12;1;0.8;0.07;0.16;1;9;347;943;2.72;0.28;0.76;6709;0.15;0.77
+dut000283;dut000283;dutch;De Pellicaen ;Sommich Mensch en het huijs van Nering;unknown;1600;9;2;0;0.22;0.0;0.0;1;1;195;1552;7.96;1.0;0.29;12414;0.0;0.29
+dut000319;dut000319;dutch;De Pellicaen  & Louris Jansz ;tGeslacht der Menschen;unknown;1598;7;7;0;1.0;0.0;0.0;1;3;241;1036;4.3;1.0;1.0;8423;0.0;1.0
+dut000315;dut000315;dutch;De Pellicaen ;tHuis van idelheijt;unknown;1598;5;4;1;0.8;0.2;0.09;1;4;487;1174;2.41;1.0;0.91;7159;0.1;0.9
+dut000302;dut000302;dutch;De Pellicaen ;Veel Volcks begeert Vrede;unknown;1598;10;5;2;0.5;0.2;0.3;1;4;393;1192;3.03;1.0;0.51;9604;0.29;0.51
+dut000272;dut000272;dutch;De Pellicaen ;Verlaten kennisse;unknown;1601;14;10;2;0.71;0.14;0.09;1;7;334;1143;3.42;0.41;0.84;8274;0.09;0.84
+dut000291;dut000291;dutch;De Pellicaen  & Louris Jansz ;Vrou Lorts;unknown;1565;7;1;1;0.14;0.14;0.21;1;4;108;486;4.5;0.33;0.26;3566;0.21;0.27
+dut000292;dut000292;dutch;De Pellicaen  & Louris Jansz  & Louris Jansz ;Werlts versufte maeltijt;unknown;1600;16;7;0;0.44;0.0;0.0;1;5;374;1122;3.0;0.68;0.51;7843;0.0;0.53
+dut000262;dut000262;dutch;De Pellicaen ;Wie haer op troost verlaeten;unknown;1600;9;7;2;0.78;0.22;0.2;1;3;188;933;4.96;1.0;0.8;7164;0.2;0.8
+dut000248;dut000248;dutch;De Royaerts ;Loo in Vuerne Ambocht;unknown;1539;3;3;0;1.0;0.0;0.0;1;1;101;512;5.07;1.0;1.0;3369;0.0;1.0
+dut000236;dut000236;dutch;Den Boeck ;Bruessele;unknown;1539;11;7;0;0.64;0.0;0.0;1;1;119;516;4.34;1.0;0.67;3709;0.0;0.67
+dut000246;dut000246;dutch;De Doornenkroon ;Nieuport;unknown;1539;3;3;0;1.0;0.0;0.0;1;1;106;589;5.56;1.0;1.0;3417;0.0;1.0
+dut000086;dut000086;dutch;Gabriel Gilbert  & David Lingelbach ;De liefde van Diana en Endimion;unknown;1669;15;8;6;0.53;0.4;0.47;6;38;365;2181;5.98;0.41;0.48;18538;0.47;0.48
+dut000245;dut000245;dutch;Goedwillig in 't herte ;Nieukercke;unknown;1539;4;3;1;0.75;0.25;0.17;1;1;81;519;6.41;1.0;0.83;3441;0.17;0.83
+dut000092;dut000092;dutch;Hendrik Graef ;Alcinea;unknown;1671;17;12;3;0.71;0.18;0.27;5;16;494;1798;3.64;0.76;0.71;15034;0.26;0.72
+dut000237;dut000237;dutch;Den Heilighe Gheest ;Brugghe;unknown;1539;4;4;0;1.0;0.0;0.0;1;1;133;522;3.92;1.0;1.0;3447;0.0;1.0
+dut000218;dut000218;dutch;Pieter Corneliszoon Hooft ;Baeto;unknown;1626;15;7;8;0.47;0.53;0.71;5;5;284;1588;5.59;0.64;0.29;12548;0.69;0.31
+dut000214;dut000214;dutch;Pieter Corneliszoon Hooft ;Geeraerdt van Velsen;unknown;1613;20;9;2;0.45;0.1;0.29;5;21;282;1817;6.44;0.22;0.56;14319;0.28;0.59
+dut000297;dut000297;dutch;Anna Horst ;De belegering van Groningen in het jaar 1672;unknown;1772;11;11;0;1.0;0.0;0.0;4;4;76;1148;15.11;0.73;1.0;10331;0.0;1.0
+dut000213;dut000213;dutch;Jan Sijwertsz Kolm ;Battaefsche vrienden-spieghel;unknown;1615;20;15;4;0.75;0.2;0.27;5;8;354;2294;6.48;0.73;0.71;18845;0.27;0.72
+dut000212;dut000212;dutch;Jan Sijwertsz Kolm ;Nederlants treur-spel;unknown;1616;24;16;4;0.67;0.17;0.1;5;9;216;2903;13.44;0.67;0.76;25141;0.1;0.77
+dut000209;dut000209;dutch;Abraham de Koning ;Achabs treur-spel;unknown;1618;35;30;4;0.86;0.11;0.26;5;36;382;2305;6.03;0.23;0.69;19353;0.25;0.7
+dut000210;dut000210;dutch;Abraham de Koning ;Iephthahs ende zijn eenighe dochters;unknown;1615;25;16;7;0.64;0.28;0.26;3;52;282;2508;8.89;0.18;0.6;21042;0.26;0.62
+dut000211;dut000211;dutch;Abraham de Koning ;Simsons treurspel;unknown;1618;14;10;2;0.71;0.14;0.29;3;25;464;2332;5.03;0.75;0.59;18412;0.26;0.65
+dut000151;dut000151;dutch;Enoch Krook ;De ondergang van Eigenbaat;unknown;1707;17;9;4;0.53;0.24;0.23;5;40;316;1680;5.32;0.7;0.62;14473;0.23;0.62
+dut000074;dut000074;dutch;Jan Harmensz. Krul ;Alcip en Amarillis;unknown;1640;15;10;4;0.67;0.27;0.26;5;8;304;1510;4.97;0.53;0.73;13052;0.24;0.75
+dut000066;dut000066;dutch;Jan Harmensz. Krul ;Mey spel van Cloris en Philida;unknown;1631;6;4;2;0.67;0.33;0.35;5;5;382;2115;5.54;0.93;0.65;17526;0.34;0.66
+dut000068;dut000068;dutch;Jan Harmensz. Krul ;Diana;unknown;1627;16;11;5;0.69;0.31;0.38;5;5;505;1984;3.93;0.57;0.62;17012;0.37;0.63
+dut000097;dut000097;dutch;Jan Harmensz. Krul ;Favstina;unknown;1640;10;6;4;0.6;0.4;0.28;6;6;389;1649;4.24;0.64;0.72;13691;0.28;0.72
+dut000064;dut000064;dutch;Jan Harmensz. Krul ;Helena;unknown;1629;7;2;5;0.29;0.71;0.53;5;5;287;1409;4.91;0.81;0.47;11798;0.52;0.48
+dut000069;dut000069;dutch;Jan Harmensz. Krul ;Musyk-spel, van Juliana, en Claudiaen;unknown;1634;10;4;6;0.4;0.6;0.55;2;2;234;998;4.26;0.93;0.45;7706;0.52;0.48
+dut000076;dut000076;dutch;Jan Harmensz. Krul ;Rosilion en Rosanniere;unknown;1641;14;10;4;0.71;0.29;0.26;5;7;319;1678;5.26;0.7;0.74;14389;0.24;0.76
+dut000067;dut000067;dutch;Jan Harmensz. Krul ;Rozemond en Raniclis;unknown;1632;6;3;3;0.5;0.5;0.43;5;5;364;1388;3.81;0.93;0.57;11445;0.44;0.56
+dut000070;dut000070;dutch;Jan Harmensz. Krul ;Theodorus en Dianira;unknown;1635;9;6;3;0.67;0.33;0.38;5;6;231;1384;5.99;0.58;0.62;12123;0.37;0.63
+dut000250;dut000250;dutch;Hoe ik labeure met pijnen duere ;Meesene;unknown;1539;4;2;0;0.5;0.0;0.0;1;1;89;537;6.03;1.0;0.68;3475;0.0;0.69
+dut000295;dut000295;dutch;Juliana Cornelia Lannoy ;De belegering van Haerlem.;unknown;1770;10;8;2;0.8;0.2;0.2;5;48;318;1859;5.85;0.71;0.8;16412;0.2;0.8
+dut000296;dut000296;dutch;Juliana Cornelia Lannoy ;Leo de Groote;unknown;1767;9;7;2;0.78;0.22;0.15;5;55;297;1738;5.85;0.61;0.85;15458;0.14;0.86
+dut000204;dut000204;dutch;Thomas Corneille  & Katharyne Lescailje ;Ariadne;unknown;1693;7;4;3;0.57;0.43;0.62;5;27;261;1898;7.27;0.71;0.38;17518;0.62;0.38
+dut000199;dut000199;dutch;Antoinette du Ligier de la Garde Deshoulières  & Katharyne Lescailje ;Genserik;unknown;1685;11;6;5;0.55;0.45;0.5;5;40;308;1982;6.44;0.47;0.5;17140;0.5;0.5
+dut000202;dut000202;dutch;Jean François Juvenon de La Thuillerie  & Katharyne Lescailje ;Herkules en Dianira;unknown;1688;9;5;4;0.56;0.44;0.45;5;31;240;1686;7.03;0.44;0.55;15071;0.46;0.54
+dut000200;dut000200;dutch;François Tristan l'Hermite  & Katharyne Lescailje ;Herodes en Mariamne;unknown;1685;16;11;5;0.69;0.31;0.36;5;33;346;2122;6.13;0.34;0.64;18924;0.36;0.64
+dut000198;dut000198;dutch;Katharyne Lescailje ;Kassandra;unknown;1753;9;5;4;0.56;0.44;0.44;5;38;266;2022;7.6;0.39;0.56;18009;0.44;0.56
+dut000203;dut000203;dutch;Pierre Corneille  & Katharyne Lescailje ;Nicomédes;unknown;1692;8;5;3;0.62;0.38;0.35;5;32;342;2138;6.25;0.79;0.65;19118;0.35;0.65
+dut000201;dut000201;dutch;Jean Rotrou   & Katharyne Lescailje ;Wenseslaüs, koning van Poolen;unknown;1686;9;5;4;0.56;0.44;0.25;5;43;330;2010;6.09;0.58;0.75;18027;0.25;0.75
+dut000085;dut000085;dutch;David Lingelbach ;Appollonius;unknown;1662;19;14;4;0.74;0.21;0.27;5;33;430;1926;4.48;0.31;0.65;16694;0.28;0.66
+dut000111;dut000111;dutch;David Lingelbach ;Cleomenes;unknown;1687;11;6;5;0.55;0.45;0.38;5;35;240;1816;7.57;0.38;0.62;16584;0.37;0.63
+dut000112;dut000112;dutch;David Lingelbach ;De ontdekte schyndeugd;unknown;1687;12;8;4;0.67;0.33;0.37;3;25;440;1135;2.58;0.74;0.63;8197;0.37;0.63
+dut000123;dut000123;dutch;David Lingelbach ;Sardanapalus;unknown;1699;8;5;3;0.62;0.38;0.47;5;25;179;1775;9.92;0.68;0.53;15972;0.47;0.53
+dut000225;dut000225;dutch;Lucretia Wilhelmina Merken ;De camisards;unknown;1774;10;8;2;0.8;0.2;0.17;5;37;398;1758;4.42;0.91;0.83;15200;0.16;0.84
+dut000231;dut000231;dutch;Lucretia Wilhelmina Merken ;Gelonide;unknown;1786;14;10;3;0.71;0.21;0.32;5;39;416;1588;3.82;0.62;0.68;13164;0.31;0.68
+dut000226;dut000226;dutch;Lucretia Wilhelmina Merken ;Het beleg der stad Leyden;unknown;1774;13;11;2;0.85;0.15;0.31;5;40;383;1730;4.52;0.56;0.69;15432;0.31;0.69
+dut000227;dut000227;dutch;Lucretia Wilhelmina Merken ;Jacob Simonszoon de Ryk;unknown;1774;10;8;2;0.8;0.2;0.29;5;40;451;1775;3.94;0.67;0.71;15320;0.3;0.7
+dut000229;dut000229;dutch;Lucretia Wilhelmina Merken ;Louize d'Arlac;unknown;1786;16;14;2;0.88;0.12;0.21;5;34;603;1818;3.01;0.53;0.79;14919;0.21;0.79
+dut000228;dut000228;dutch;Lucretia Wilhelmina Merken ;Maria van Bourgondiën, gravinne van Holland;unknown;1774;10;8;2;0.8;0.2;0.45;5;37;411;1702;4.14;0.64;0.55;14844;0.45;0.55
+dut000230;dut000230;dutch;Lucretia Wilhelmina Merken ;Sebille van Anjou;unknown;1786;14;9;5;0.64;0.36;0.37;5;35;413;1751;4.24;0.62;0.63;14852;0.36;0.64
+dut000126;dut000126;dutch;Antonio Mira de Amescua  & Lope de Vega  & Leonard de Fuyter ;Verwarde hof;unknown;1647;18;15;3;0.83;0.17;0.22;5;34;559;2120;3.79;0.77;0.78;17786;0.22;0.78
+dut000093;dut000093;dutch;Johannes Mol ;Bedrogen lichtmis;unknown;1671;10;5;5;0.5;0.5;0.61;1;5;179;464;2.59;0.64;0.39;4021;0.59;0.41
+dut000240;dut000240;dutch;De Nazarenen ;Deynze;unknown;1539;6;4;1;0.67;0.17;0.11;1;1;59;502;8.51;1.0;0.63;3518;0.11;0.63
+dut000139;dut000139;dutch;Philippe Quinault  & Nil Volentibus Arduum ;Agrippa, koning van Alba;unknown;1669;11;7;4;0.64;0.36;0.36;5;25;290;1830;6.31;0.44;0.64;16659;0.36;0.64
+dut000142;dut000142;dutch;Jean Baptiste Racine  & Nil Volentibus Arduum ;Andromaché;unknown;1678;8;4;4;0.5;0.5;0.47;5;28;247;1759;7.12;0.46;0.53;16455;0.47;0.53
+dut000162;dut000162;dutch;Philippe Quinault  & Nil Volentibus Arduum ;Astrate, koning van Tyrus;unknown;1670;11;8;2;0.73;0.18;0.35;5;23;340;1705;5.01;0.35;0.65;15531;0.35;0.65
+dut000146;dut000146;dutch;Pierre Corneille  & Nil Volentibus Arduum ;Cinna;unknown;1680;9;6;3;0.67;0.33;0.29;5;20;217;1884;8.68;0.53;0.71;17467;0.29;0.71
+dut000157;dut000157;dutch;Nil Volentibus Arduum ;De Amsterdamsche dragonnade;unknown;1714;13;10;3;0.77;0.23;0.26;3;34;499;1086;2.18;0.69;0.74;10531;0.26;0.74
+dut000144;dut000144;dutch;Nil Volentibus Arduum ;De Bekeerde Alchimist;unknown;1680;11;6;4;0.55;0.36;0.2;1;11;281;834;2.97;0.87;0.79;5195;0.21;0.79
+dut000155;dut000155;dutch;Nil Volentibus Arduum ;De belachchelyke sérenade;unknown;1706;9;7;2;0.78;0.22;0.1;1;20;282;935;3.32;0.75;0.9;5875;0.1;0.9
+dut000150;dut000150;dutch;Adrien-Thomas Perdou de Subligny  & Nil Volentibus Arduum ;De gelukte list;unknown;1682;12;7;4;0.58;0.33;0.22;1;20;574;1130;1.97;0.64;0.75;9254;0.22;0.76
+dut000161;dut000161;dutch;Plautus  & Nil Volentibus Arduum ;De gelyke twélingen;unknown;1682;13;10;3;0.77;0.23;0.17;5;42;1048;2176;2.08;0.59;0.83;19486;0.17;0.83
+dut000166;dut000166;dutch;Jean de la Chapelle  & Nil Volentibus Arduum ;De geschaakte bruid;unknown;1690;14;9;5;0.64;0.36;0.23;3;58;569;1169;2.05;0.78;0.77;9085;0.23;0.77
+dut000158;dut000158;dutch;Nil Volentibus Arduum ;De leevendige doode;unknown;1716;7;4;3;0.57;0.43;0.25;1;17;342;682;1.99;1.0;0.75;5542;0.25;0.75
+dut000159;dut000159;dutch;Jean Baptiste Molière  & Nil Volentibus Arduum ;De listige vryster;unknown;1690;8;5;3;0.62;0.38;0.18;3;36;507;1400;2.76;1.0;0.82;10328;0.18;0.82
+dut000141;dut000141;dutch;François le Métel de Boisrobert  & Nil Volentibus Arduum ;De malle wedding;unknown;1690;11;7;4;0.64;0.36;0.23;5;59;1259;3127;2.48;1.0;0.77;21693;0.24;0.76
+dut000160;dut000160;dutch;Nil Volentibus Arduum ;De schaakingen;unknown;1763;10;8;2;0.8;0.2;0.08;3;33;461;935;2.03;0.82;0.92;8834;0.07;0.93
+dut000165;dut000165;dutch;Jean-Baptiste Molière  & Nil Volentibus Arduum ;De schilder door liefde;unknown;1682;14;9;4;0.64;0.29;0.29;3;25;551;1587;2.88;0.55;0.71;11691;0.29;0.71
+dut000156;dut000156;dutch;Petrus Anthonius de Huybert van Cruyningen  & Nil Volentibus Arduum ;De vermiste molenaar;unknown;1713;12;6;3;0.5;0.25;0.28;1;24;461;758;1.64;1.0;0.72;7411;0.28;0.72
+dut000164;dut000164;dutch;Nil Volentibus Arduum  & Isaac Vos ;De vrijer in de kist;unknown;1678;8;3;5;0.38;0.62;0.62;1;8;210;713;3.4;1.0;0.38;7001;0.63;0.37
+dut000143;dut000143;dutch;Philippe Quinault  & Nil Volentibus Arduum ;De wanhébbelyke liefde;unknown;1678;6;3;3;0.5;0.5;0.36;1;13;328;779;2.38;1.0;0.64;7050;0.36;0.64
+dut000148;dut000148;dutch;Nil Volentibus Arduum ;De verwaande Hollandsche Franschman;unknown;1684;15;8;6;0.53;0.4;0.4;5;58;818;2306;2.82;0.68;0.59;17538;0.4;0.59
+dut000154;dut000154;dutch;Jean Baptiste Molière  & Nil Volentibus Arduum ;Fielebout;unknown;1680;19;14;5;0.74;0.26;0.2;3;28;608;1956;3.22;0.33;0.8;11544;0.21;0.79
+dut000153;dut000153;dutch;Jean Baptiste Molière  & Nil Volentibus Arduum ;Het gedwongene huuwelyk;unknown;1682;13;8;5;0.62;0.38;0.17;3;26;410;1250;3.05;0.27;0.83;9150;0.18;0.82
+dut000140;dut000140;dutch;Jean Magnon  & Nil Volentibus Arduum ;Het huwelyk van Orondates en Statira;unknown;1670;8;4;4;0.5;0.5;0.57;5;33;436;1522;3.49;0.75;0.43;12933;0.57;0.43
+dut000163;dut000163;dutch;Pedro Calderón de la Barca  & Antoine Le Métel d'Ouville  & Nil Volentibus Arduum ;Het spookend weeuwtje;unknown;1670;12;6;6;0.5;0.5;0.47;5;33;717;2122;2.96;0.62;0.53;16574;0.48;0.52
+dut000147;dut000147;dutch;Jean Racine  & Nil Volentibus Arduum ;Ifigenia;unknown;1678;13;8;5;0.62;0.38;0.46;5;37;257;1954;7.6;0.47;0.54;17826;0.47;0.53
+dut000152;dut000152;dutch;Nil Volentibus Arduum ;Loon naar wérk;unknown;1709;6;4;1;0.67;0.17;0.06;1;13;224;975;4.35;0.93;0.93;5483;0.06;0.93
+dut000149;dut000149;dutch;Philippe Quinault  & Nil Volentibus Arduum ;Roeland;unknown;1686;24;6;7;0.25;0.29;0.4;5;27;256;1346;5.26;0.17;0.42;10976;0.41;0.43
+dut000145;dut000145;dutch;Francesco Sbarra  & Nil Volentibus Arduum ;Tieranny van Eigenbaat in het Eiland van Vryekeur;unknown;1679;15;7;7;0.47;0.47;0.48;5;65;865;2390;2.76;0.65;0.52;18294;0.48;0.52
+dut000252;dut000252;dutch;Oudenaerde ;Audenaerde;unknown;1539;8;1;2;0.12;0.25;0.3;1;2;119;510;4.29;0.57;0.15;3400;0.3;0.16
+dut000207;dut000207;dutch;Catharina Questiers  & Antonio Enríquez Gómez ;Casimier;unknown;1656;16;11;4;0.69;0.25;0.21;5;16;597;1748;2.93;0.69;0.79;16097;0.21;0.79
+dut000206;dut000206;dutch;Lope de Vega  & Catharina Questiers ;Den geheymen minnaar;unknown;1655;13;10;2;0.77;0.15;0.16;5;5;581;2000;3.44;0.9;0.84;18007;0.15;0.85
+dut000205;dut000205;dutch;Catharina Questiers ;D’ondanckbare Fulvius en getrouwe Octavia;unknown;1665;13;9;4;0.69;0.31;0.42;5;5;533;1862;3.49;0.86;0.58;17027;0.42;0.58
+dut000223;dut000223;dutch;Theodoor Rodenburg ;Casandra;unknown;1617;18;13;3;0.72;0.17;0.31;4;7;1177;3474;2.95;0.73;0.67;27841;0.3;0.69
+dut000224;dut000224;dutch;Theodoor Rodenburg ;Rodomont en Isabella;unknown;1618;42;25;6;0.6;0.14;0.32;6;8;939;2912;3.1;0.42;0.63;22638;0.3;0.64
+dut000241;dut000241;dutch;Sint-Anna ;Edijnghe;unknown;1539;5;1;3;0.2;0.6;0.49;1;1;90;495;5.5;1.0;0.46;3649;0.5;0.46
+dut000251;dut000251;dutch;Sint-Jan-Baptist ;Thielt;unknown;1539;4;1;0;0.25;0.0;0.0;1;1;168;560;3.33;1.0;0.1;3471;0.0;0.1
+dut000235;dut000235;dutch;Sint-Ontcommere ;Axcele;unknown;1539;8;5;1;0.62;0.12;0.24;1;1;103;494;4.8;1.0;0.74;3436;0.24;0.75
+dut000208;dut000208;dutch;Catharina Verwers Dusart ;Spaensche heydin;unknown;1644;25;13;11;0.52;0.44;0.49;5;5;376;1496;3.98;0.51;0.5;12561;0.48;0.52
+dut000234;dut000234;dutch;De Violieren ;Antwerpen;unknown;1539;8;5;2;0.62;0.25;0.26;1;1;118;570;4.83;1.0;0.73;3780;0.26;0.73
+dut000030;dut000030;dutch;Joost Vondel ;Adam in Ballingschap;unknown;1664;10;9;1;0.9;0.1;0.17;5;16;233;1724;7.4;0.27;0.83;13300;0.16;0.84
+dut000028;dut000028;dutch;Joost Vondel ;Adonias;unknown;1661;13;10;3;0.77;0.23;0.35;5;21;344;1920;5.58;0.27;0.65;15247;0.3;0.7
+dut000007;dut000007;dutch;Joost Vondel ;De Amsteldamsche Hecvba;unknown;1626;12;8;4;0.67;0.33;0.67;5;8;145;1687;11.63;0.33;0.33;13301;0.64;0.36
+dut000029;dut000029;dutch;Joost Vondel ;Batavische Gebroeders;unknown;1663;8;5;3;0.62;0.38;0.32;5;19;391;1875;4.8;0.61;0.68;14735;0.26;0.74
+dut000024;dut000024;dutch;Joost Vondel ;Koning David In ballingschap;unknown;1660;14;10;3;0.71;0.21;0.28;5;22;399;1946;4.88;0.26;0.59;15229;0.28;0.65
+dut000012;dut000012;dutch;Sophocles  & Joost Vondel ;Elektra;unknown;1639;8;4;4;0.5;0.5;0.78;1;1;405;1648;4.07;1.0;0.22;13032;0.76;0.24
+dut000002;dut000002;dutch;Euripides  & Joost Vondel ;Euripides Feniciaensche;unknown;1668;12;9;3;0.75;0.25;0.47;1;1;433;1983;4.58;1.0;0.53;15046;0.41;0.59
+dut000003;dut000003;dutch;Joost Vondel ;Faeton;unknown;1663;9;4;3;0.44;0.33;0.27;5;14;316;1567;4.96;0.42;0.49;12675;0.29;0.53
+dut000014;dut000014;dutch;Joost Vondel ;Gebroeders;unknown;1640;10;8;2;0.8;0.2;0.26;5;17;381;1818;4.77;0.47;0.74;15487;0.25;0.75
+dut000001;dut000001;dutch;Joost Vondel ;Gysbreght van Aemstel;Tragedy;1637;23;14;5;0.61;0.22;0.16;5;14;248;1933;7.79;0.25;0.81;16905;0.15;0.83
+dut000004;dut000004;dutch;Sophocles  & Joost Vondel ;Sofokles Herkules in Trachin;unknown;1668;9;5;4;0.56;0.44;0.58;1;1;264;1279;4.84;1.0;0.42;10164;0.55;0.45
+dut000036;dut000036;dutch;Joost Vondel ;Het Pascha;unknown;1612;16;10;2;0.62;0.12;0.08;5;16;181;2318;12.81;0.29;0.53;17617;0.09;0.6
+dut000008;dut000008;dutch;Joost Vondel ;Hiervsalem verwoest;unknown;1620;15;10;4;0.67;0.27;0.4;5;8;206;2456;11.92;0.29;0.6;19812;0.37;0.63
+dut000010;dut000010;dutch;Joost Vondel ;Hippolytvs;unknown;1628;6;2;2;0.33;0.33;0.37;5;10;120;1639;13.66;0.73;0.32;12369;0.41;0.34
+dut000031;dut000031;dutch;Euripides  & Joost Vondel ;Ifigenie in Tauren;unknown;1666;8;5;3;0.62;0.38;0.58;1;1;396;1577;3.98;1.0;0.42;12688;0.54;0.46
+dut000011;dut000011;dutch;Hugo Grotius  & Joost Vondel ;Iosef;unknown;1635;12;11;1;0.92;0.08;0.27;5;8;141;1423;10.09;0.53;0.73;11513;0.19;0.81
+dut000023;dut000023;dutch;Joost Vondel ;Jeptha;unknown;1659;8;5;3;0.62;0.38;0.39;5;16;252;2015;8.0;0.54;0.61;14105;0.35;0.65
+dut000015;dut000015;dutch;Joost Vondel ;Joseph in Dothan;unknown;1640;7;6;0;0.86;0.0;0.0;5;20;515;1732;3.36;0.71;0.86;14582;0.0;0.89
+dut000016;dut000016;dutch;Joost Vondel ;Joseph In Egypten;unknown;1640;6;3;3;0.5;0.5;0.45;5;17;256;1476;5.77;0.67;0.55;12173;0.47;0.53
+dut000025;dut000025;dutch;Joost Vondel ;Koning David Herstelt;unknown;1660;11;9;1;0.82;0.09;0.08;5;18;290;1786;6.16;0.35;0.77;14188;0.07;0.82
+dut000026;dut000026;dutch;Sophocles  & Joost Vondel ;Koning Edipus;unknown;1660;9;7;1;0.78;0.11;0.08;1;1;448;1876;4.19;1.0;0.71;13737;0.08;0.74
+dut000021;dut000021;dutch;Joost Vondel ;Lucifer;unknown;1654;10;8;0;0.8;0.0;0.0;5;23;331;2205;6.66;0.47;0.75;18258;0.0;0.78
+dut000013;dut000013;dutch;Joost Vondel ;Maeghden;unknown;1639;10;7;2;0.7;0.2;0.14;5;19;288;1792;6.22;0.42;0.71;15096;0.14;0.75
+dut000018;dut000018;dutch;Joost Vondel ;Maria Stuart;unknown;1646;8;5;3;0.62;0.38;0.42;5;19;385;1874;4.87;0.54;0.58;15259;0.38;0.62
+dut000005;dut000005;dutch;Joost Vondel ;Noah;unknown;1667;13;10;2;0.77;0.15;0.13;5;16;261;1596;6.11;0.29;0.67;12304;0.13;0.74
+dut000009;dut000009;dutch;Joost Vondel ;Palamedes;unknown;1625;22;19;3;0.86;0.14;0.07;5;14;267;2440;9.14;0.24;0.93;19331;0.05;0.95
+dut000017;dut000017;dutch;Joost Vondel ;Peter en Pauwels;unknown;1641;14;10;3;0.71;0.21;0.39;5;20;288;1698;5.9;0.19;0.61;14366;0.42;0.58
+dut000022;dut000022;dutch;Joost Vondel ;Salmoneus;unknown;1657;8;6;1;0.75;0.12;0.13;5;21;407;1995;4.9;0.82;0.72;16230;0.14;0.71
+dut000020;dut000020;dutch;Joost Vondel ;Salomon;unknown;1648;12;9;2;0.75;0.17;0.16;5;18;366;1978;5.4;0.27;0.68;16072;0.16;0.73
+dut000027;dut000027;dutch;Joost van den Vondel ;Samson;unknown;1660;12;8;3;0.67;0.25;0.38;5;17;250;1717;6.87;0.21;0.61;13887;0.36;0.63
+dut000006;dut000006;dutch;Joost Vondel ;Zungchin;unknown;1667;11;8;3;0.73;0.27;0.11;5;19;314;1652;5.26;0.38;0.89;12958;0.12;0.88
+dut000233;dut000233;dutch;Nicolaas Simon Winter ;Menzikoff;unknown;1786;7;6;1;0.86;0.14;0.14;5;28;546;1765;3.23;0.71;0.86;15152;0.14;0.86
+dut000232;dut000232;dutch;Nicolaas Simon Winter ;Monzongo;unknown;1774;8;5;3;0.62;0.38;0.48;5;41;381;1723;4.52;0.75;0.52;14327;0.48;0.52
