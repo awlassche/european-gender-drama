@@ -7,9 +7,6 @@ import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from google.oauth2 import service_account
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
 
 for _font_path in [
     os.path.expanduser("~/Library/Fonts/RobotoCondensed-Regular.ttf"),
@@ -44,6 +41,20 @@ CREDENTIALS_FILE = os.environ.get(
 )
 DRIVE_FOLDER_NAME = "DutchDraCor_gender"
 CACHE_DIR = os.path.join(_REPO_DIR, "data/corpus_stats")
+
+# current figures: statistics from extract_character_stats.py (current DraCor,
+# same plays as the speech texts, year = yearNormalized); figure names get
+# FIGURE_SUFFIX, so the figures of the submitted article stay
+STATS_DIR = os.path.join(_REPO_DIR, "data/corpus_stats_2026-10-15")
+FIGURE_SUFFIX = "_v2"
+# the figures in the submitted article (CSVs from the notebook, via Google Drive):
+# STATS_DIR = CACHE_DIR
+# FIGURE_SUFFIX = ""
+
+
+def figure_path(name):
+    """figs/<name><FIGURE_SUFFIX>.pdf"""
+    return os.path.join(_REPO_DIR, "figs", f"{name}{FIGURE_SUFFIX}.pdf")
 
 CORPORA = ["fre", "ita", "cal", "dutch", "eng", "ger"]
 CORPUS_NAMES = {
@@ -84,6 +95,7 @@ def find_root_folder(service, name):
 
 
 def download_file(service, file_id, dest_path):
+    from googleapiclient.http import MediaIoBaseDownload
     request = service.files().get_media(fileId=file_id)
     buf = io.BytesIO()
     downloader = MediaIoBaseDownload(buf, request)
@@ -105,6 +117,8 @@ def fetch_corpus_csvs():
     if not missing:
         return
 
+    from google.oauth2 import service_account
+    from googleapiclient.discovery import build
     creds = service_account.Credentials.from_service_account_file(
         CREDENTIALS_FILE, scopes=["https://www.googleapis.com/auth/drive.readonly"]
     )
@@ -144,17 +158,18 @@ def fetch_corpus_csvs():
         print(f"Downloaded {csv_name}")
 
 
-fetch_corpus_csvs()
+if STATS_DIR == CACHE_DIR:  # only the notebook's CSVs live on Google Drive
+    fetch_corpus_csvs()
 
 # ── load ────────────────────────────────────────────────────────────────────
 # %%
 
 play_data = {
-    c: pd.read_csv(os.path.join(CACHE_DIR, f"plays_df_{c}.csv"), sep=";")
+    c: pd.read_csv(os.path.join(STATS_DIR, f"plays_df_{c}.csv"), sep=";")
     for c in CORPORA
 }
 character_data = {
-    c: pd.read_csv(os.path.join(CACHE_DIR, f"character_df_{c}.csv"), sep=";")
+    c: pd.read_csv(os.path.join(STATS_DIR, f"character_df_{c}.csv"), sep=";")
     for c in CORPORA
 }
 
@@ -170,8 +185,8 @@ FEMALE_ACTING_INTRODUCED = {
 }
 
 
-def plot_plays_per_decade(play_years=None, filename="plays_per_decade_columns_female_line.pdf"):
-    """play_years: {corpus: one year per play}; defaults to the corpus_stats plays."""
+def plot_plays_per_decade(play_years=None, filename="plays_per_decade_columns_female_line"):
+    """play_years: {corpus: one year per play}; defaults to the plays in STATS_DIR."""
     if play_years is None:
         play_years = {c: play_data[c]["year"] for c in play_data}
     decades = [str(decade) + "0" for decade in range(150, 180)]
@@ -209,29 +224,10 @@ def plot_plays_per_decade(play_years=None, filename="plays_per_decade_columns_fe
         loc="lower center", ncol=1, bbox_to_anchor=(0.5, -0.05), frameon=False,
     )
     fig.tight_layout()
-    plt.savefig(os.path.join(_REPO_DIR, "figs", filename), bbox_inches="tight")
+    plt.savefig(figure_path(filename), bbox_inches="tight")
 
 
 plot_plays_per_decade()
-
-# %%
-# The same figure for the plays in the current DraCor extraction
-# (extract_speech_texts.py), which is the corpus the experiments now use.
-
-SPEECH_TEXTS_DIR = os.path.join(_REPO_DIR, "data/speech_texts_2026-10-15")
-
-
-def speech_text_play_years(corpus):
-    """One year per play in the extracted speech texts of a corpus."""
-    path = os.path.join(SPEECH_TEXTS_DIR, f"speech_gender_{corpus}.ndjson")
-    records = pd.read_json(path, lines=True)[["play", "year"]]
-    return records.drop_duplicates("play")["year"]
-
-
-plot_plays_per_decade(
-    play_years={c: speech_text_play_years(c) for c in CORPORA},
-    filename="plays_per_decade_columns_female_line_dracor-2026-10-15.pdf",
-)
 
 # ── % female characters per corpus ───────────────────────────────────────────
 # %%
@@ -260,7 +256,7 @@ def plot_female_chars_per_corpus():
     ax.set_xticks(range(1, len(CORPORA) + 1), labels=[""] * len(CORPORA))
     ax.set_ylim(0, 1)
     #ax.set_xlabel("Corpus", fontweight="semibold")
-    ax.set_ylabel("Share of female characters (%)", fontweight="semibold")
+    ax.set_ylabel("Share of female characters", fontweight="semibold")
     ax.yaxis.grid(True, linestyle="--", alpha=0.4)
     ax.spines[["top", "right"]].set_visible(False)
 
@@ -272,7 +268,7 @@ def plot_female_chars_per_corpus():
                  transform=trans, ha="center", va="top", fontsize=8)
 
     fig.tight_layout()
-    plt.savefig(os.path.join(_REPO_DIR, "figs", "pct_female_chars_per_corpus.pdf"), bbox_inches="tight")
+    plt.savefig(figure_path("pct_female_chars_per_corpus"), bbox_inches="tight")
 
 
 plot_female_chars_per_corpus()
@@ -303,7 +299,7 @@ def plot_female_lines_per_corpus():
 
     ax.set_xticks(range(1, len(CORPORA) + 1), labels=[""] * len(CORPORA))
     ax.set_ylim(0, 1)
-    ax.set_ylabel("Share of female lines (%)", fontweight="semibold")
+    ax.set_ylabel("Share of female lines", fontweight="semibold")
     ax.yaxis.grid(True, linestyle="--", alpha=0.4)
     ax.spines[["top", "right"]].set_visible(False)
 
@@ -315,7 +311,7 @@ def plot_female_lines_per_corpus():
                  transform=trans, ha="center", va="top", fontsize=8)
 
     fig.tight_layout()
-    plt.savefig(os.path.join(_REPO_DIR, "figs", "pct_female_lines_per_corpus.pdf"), bbox_inches="tight")
+    plt.savefig(figure_path("pct_female_lines_per_corpus"), bbox_inches="tight")
 
 
 plot_female_lines_per_corpus()
@@ -354,7 +350,7 @@ def plot_centrality_by_gender():
 
     #fig.suptitle("Degree centrality by gender", fontweight="bold")
     fig.tight_layout()
-    plt.savefig(os.path.join(_REPO_DIR, "figs", "centrality_by_gender.pdf"), bbox_inches="tight")
+    plt.savefig(figure_path("centrality_by_gender"), bbox_inches="tight")
 
 
 plot_centrality_by_gender()
@@ -388,27 +384,28 @@ def plot_mean_speech_length_over_time():
     ax.legend(loc="upper right", ncol=2, framealpha=0.7)
 
     fig.tight_layout()
-    plt.savefig(os.path.join(_REPO_DIR, "figs", "mean_speech_length_over_time.pdf"), bbox_inches="tight")
+    plt.savefig(figure_path("mean_speech_length_over_time"), bbox_inches="tight")
 
 
 plot_mean_speech_length_over_time()
 
-# ── % female lines & characters over time, French, 25-yr windows ─────────────
+# ── % female lines & characters over time, 25-yr windows ────────────────────
 # %%
 
-# Same windowing as train_temporal_fre.py, so the two plots line up.
+# Same windows as the temporal experiments (train_temporal_fre.py), so the
+# plots line up: French 1625-1799, English 1575-1699.
 WINDOW_SIZE = 25
-START_YEAR = 1625
-END_YEAR = 1800
+TEMPORAL_PERIODS = {"fre": (1625, 1800), "eng": (1575, 1700)}
 
 
-def plot_female_pct_over_time_fre():
-    df = play_data["fre"].copy()
+def plot_female_pct_over_time(corpus):
+    start_year, end_year = TEMPORAL_PERIODS[corpus]
+    df = play_data[corpus].copy()
     df["year"] = pd.to_numeric(df["year"], errors="coerce")
     df = df.dropna(subset=["year", "%_female_chars", "%_female_lines"])
 
     windows, chars_mean, chars_std, lines_mean, lines_std, counts = [], [], [], [], [], []
-    for start in range(START_YEAR, END_YEAR, WINDOW_SIZE):
+    for start in range(start_year, end_year, WINDOW_SIZE):
         end = start + WINDOW_SIZE
         w = df[(df.year >= start) & (df.year < end)]
         if w.empty:
@@ -420,7 +417,7 @@ def plot_female_pct_over_time_fre():
         lines_std.append(w["%_female_lines"].std())
         counts.append(len(w))
 
-    print("French, % female chars/lines per 25-yr window:")
+    print(f"{CORPUS_NAMES[corpus]}, % female chars/lines per 25-yr window:")
     for label, n, cm, lm in zip(windows, counts, chars_mean, lines_mean):
         print(f"  {label} (N={n}): chars={cm:.2f}, lines={lm:.2f}")
 
@@ -442,15 +439,16 @@ def plot_female_pct_over_time_fre():
     ax.set_xticks(x, labels=windows, ha="center")
     ax.set_ylim(0, 0.6)
     #ax.set_xlabel("Year (25-year windows)", fontweight="semibold")
-    ax.set_ylabel("Share (%)", fontweight="semibold")
+    ax.set_ylabel("Share", fontweight="semibold")
     ax.grid(axis="y", linestyle="--", alpha=0.4)
     ax.spines[["top", "right"]].set_visible(False)
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2, framealpha=0.7)
 
     fig.tight_layout()
-    plt.savefig(os.path.join(_REPO_DIR, "figs", "female_pct_over_time_fre.pdf"), bbox_inches="tight")
+    plt.savefig(figure_path(f"female_pct_over_time_{corpus}"), bbox_inches="tight")
 
 
-plot_female_pct_over_time_fre()
+plot_female_pct_over_time("fre")
+plot_female_pct_over_time("eng")
 
 # %%

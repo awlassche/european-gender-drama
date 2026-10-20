@@ -35,6 +35,16 @@ OUTPUT_FILE = "accuracy_by_sample_size_v2.pdf"
 # RESULTS_FILES[1500] = f"{RESULTS_PREFIX}.txt"
 # OUTPUT_FILE = "accuracy_by_sample_size.pdf"
 
+# larger text than the shared settings in visualize_method_comparison.py,
+# so the six small panels stay readable when the figure is scaled down
+plt.rcParams.update({
+    "axes.titlesize": 16,
+    "axes.labelsize": 14,
+    "xtick.labelsize": 13,
+    "ytick.labelsize": 13,
+    "legend.fontsize": 14,
+})
+
 METHODS = ("TF-IDF", "bge-m3")
 COLORS = {"TF-IDF": CHRyellow, "bge-m3": CHRred}
 MARKERS = {"TF-IDF": "o", "bge-m3": "s"}
@@ -85,9 +95,9 @@ def plot_accuracy_by_sample_size(series):
                 label=method,
                 color=COLORS[method],
                 marker=MARKERS[method],
-                markersize=5,
+                markersize=6,
                 capsize=3,
-                linewidth=1.6,
+                linewidth=1.8,
                 alpha=0.9,
             )
 
@@ -105,7 +115,7 @@ def plot_accuracy_by_sample_size(series):
 
     handles, labels = axes[0, 0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="lower center", ncol=2, framealpha=0.7,
-               bbox_to_anchor=(0.5, -0.04))
+               bbox_to_anchor=(0.5, -0.09))
 
     fig.tight_layout()
     plt.savefig(os.path.join(_REPO_DIR, "figs", OUTPUT_FILE), bbox_inches="tight")
