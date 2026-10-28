@@ -180,3 +180,9 @@ data/tei/
 
 # Local model checkpoints (e.g. models/bertoldo-all, 2.5 GB)
 models/
+
+# Local notebooks (replaced by the extract_*.py and visualize_*.py scripts)
+notebooks/
+
+# Internal note on the corpus statistics corrections
+docs/corpus_stats_fix.md

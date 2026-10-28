@@ -9,8 +9,7 @@ This repository contains code for data extraction, embeddings, classification, c
 ## Useful directions 📌
 
 - `european-gender-drama/` the main folder contains the Python files to extract data, get embeddings, train classifiers and run clustering experiments
-- `/notebooks/` contains a notebook exploring the extracted speech texts
-- `/data/` contains the per-language speech/gender corpora and corpus statistics
+- `/data/` contains the per-character speech texts and the corpus statistics
 - `/results/` contains results of the classification, clustering and temporal experiments
 - `/figs/` contains the figures generated from those results
 
@@ -23,39 +22,39 @@ Speech data is drawn from [DraCor](https://dracor.org/) (Dutch, English, French,
 ## Project Organization 🏗️
 
 ```
-├── README.md                        <- The top-level README for developers using this project.
+├── README.md                              <- The top-level README for developers using this project.
 │
-├── requirements.txt                 <- Python dependencies.
+├── requirements.txt                       <- Python dependencies.
 │
-├── clustering_task.py               <- Clustering task (KMeans + V-measure) to choose the best embedding model per language.
+├── extract_speech_texts.py                <- Extracts the spoken text of every character per play from DraCor (TEI), with gender and year, into data/speech_texts_<date>/.
 │
-├── check_chunksize.py               <- Inspects how many usable speech chunks result from different chunk sizes / top-speaker cutoffs.
+├── extract_character_stats.py             <- Per-play and per-character statistics (counts, acts, co-presence network) into data/corpus_stats_<date>/.
 │
-├── get_embeddings_europe.py         <- Chunk speech data and push sentence embeddings (BGE-M3 etc.) for all languages to the Hugging Face Hub.
+├── get_embeddings_europe.py               <- Chunks the speech texts and pushes sentence embeddings (bge-m3) for all languages to the Hugging Face Hub.
 │
-├── train_classifiers_europe.py      <- Train logistic regression classifiers (TF-IDF and embeddings) to predict speaker gender, per language.
+├── clustering_task.py                     <- Clustering task (KMeans + V-measure) to choose the best embedding model per language.
 │
-├── train_temporal_fre.py            <- Temporal version of the classification task: trains classifiers on 25-year subcorpora (1625–1800) of the French corpus.
+├── check_chunksize.py                     <- Inspects how many usable speech chunks result from different chunk sizes / top-speaker cutoffs.
 │
-├── add_year_to_ndjson.py            <- Adds publication year (from DraCor metadata) to the per-language NDJSON files.
+├── train_classifiers_europe.py            <- Original classification script of the submitted version (sampling with replacement).
 │
-├── add_year_to_hf_dataset.py        <- Propagates the 'year' column from the NDJSON files to the pushed Hugging Face embedding datasets.
+├── train_classifiers_europe_noreplace.py  <- Revised classification script: sampling without replacement, TF-IDF fitted on training data, held-out plays, equal-speakers option.
 │
-├── push_to_hub.py                   <- Merges per-language local embedding datasets and pushes the combined dataset to the Hugging Face Hub.
+├── train_temporal_fre.py                  <- Temporal version of the classification task on 25-year subcorpora (French 1625–1799, English 1575–1699).
 │
-├── visualize_corpus_stats.py        <- Figures on corpus composition: plays per decade, % female characters/lines, centrality by gender, speech length over time, and % female lines/characters over time for the French corpus.
+├── test_temporal_trend.py                 <- Trend test over time on the saved temporal predictions (logistic regression, clustered by play).
 │
-├── visualize_method_comparison.py   <- Figures comparing classification accuracy across languages and embedding/TF-IDF methods.
+├── visualize_corpus_stats.py              <- Figures on corpus composition: plays per decade, % female characters/lines, centrality by gender, speech length, and % female lines/characters over time.
 │
-├── visualize_temporal_results.py    <- Figures for the temporal French classification results.
+├── visualize_method_comparison.py         <- Figures comparing classification accuracy across languages and TF-IDF/embedding methods.
 │
-├── data/                            <- Per-language speech/gender NDJSON files (zipped), plus corpus_stats/ (per-play and per-character CSVs) created by the notebooks.
+├── visualize_sample_size.py               <- Figure of classification accuracy by sample size.
 │
-├── notebooks/                       <- Jupyter notebooks.
-│      │
-│      └── explore_speech_texts.ipynb            <- Exploratory look at the extracted speech texts.
+├── visualize_temporal_results.py          <- Figures for the temporal classification results.
 │
-├── figs/                            <- Figures generated by the visualize_*.py scripts.
+├── data/                                  <- Speech texts (speech_texts_<date>/), corpus statistics (corpus_stats_<date>/), DraCor play years, and the data of the submitted version.
 │
-└── results/                         <- Results from the clustering, classification and temporal experiments (incl. v_measures/ subfolder).
+├── figs/                                  <- Figures generated by the visualize_*.py scripts (revised versions end in _v2).
+│
+└── results/                               <- Results from the clustering, classification and temporal experiments (incl. v_measures/ subfolder).
 ```
